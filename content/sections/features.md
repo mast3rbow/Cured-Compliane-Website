@@ -3,6 +3,6 @@ title: Cured Compliance Features
 afterTitle: ...and so much more!
 ---
 
-Check out some of these amazing features to improve your compliance!
+Check out some of these amazaing features to improve your compliance!
 <br><br>
-Cras mattis justo id convallis porta.
+Check them out below!
