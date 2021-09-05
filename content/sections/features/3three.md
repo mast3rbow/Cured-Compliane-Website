@@ -1,7 +1,7 @@
 ---
-title: Cured Compliance Feature 3
+title: Your Shop, your lists
 weight: 3
 icon: icon3.svg
 ---
 
-Maecenas pulvinar ultricies dolor, vitae sagittis nunc aliquam non. Cras vitae eros mi. Pellentesque ac orci mi. Ut dignissim tincidunt ex id tincidunt.
+Customise the system to meet your shop needs, ensure your all your requirements are setup to meet compliance needs.

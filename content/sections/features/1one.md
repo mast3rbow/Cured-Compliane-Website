@@ -1,7 +1,7 @@
 ---
-title: Cured Compliance Feature One
+title: Native Cloud Scale
 weight: 1
 icon: icon1.svg
 ---
 
-Maecenas pulvinar ultricies dolor, vitae sagittis nunc aliquam non. Cras vitae eros mi. Pellentesque ac orci mi. Ut dignissim tincidunt ex id tincidunt.
+Native cloud scale, manage compliance from any device, phone, tablet and computer ensuring consistency across the business.
