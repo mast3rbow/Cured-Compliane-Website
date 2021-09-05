@@ -2,4 +2,4 @@
 title: Registration
 ---
 
-Maecenas pulvinar ultricies dolor, vitae sagittis nunc aliquam non. Cras vitae eros mi.
+Register your interest, we will contact you once we are ready to extend our closed beta!

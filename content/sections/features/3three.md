@@ -1,5 +1,5 @@
 ---
-title: AWE.SOME Feature 3
+title: Cured Compliance Feature 3
 weight: 3
 icon: icon3.svg
 ---
