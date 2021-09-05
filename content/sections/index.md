@@ -1,5 +1,5 @@
 ---
-title: AWE.SOME
+title: Cured Compliance
 headless: true
 resources:
     - name: about
