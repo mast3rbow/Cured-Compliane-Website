@@ -1,7 +1,7 @@
 ---
-title: AWE.SOME Heading
+title: About Us!
 ---
 
-Maecenas pulvinar ultricies dolor, vitae sagittis nunc aliquam non. Cras vitae eros mi. Pellentesque ac orci mi. Ut dignissim tincidunt ex id tincidunt.
+What happens when, a butcher and IT pro deciedes to smoke bacon together, well they decieded start an compliance revolution.
 <br><br>
-**Vivamus vitae erat vel tellus condimentum consectetur.**
+**Digitaise your compliance and simplify your auditing!**

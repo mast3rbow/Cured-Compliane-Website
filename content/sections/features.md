@@ -3,6 +3,6 @@ title: Cured Compliance Features
 afterTitle: ...and so much more!
 ---
 
-Pellentesque ullamcorper fringilla odio at pretium. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nulla mattis erat dui, ut tempor lectus dictum id.
+Check out some of these amazing features to improve your compliance!
 <br><br>
 Cras mattis justo id convallis porta.
