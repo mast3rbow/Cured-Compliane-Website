@@ -2,15 +2,20 @@
 title: Privacy Policy
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut id rhoncus est. Nullam sit amet justo nisi. Aliquam elementum iaculis nulla bibendum congue. Integer convallis ut nisi at tincidunt. Sed eu diam ex. Ut efficitur velit ut ultrices semper. Morbi suscipit ut purus a placerat. Cras massa lorem, pretium et nibh in, faucibus fermentum dolor. Nulla lacinia malesuada molestie. Proin et risus turpis. Aenean lacinia, orci at egestas fringilla, sem libero facilisis lectus, ut porta justo ligula a quam. Mauris vulputate purus mauris, eget semper ante rutrum id. Duis vestibulum, turpis at ultricies aliquam, enim dolor lobortis leo, at laoreet elit odio at nunc. Aliquam sit amet erat mi.
+CuredCompliance agrees that the ‘National Privacy Principles for the Fair Handling of Personal Information’ is an integral part of the way we do business. This Principle has guidelines and standards for the collection, access, storage and use of personal information which we obtain in order to run our business and meet customer needs. We are respectful of our customer’s right to privacy and in this regard will only use the personal information in relation to our customers in a way that is agreed in the National Privacy Principles.
 
-Cras mattis justo id convallis porta. Pellentesque ullamcorper fringilla odio at pretium. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nulla mattis erat dui, ut tempor lectus dictum id. Mauris ornare massa a nisi gravida, id ultrices ex cursus. Donec quis porttitor nisl, non viverra dui. Donec nec gravida arcu. Pellentesque dignissim at libero id bibendum. Vivamus pulvinar nibh risus, et egestas odio interdum id. Cras eleifend risus molestie mollis finibus. Aenean tortor elit, accumsan vel fermentum pharetra, molestie ut felis.
+Information in regard to what personal information we collect about and from you and the way we handle and what we do with this personal information
 
-Maecenas pulvinar ultricies dolor, vitae sagittis nunc aliquam non. Cras vitae eros mi. Pellentesque ac orci mi. Ut dignissim tincidunt ex id tincidunt. Aliquam semper felis sed leo sodales scelerisque. Vivamus vitae erat vel tellus condimentum consectetur at ac velit. Mauris massa tortor, cursus sit amet turpis in, lacinia ultricies nulla.
+As a part of our customer service and accounting needs we may need to ask for personal details such as your name, business name and ABN or ACN, mailing and physical address, telephone number/s and e-mail address. We need this information to generate tax invoices, dispatch or mail accounts/orders/goods to you, send electronic messages to you (accounts/newsletters/promotions) and call you in regard to deliveries and accounts. The Privacy law requires us to collect personal information about you only from you if it is reasonable and practical to do so. You can decline to give information if it is not relevant to your business with us but we still need to comply with the taxation laws in regard to our business operations so some information will be necessary in order to do this.
 
-Integer finibus sem sit amet diam luctus, ut posuere enim dapibus. Nunc euismod dignissim dui a maximus. Phasellus pulvinar neque at lorem ultricies suscipit. Maecenas felis erat, ornare eget egestas et, ultricies vitae ante. In convallis quam lectus, sit amet elementum ligula pulvinar ac. Integer sapien ipsum, congue a purus vel, sollicitudin lacinia ligula. Ut varius sit amet lectus quis congue. Ut viverra lectus tellus, a pharetra neque egestas eu. Morbi feugiat, arcu id bibendum vulputate, risus mi finibus enim, sed pulvinar ipsum sem eu risus. Aenean accumsan elementum ipsum, eu porttitor libero auctor at. Duis nec ipsum velit. Aliquam ac ullamcorper nisl. Duis mattis malesuada leo, quis egestas turpis molestie nec. Curabitur dui tortor, volutpat quis varius et, posuere eget augue. Praesent sed pretium dui. Vivamus auctor ex vitae nisl commodo interdum.
+We take care and have security measures in place so that your personal information is protected from unauthorized access or handling of your information. In regard to financial transactions any information relayed by you is not stored but only used in relation to the immediate authorised transaction.
 
-Nam non quam vel velit sagittis consequat non vel odio. Phasellus condimentum dictum orci, quis rhoncus lacus hendrerit non. Ut vel nisl lectus. Duis vitae varius enim. Morbi placerat urna sit amet sollicitudin viverra. Vivamus maximus metus ac ornare venenatis. Ut suscipit nec sapien ac fringilla. Phasellus et justo eget odio lacinia feugiat. Nullam laoreet eros a lectus pretium, sed euismod velit tincidunt.
+We do not disclosure your personal information to other organisations (for example market researchers, and others). At your request we can provide account information for credit reference purposes (This authority will be required from you in writing)
+
+On request we will provide you with access and also change any of your personal information we hold (except in the limited circumstances recognised by privacy law). In this case we will ask questions and request a signed form from you to ensure that we are providing this information to the concerned party only.
+
+More information about Privacy law and the National Privacy Principles is available from the Federal Privacy Commissioner at <a href="https://www.oaic.gov.au" target="_blanl">https://www.oaic.gov.au</a>
+
 
 #### Website enhancements ####
 
@@ -20,7 +25,3 @@ This website uses the follwing packages from <a href="https://unpkg.com" rel="no
 - &dash; tippy.js
 
 Using these packages, personal data may be transmitted.
-
-### Your rights ###
-
-Integer finibus sem sit amet diam luctus, ut posuere enim dapibus. Nunc euismod dignissim dui a maximus. Phasellus pulvinar neque at lorem ultricies suscipit. Maecenas felis erat, ornare eget egestas et, ultricies vitae ante. In convallis quam lectus, sit amet elementum ligula pulvinar ac. Integer sapien ipsum, congue a purus vel, sollicitudin lacinia ligula. Ut varius sit amet lectus quis congue. Ut viverra lectus tellus, a pharetra neque egestas eu. Morbi feugiat, arcu id bibendum vulputate, risus mi finibus enim, sed pulvinar ipsum sem eu risus. Aenean accumsan elementum ipsum, eu porttitor libero auctor at. Duis nec ipsum velit. Aliquam ac ullamcorper nisl. Duis mattis malesuada leo, quis egestas turpis molestie nec. Curabitur dui tortor, volutpat quis varius et, posuere eget augue. Praesent sed pretium dui. Vivamus auctor ex vitae nisl commodo interdum.
