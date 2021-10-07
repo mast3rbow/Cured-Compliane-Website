@@ -2,6 +2,7 @@
 title: About Us!
 ---
 
-What happens when, a butcher and IT pro deciedes to smoke bacon together, well they decieded start an compliance revolution.
+**Our story begins simply as all great things do with bacon...**
+An IT professional was looking to cure his own bacon, and enlisted the help of the local butcher. A simple discussion and agreement to trade skills lead to discovery and opportunity to improve the industry. Now cured and almost ready for packaging, Cured Compliance is ready to become the platform to help butchers
 
 **Digitaise your compliance and simplify your auditing!**
