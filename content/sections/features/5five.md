@@ -1,5 +1,5 @@
 ---
-title: Cured Compliance Feature Five
+title: Friendly and Simple to use
 weight: 5
 icon: icon5.svg
 ---
