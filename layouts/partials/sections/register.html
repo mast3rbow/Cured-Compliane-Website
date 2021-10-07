@@ -7,9 +7,9 @@
         <div class="font-light text-gray-400 text-xl">
             {{ $reg.Content }}
         </div>
-        <form class="w-full max-w-lg my-20 mx-auto" action="#" method="post" id="registration-form" target="_blank" validate>
+        <form class="w-full max-w-lg my-20 mx-auto" onsubmit="return submitForm()" validate>
             <div class="flex items-center border-b border-pink-600 py-2">
-                <input class="appearance-none bg-transparent border border-transparent w-full text-gray-200 focus:outline-none focus:bg-gray-400 focus:text-gray-800 focus:border-gray-400 mr-3 py-2 px-3" type="email" value="" name="EMAIL" placeholder="name@domain.com" aria-label="Email Address" required>
+                <input class="appearance-none bg-transparent border border-transparent w-full text-gray-200 focus:outline-none focus:bg-gray-400 focus:text-gray-800 focus:border-gray-400 mr-3 py-2 px-3" id="form-email" type="email" value="" name="EMAIL" placeholder="name@domain.com" aria-label="Email Address" required>
                 <button class="flex-shrink-0 bg-pink-600 border-pink-600 hover:bg-gray-800 hover:text-pink-600 border text-gray-200 py-2 px-4" type="submit" name="subscribe">
                     Sign Up
                 </button>
@@ -21,5 +21,23 @@
                 </span>
             </label>
         </form>
+        <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/superagent/2.2.0/superagent.min.js"></script>
+        <script>
+            function submitForm() {
+                superagent
+                    .post('https://prod-15.australiaeast.logic.azure.com:443/workflows/35322c1d8a1240f6977b41bbf8df96ed/triggers/manual/paths/invoke?api-version=2016-10-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=TFvXHLj6j0dD1YtJ6_fT6SNdpTvHwst_OaOMNyx4Dm4')
+                    .send({ 
+                        email: document.getElementById('form-email').value,
+                    })
+                    .end(function(err, res){
+                        if (err || !res.ok) {
+                            alert('Whoops. Something went wrong.');
+                        } else {
+                            alert('Thank you for your registration.');
+                        }
+                    });
+                return false;
+            }
+        </script>
     </div>
 </div>
