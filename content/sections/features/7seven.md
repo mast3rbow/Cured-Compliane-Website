@@ -1,5 +1,5 @@
 ---
-title: Cured Compliance Feature 7
+title: Simple Billing model
 weight: 7
 icon: icon7.svg
 ---

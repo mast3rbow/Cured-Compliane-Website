@@ -1,5 +1,5 @@
 ---
-title: Cured Compliance Feature 8
+title: Designed for You
 weight: 8
 icon: icon8.svg
 ---
