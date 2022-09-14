@@ -1,9 +1,7 @@
 ---
-title: Demo
+title: Get a demo
 ---
 
-**Our story begins simply as all great things do with bacon...**
+**Register for a demo...**
 
-Check our a quick demo
-
-**Digitaise your shop and simplify your auditing!**
+Register below for one of our team members to give you a guided demo of the Cured Compliance platform.
