@@ -2,4 +2,4 @@
 title: Registration
 ---
 
-Register your interest, we will contact you once we are ready to extend our closed beta!
+Register your demo and we will get contact within a business day to organise a time!

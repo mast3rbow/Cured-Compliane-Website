@@ -1,0 +1,15 @@
+{{ $headless := .Site.GetPage "/sections" }}
+{{ $demo := $headless.Resources.GetMatch (printf "*%s*" "demo") }}
+
+<div id="demo" class="w-full min-h-screen flex flex-col justify-center items-center py-12">
+    <div class="self-center text-center w-full sm:w-2/3 xl:w-1/2 px-4 sm:px:0">
+        <h2 class="font-bold tracking-wider text-gray-800 text-4xl mb-4">{{ $demo.Title }}</h2>
+        <div class="font-light text-black text-xl">
+            {{ $demo.Content }}
+        </div>
+        <img class="my-12 max-w-full mx-auto" src="/img/temp-demo.png" alt="A butcher and meat">
+    </div>
+    <div class="flex flex-row w-full justify-center">
+        <a class="px-10 py-2 text-gray-200 bg-pink-600 rounded-full shadow-md text-lg hover:bg-gray-800 hover:border-red" href="#register">Register Now!</a>
+    </div>
+</div>
