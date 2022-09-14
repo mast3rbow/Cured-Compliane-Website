@@ -7,7 +7,7 @@ disableKinds = ["RSS","taxonomy","taxonomyTerm"] # disable hugo's content that w
 
 title = "Cured Compliance - curing compliance and making it enjoyable" # page title -> see ./layouts/partials/head.html
 
-googleAnalytics = "" # if needed...
+googleAnalytics = "G-HLHSCC5JWV" # if needed...
 
 [author]
     name = "Cured Compliance"
