@@ -1,9 +1,10 @@
 images:
-  - image: /static/img/slider/image1.jpg
-    content_html: "1"
-  - image: /static/img/slider/image1.jpg
-    content_html: "2"
-  - image: /static/img/slider/image1.jpg
-    content_html: "3"
-  - image: /static/img/slider/image1.jpg
-    content_html: "4"
+  - image: /img/slider/mvsg.webp
+  - image: /img/slider/gmh.jpg
+  - image: /img/slider/collins-court-butcher.png
+  - image: /img/slider/wcm.png
+  - image: /img/slider/bermuda_butchery.webp
+  - image: /img/slider/compassmeats.jpg
+  - image: /img/slider/ellisbutchers.png
+  - image: /img/slider/kenilworth.png
+  - image: /img/slider/nab.webp

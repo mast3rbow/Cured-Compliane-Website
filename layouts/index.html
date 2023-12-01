@@ -3,7 +3,7 @@
 {{ partial "sections/about.html" . }}
 {{ partial "sections/features.html" . }}
 {{ partial "sections/demo.html" . }}
-{{ partial "sections/pricing.html" . }}
-{{ partial "sections/register.html" . }}
+{{ partial "sections/carousel.html" (dict "context" . "items" "1" "height" "15" "unit" "%" "duration" "6000") . }}
 {{ partial "sections/awards.html" . }}
+{{ partial "sections/register.html" . }}
 {{ end }}
