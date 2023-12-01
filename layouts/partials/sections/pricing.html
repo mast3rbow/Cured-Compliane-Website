@@ -1,9 +1,9 @@
 {{ $headless := .Site.GetPage "/sections" }}
 {{ $pricing := $headless.Resources.GetMatch (printf "*%s*" "pricing") }}
 
-<div id="pricing" class="w-full flex flex-col justify-center bg-indigo-800 items-center py-12">
+<div id="pricing" class="w-full flex flex-col justify-center bg-blue-600 items-center py-12">
     <div class="self-center text-center w-full sm:w-2/3 xl:w-1/2 px-4 sm:px:0">
-        <h2 class="font-bold tracking-wider  text-4xl mb-4">{{ $pricing.Title }}</h2>
+        <h2 class="font-bold tracking-wider  text-4xl mb-4 text-white-200">{{ $pricing.Title }}</h2>
 
         <div class="price text-gray-200 text-xl">
             <div class="name center">Standard</div>
