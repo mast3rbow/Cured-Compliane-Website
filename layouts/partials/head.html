@@ -14,8 +14,10 @@
 <!-- ./END SOCIAL META DATA -->
 <base href="{{ .Site.BaseURL }}">
 <meta name="theme-color" content="#ffffff">
+<link rel="icon" type="image/png" href="/img/logo.png" />
 <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Author.name }}{{ end }}</title>
 <link rel="stylesheet" href="/css/page.css">
+<link rel="stylesheet" href="/css/carousel.css">
 {{- if ne .Site.Params.googleAnalytics "" -}}
   {{ template "_internal/google_analytics_async.html" . }}
 {{- end -}}

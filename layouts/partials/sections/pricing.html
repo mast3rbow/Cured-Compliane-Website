@@ -1,0 +1,33 @@
+{{ $headless := .Site.GetPage "/sections" }}
+{{ $pricing := $headless.Resources.GetMatch (printf "*%s*" "pricing") }}
+
+<div id="pricing" class="w-full flex flex-col justify-center bg-blue-600 items-center py-12">
+    <div class="self-center text-center w-full sm:w-2/3 xl:w-1/2 px-4 sm:px:0">
+        <h2 class="font-bold tracking-wider  text-4xl mb-4 text-white-200">{{ $pricing.Title }}</h2>
+
+        <div class="price text-gray-200 text-xl">
+            <div class="name center">Standard</div>
+            <div class="ideal">
+                <div class="head">Ideal for:</div>
+                <div class="text">Retail Butchers and Smallgood producers</div>
+            </div>
+            <div class="price-area">
+                <span class="small bold currency"><sup>$</sup></span>
+                <span class="cost" data-alt-text="0">{{ $pricing.Param "Price" }}</span>
+                <span class="small period">/mo</span>
+            </div>
+            <div class="mt-2 pricing-panel light-gray-200 text-center">
+                <em data-alt-text=""><br><br></em>
+            </div>
+            <div class="features mb-6">
+                {{ $pricing.Content}}
+            </div>
+            <div class="comparison-link d-none d-lg-block">
+            </div>
+            <div class="exclusions text-sm">
+                <br>
+                <i>*{{ $pricing.Param "exclusions" }}</i>
+            </div>
+        </div>
+    </div>
+</div>
