@@ -15,16 +15,16 @@ export default defineConfig({
   // Get this from tina.io
   token: "df8c3dea04c5f2857af6db4d855544950d9e8cae",
 
-  build: {
-    outputFolder: "admin",
-    publicFolder: "static",
-  },
   media: {
     tina: {
       publicFolder: 'public',
       mediaRoot: 'img',
       static: false, //default is false
     },
+  },
+  build: {
+    outputFolder: "admin",
+    publicFolder: "static",
   },
   // See docs on content modeling for more info on how to setup new content models: https://tina.io/docs/schema/
   schema: {
