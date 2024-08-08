@@ -523,7 +523,7 @@
     "string-width-cjs": "5.1.1",
     "stringify-entities": "^4.0.3",
     "strip-ansi": "^6.0.1",
-    "strip-ansi-cjs": "^6.0.1",
+    "strip-ansi-cjs": "8.0.0",
     "strip-bom-string": "^1.0.0",
     "strip-json-comments": "^2.0.1",
     "style-mod": "^4.1.2",
