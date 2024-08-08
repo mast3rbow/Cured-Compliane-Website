@@ -1,0 +1,27 @@
+{
+  "name": "cured-compliane-website",
+  "version": "1.0.0",
+  "description": "A simple landing page built with Hugo and Tailwind CSS",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mast3rbow/Cured-Compliane-Website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mast3rbow/Cured-Compliane-Website/issues"
+  },
+  "homepage": "https://github.com/mast3rbow/Cured-Compliane-Website#readme",
+  "dependencies": {
+    "tinacms": "^2.1.0"
+  },
+  "devDependencies": {
+    "@tinacms/cli": "^1.5.52",
+    "@types/node": "^22.1.0"
+  }
+}
