@@ -3,8 +3,6 @@
   "version": "1.0.0",
   "description": "A simple landing page built with Hugo and Tailwind CSS",
   "main": "gulpfile.js",
-<<<<<<< Updated upstream
-=======
   "dependencies": {
     "abort-controller": "^3.0.0",
     "abstract-level": "^1.0.4",
@@ -621,7 +619,6 @@
     "zustand": "^3.7.2",
     "zwitch": "^2.0.4"
   },
->>>>>>> Stashed changes
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
