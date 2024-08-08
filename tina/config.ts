@@ -70,4 +70,11 @@ export default defineConfig({
       },
     ],
   },
+  media: {
+    tina: {
+      publicFolder: 'static',
+      mediaRoot: 'static',
+      static: false, //default is false
+    },
+  },
 });
