@@ -620,7 +620,7 @@
     "zwitch": "^2.0.4"
   },
   "resolutions": {
-    "@tanstack/virtual-core": "3.9.0"
+    "virtual-core": "3.9.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
