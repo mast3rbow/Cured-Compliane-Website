@@ -619,6 +619,9 @@
     "zustand": "^3.7.2",
     "zwitch": "^2.0.4"
   },
+  "overrides": {
+    "@tanstack/virtual-core": "3.9.0"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -637,7 +640,4 @@
     "@tinacms/cli": "^1.5.52",
     "@types/node": "^22.1.0"
   },
-  "resolutions": {
-    "@tanstack/virtual-core": "3.9.0"
-  }
 }
