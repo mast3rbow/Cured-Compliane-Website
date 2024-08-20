@@ -638,6 +638,6 @@
     "@types/node": "^22.1.0"
   },
   "resolutions": {
-    "tanstack/virtual-core": "3.9.0"
+    "@tanstack/virtual-core": "3.9.0"
   }
 }
