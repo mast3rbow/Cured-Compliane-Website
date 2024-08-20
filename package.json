@@ -200,7 +200,7 @@
     "hoist-non-react-statics": "^3.3.2",
     "html-entities": "^2.5.2",
     "http-errors": "^2.0.0",
-    "headlessui/react": "2.1.1",
+    "headlessui/react": "^2.1.1",
     "iconv-lite": "^0.4.24",
     "ieee754": "^1.2.1",
     "ignore": "^5.3.1",
@@ -639,6 +639,6 @@
     "@types/node": "^22.1.0"
   },
   "resolutions": {
-    "@tanstack/virtual-core": "3.9.0"
+    "tanstack/virtual-core": "3.9.0"
   }
 }
