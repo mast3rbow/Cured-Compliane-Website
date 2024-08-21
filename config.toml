@@ -31,8 +31,3 @@ googleAnalytics = "G-HLHSCC5JWV" # if needed...
   disable = false
   filename = 'sitemap.xml'
   priority = -1
-
-[[redirects]]
-  from = '/**'
-  status = 404
-  to = '/404.html'
