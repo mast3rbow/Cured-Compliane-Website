@@ -1,7 +1,17 @@
 {{ define "main" }}
-  {{ partial "navbar.html" . }}
+<link rel="stylesheet"  href="/css/normalize.min.css">
+
+<style>
+    h2, h3, h4 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    }
+</style>
+
+{{ partial "navbar.html" . }}
+
 <div class="w-full flex flex-col justify-center items-center">
-<h1>404 Not Found</h1>
+<h2>{{.Title}}</h2>
 <p>The page you requested cannot be found.</p>
 <p>
 <div class="main">
@@ -48,9 +58,7 @@
     </g>
 </svg>
 </div>
-<div class="font-light text-gray-200 text-lg">
-    {{ .Content }}
-</div>
+<p> {{.Content}}</p>   
 </div>
 
 {{ end }}
