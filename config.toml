@@ -5,16 +5,14 @@ publishdir = "public"
 canonifyUrls = "true"
 disableKinds = ["RSS","taxonomy","taxonomyTerm"] # disable hugo's content that we don't need...
 
-title = "Cured Compliance - curing compliance and making it enjoyable" # page title -> see ./layouts/partials/head.html
-
-googleAnalytics = "G-HLHSCC5JWV" # if needed...
+title = "Cured Compliance - Specialised compliance software for butchers and meat industry professionals." # page title -> see ./layouts/partials/head.html
 
 [author]
     name = "Cured Compliance"
     email = "help@curedcompliance.com"
 
 [params]
-    description = "Cured Compliance - curing compliance and making it enjoyable" # page description -> see ./layouts/partials/head.html
+    description = "Cured Compliance - Specialised compliance software for butchers and meat industry professionals." # page description -> see ./layouts/partials/head.html
     images = [] #add images here as "img/name.ext" (points to s./static/img/) to populate the default og and twitter <meta> attributes -> see ./layouts/partials/head.html
 
 [[params.social]]

@@ -60,6 +60,3 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 <link rel="stylesheet" href="/css/page.css">
 <link rel="stylesheet" href="/css/carousel.css">
-{{- if ne .Site.Params.googleAnalytics "" -}}
-  {{ template "_internal/google_analytics_async.html" . }}
-{{- end -}}
