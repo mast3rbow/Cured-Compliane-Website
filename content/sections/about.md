@@ -1,9 +1,11 @@
 ---
-title: About Us!
+title: Technology driven compliance
+sitemap_exclude: false
 ---
 
-**Our story begins simply as all great things do with bacon...**
+Cured Compliance provides specialized software solutions for the meat and butcher industries, focusing on 
+compliance management, tracking, and reporting to ensure adherence to industry regulations and standards.
 
-An IT professional was looking to cure his own bacon, and enlisted the help of the local butcher. A simple discussion and agreement to trade skills lead to discovery and opportunity to improve the industry. Now cured and almost ready for packaging, Cured Compliance is ready to become the digital platform to help butchers
+{{< figure src="./img/demo.png" width="100%" alt="A screenshot of cured compliance with the menu bar" class="my-12 max-w-full mx-auto border-rounded">}}
 
-**Digitaise your shop and simplify your auditing!**
+Continue reading to learn more

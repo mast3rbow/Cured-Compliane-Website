@@ -17,8 +17,6 @@ googleAnalytics = "G-HLHSCC5JWV" # if needed...
     description = "Cured Compliance - curing compliance and making it enjoyable" # page description -> see ./layouts/partials/head.html
     images = [] #add images here as "img/name.ext" (points to s./static/img/) to populate the default og and twitter <meta> attributes -> see ./layouts/partials/head.html
 
-# these items will be rendered 1. into a tooltip in the navbar and 2. into the footer - consider that there's limited space when adding more items -> see ./layouts/partials
-
 [[params.social]]
     title = "LinkedIn"
     url = "https://linkedin.com/company/75633596" # add your linkedin profile URL
@@ -31,3 +29,25 @@ googleAnalytics = "G-HLHSCC5JWV" # if needed...
   disable = false
   filename = 'sitemap.xml'
   priority = -1
+
+[menus]
+  [[menus.main]]
+    identifier = 'Features'
+    name = 'Features'
+    pageRef = '/features'
+    weight = 10
+  [[menus.main]]
+    identifier = "Story"
+    name = 'Our Story'
+    pageRef = '/About'
+    weight = 1
+  [[menus.main]]
+    identifier = "Resources"
+    name = 'Resources'
+    pageRef = '/resources'
+    weight = 40
+  [[menus.main]]
+    identifier = "media"
+    name = 'Media'
+    pageRef = '/media'
+    weight = 50

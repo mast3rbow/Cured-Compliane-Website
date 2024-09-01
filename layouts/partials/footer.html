@@ -1,4 +1,4 @@
-<footer class="w-full flex flex-col sm:flex-row sm:justify-center text-lg tracking-wide px-4 sm:px-0 py-16">
+<footer class="footer w-full flex flex-col sm:flex-row sm:justify-center text-lg tracking-wide px-4 sm:px-0 py-16">
     <div class="text-center pr-0 sm:pr-8 py-4">
         <ul class="list-none">
             {{ range .Site.Params.social }}
@@ -31,33 +31,11 @@
         </ul>
     </div>
 </footer>
-<div class="w-full">
-    <span class="block text-center text-gray-800 text-sm font-light">
-        &copy; Cured Compliance {{ now.Format "2006" }}
-    </span>
-</div>
-<div class="">
-    <a id="btt" class="hidden fixed bottom-0 right-0 mb-4 mr-4 text-gray-200 border border-blue-600 hover:bg-gray-200 hover:text-blue-600 hover:border-browngray no-underline px-6 py-1 bg-blue-600 shadow-md" href="{{ if .IsHome }}#top{{ else }}{{ .Permalink }}#top{{ end }}" title="Back to Top">UP</a>
-<style>
-    .tippy-tooltip {
-        background-color: #656D78;
-        color: #323A45;
-        opacity: 0.85;
-    }
-
-    .tippy-tooltip[data-animatefill] {
-        background-color: transparent;
-    }
-
-    .tippy-tooltip .tippy-backdrop {
-        background-color: #656D78;
-        opacity: 0.5;
-    }
-
-    .tippy-tooltip[x-placement^='bottom'] .tippy-arrow {
-        border-bottom-color: #656D78;
-    }
-</style>
+<div class="footer w-full"  style="padding-top: 30px;">
+        <span class="block text-center text-gray-800 text-sm font-light">
+            &copy; Cured Compliance {{ now.Format "2006" }}
+        </span>
+    </div>
 <template id="followTip">
     {{ range .Site.Params.social }}
         <a href="{{ .url }}" class="inline-block text-gray-200 text-sm bg-blue-600 shadow-md hover:bg-gray-200 hover:text-gray-800 no-underline p-1 px-4 mx-2 my-1" target="_blank" rel="noopener">{{ .title }}</a>
