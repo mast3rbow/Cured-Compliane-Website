@@ -14,7 +14,7 @@ We are thrilled to announce that Cured Compliance has been honored with the NBN 
 The NBN Innovate Award celebrates organizations that demonstrate exceptional innovation, and we are proud to be acknowledged for our transformative approach to compliance management. This award is a testament to the hard work and dedication of our team in delivering solutions that not only meet but exceed industry expectations.
 
 {{< rawhtml >}}
-<iframe width="560" height="315" src="https://www.youtube.com/embed/G95rr9pQu4M?si=2H72UcZWfh1Xcgmn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe height="315" style="width: 100%;" class="border-rounded" src="https://www.youtube.com/embed/G95rr9pQu4M?si=2H72UcZWfh1Xcgmn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 <br>
 {{< /rawhtml >}}
 
@@ -24,20 +24,22 @@ Cured Compliance is in the spotlight! Our recent feature in major newspapers hig
 
 These features delve into our innovative approach and the solutions we provide that are reshaping compliance practices. We’re grateful for the recognition and the opportunity to share our story with a broader audience.
 
-Daily Telegraph\
-https://www.dailytelegraph.com.au/news/nbn-technology-used-to-power-new-compliance-tool-for-butchers/news-story/eabc3b7ff51f27f96ab9bf99970990e7
+# Featured Articles
 
-Bendio Advertister\
-https://www.bendigoadvertiser.com.au/story/8633952/connectivity-revolution-for-more-farmers-than-ever-with-nbn/
+- **Daily Telegraph**  
+  [Read the article](https://www.dailytelegraph.com.au/news/nbn-technology-used-to-power-new-compliance-tool-for-butchers/news-story/eabc3b7ff51f27f96ab9bf99970990e7)
 
-Queensland Country Life\
-https://www.queenslandcountrylife.com.au/story/8202016/gympie-innovators-are-bacon-a-cure-for-meat-compliance/
+- **Bendigo Advertiser**  
+  [Read the article](https://www.bendigoadvertiser.com.au/story/8633952/connectivity-revolution-for-more-farmers-than-ever-with-nbn/)
 
-Agtech Logistics Hub\
-https://agtechlogisticshub.com.au/2023/11/15/digital-platform-for-butchers-in-running-for-major-award/
+- **Queensland Country Life**  
+  [Read the article](https://www.queenslandcountrylife.com.au/story/8202016/gympie-innovators-are-bacon-a-cure-for-meat-compliance/)
 
-Agri Business Connect\
-https://agribusinessconnect.com.au/innovators-are-bacon-a-cure-for-compliance/
+- **Agtech Logistics Hub**  
+  [Read the article](https://agtechlogisticshub.com.au/2023/11/15/digital-platform-for-butchers-in-running-for-major-award/)
+
+- **Agri Business Connect**  
+  [Read the article](https://agribusinessconnect.com.au/innovators-are-bacon-a-cure-for-compliance/)
 
 
 **Stay Updated**\
