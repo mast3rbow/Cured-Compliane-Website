@@ -2,6 +2,7 @@
 title: About Us!
 sitemap_exclude: false
 seoTitle: About our story
+description: "A story about how Cured Compliance Started"
 layout: media.html
 ---
 
