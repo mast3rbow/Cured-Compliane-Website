@@ -1,6 +1,7 @@
 ---
 title: Investors
 description: Information for investors
+seoTitle: Investor information about cured compliance
 ---
 **Mission**
 >Our mission is to drive the digital revolution for butchers. We want to simplify how butchers can complete in the digital era. We want to simplify auditing, improve tracability and provide valueable tools to enable butchers to do more. Ultimately ensuring safer food for everyone.

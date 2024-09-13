@@ -1,21 +1,62 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MJK756LH');</script>
+<!-- End Google Tag Manager -->
+
 <link rel="preload" href="/css/page.css" as="style">
 <!-- PRELOAD CDN SCRIPTS -->
 <link rel="preconnect" href="https://unpkg.com/popper.js@1" as="script">
 <link rel="preconnect" href="https://unpkg.com/tippy.js@4" as="script">
+<link rel="icon" type="image/png" href="/img/logo.png" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="description" content="{{ with .Description }}{{.}}{{ else }}{{ if .IsPage }}{{ .Summary }}{{ else }}{{ .Site.Params.description }}{{ end }}{{ end }}">
-<meta name="author" content="{{ .Site.Params.author.name }}">
-<meta name="robots" content="index,follow">
+<meta name="author" content="Cured Compliance Pty Ltd">
+
 <!-- BEGIN SOCIAL META DATA -->
         {{ template "_internal/twitter_cards.html" . }}
         {{ template "_internal/opengraph.html" . }}
 <!-- ./END SOCIAL META DATA -->
 <base href="{{ .Site.BaseURL }}">
 <meta name="theme-color" content="#ffffff">
-<title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Author.name }}{{ end }}</title>
+
+{{  if .Params.noindex }}
+	<meta name="robots" content="noindex, nofollow">
+{{ else }}
+	<meta name="robots" content="index, follow">
+{{ end }}
+
+{{ $paginator := .Paginate (where .Site.RegularPages ".Params.post" "!=" false) }}
+
+{{ if .IsHome }}
+	{{ if eq $paginator.PageNumber 1 }}
+		<title>{{ .Title }}</title>
+		<meta name="description" content="{{ .Site.Params.description }}" />
+	{{ else }}
+		<title>{{ .Title }} | Page {{ $paginator.PageNumber }}</title>
+		<meta name="description" content="This is page {{ $paginator.PageNumber }} of our content." />
+	{{ end }}
+{{ else }}
+	{{ if .Params.seoTitle }}
+		<title>{{ .Params.seoTitle }}</title>
+	{{ else }}
+		<title>{{ .Title }}</title>
+	{{ end }}
+	<meta name="description" content="{{ .Description }}" />
+{{ end}}
+
+{{ if .IsHome }}
+  {{ if eq $paginator.PageNumber 1 }}
+    <link rel="canonical" href="{{ .Permalink }}" />
+  {{ else }}
+    <link rel="canonical" href="{{ .Permalink }}page/{{ $paginator.PageNumber }}/" />
+  {{ end }}
+{{ else }}
+  <link rel="canonical" href="{{ .Permalink }}" />
+{{ end }}
+
 <link rel="stylesheet" href="/css/page.css">
-{{- if ne .Site.Params.googleAnalytics "" -}}
-  {{ template "_internal/google_analytics_async.html" . }}
-{{- end -}}
+<link rel="stylesheet" href="/css/carousel.css">

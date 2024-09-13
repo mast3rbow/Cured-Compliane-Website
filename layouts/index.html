@@ -1,8 +1,7 @@
 {{ define "main" }}
 {{ partial "sections/header.html" . }}
 {{ partial "sections/about.html" . }}
-{{ partial "sections/features.html" . }}
+{{ partial "sections/carousel.html" (dict "context" . "items" "1" "height" "15" "unit" "%" "duration" "6000") . }}
 {{ partial "sections/demo.html" . }}
-{{ partial "sections/pricing.html" . }}
 {{ partial "sections/register.html" . }}
 {{ end }}

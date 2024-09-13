@@ -1,0 +1,14 @@
+{{ .context.Scratch.Set "height" .height }}
+{{ .context.Scratch.Set "unit" .unit }}
+{{ .context.Scratch.Set "items" .items }}
+<div id="slider" class="flex flex-col justify-center items-center bg-blue-200 py-12">
+	<div class="slider">
+		<div class="slide-track">
+			{{ range $index, $slide := .context.Site.Data.carousel.images }}
+			<div class="slide">
+				<img class="image_slider" src="{{ $slide.image }}" alt="{{ $slide.alt }}" title="{{ $slide.alt }}" />
+			</div>
+			{{ end }}
+		</div>
+	</div>
+</div>

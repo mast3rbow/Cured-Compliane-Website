@@ -1,6 +1,7 @@
 ---
-title: Imprint
-description: Information according to whatever legal requirements apply.
+title: Terms and Services
+description: Information according to legal requirements apply.
+seoTitle: Terms and Services for Cured compliance
 ---
 Your use of the curedcomplaince.com or curedcompliance.com.au website (“CuredCompliance website”) is owned by <ABN> and its related entities (“we”, “our” or “us”) is subject to:
 

@@ -2,31 +2,6 @@
 <script src="https://unpkg.com/tippy.js@4"></script>
 <script>
 
-    function navToggle() {
-        let btn = document.getElementById('menuBtn');
-        let nav = document.getElementById('menu');
-
-        btn.classList.toggle('open');
-        nav.classList.toggle('flex');
-        nav.classList.toggle('hidden');
-    }
-
-    window.addEventListener('scroll', function() {
-
-        let btt = document.getElementById('btt');
-
-        if (window.scrollY >= 1080) {
-            btt.classList.remove('hidden');
-            btt.classList.add('block');
-        } else {
-            btt.classList.add('hidden');
-            btt.classList.remove('block');
-        }
-
-    });
-
-    console.log('Code/Design: ttntm.me'); // credit where credit is due
-
     const template = document.getElementById('followTip');
     const container = document.createElement('div');
 
@@ -40,5 +15,19 @@
         placement: 'bottom',
         interactive: true,
     })
+
+    // New JS functions
+    function navToggle() {
+        // Select the element with the id 'menu'
+        let menu = document.getElementById('menu');
+        // Check if the element has the class 'hidden'
+        if (menu.classList.contains('hidden')) {
+          // If it has the class, remove it
+          menu.classList.remove('hidden');
+        } else {
+          // If it doesn't have the class, add it
+          menu.classList.add('hidden');
+        }
+    }
 
 </script>
