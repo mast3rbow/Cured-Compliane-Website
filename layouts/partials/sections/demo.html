@@ -7,7 +7,27 @@
         <div class="font-light text-black text-xl">
             {{ $demo.Content }}
         </div>
-        <img class="my-12 max-w-full mx-auto border-rounded" src="/img/temp-demo.png" alt="A butcher and meat">
+        <picture>
+            {{ $isJPG := eq (path.Ext $demo.Params.image) ".jpg" }}
+            {{ $isPNG := eq (path.Ext $demo.Params.image) ".png" }}
+            
+            {{ if ($isJPG) -}}
+              {{ $webpPath:= replace $demo.Params.Image ".jpg" ".webp" }}
+              {{ $webpPathStatic:= printf "static/%s" $webpPath }}
+              {{ if (fileExists $webpPathStatic) -}}
+                <source srcset="{{ $webpPath | safeURL }}" type="image/webp" >
+              {{- end }}
+
+            {{- end }}
+            {{ if ($isPNG) -}}
+              {{ $webpPath:= replace $demo.Params.Image ".png" ".webp" }}
+              {{ $webpPathStatic:= printf "static/%s" $webpPath }}
+              {{ if (fileExists $webpPathStatic) -}}
+                <source srcset="{{ $webpPath | safeURL }}" type="image/webp" >
+              {{- end }}
+            {{- end }}
+        <img class="my-12 max-w-full mx-auto border-rounded" src="{{ $demo.Params.Image }}" alt="A butcher and meat">
+        </picture>
     </div>
     <div class="flex flex-row w-full justify-center">
         <a class="px-10 py-2 text-gray-200 bg-blue-600 rounded-full shadow-md text-lg hover:bg-gray-800 hover:border-red" href="#register">Register Now!</a>

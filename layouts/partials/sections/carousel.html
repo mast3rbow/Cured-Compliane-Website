@@ -6,7 +6,28 @@
   	<div class="slide-track">
         {{ range $index, $slide := .context.Site.Data.carousel.images }}
         <div class="slide">
-            <img class="image_slider" src="{{ $slide.image }}" alt="" />
+          <picture>
+            {{ $isJPG := eq (path.Ext $slide.image) ".jpg" }}
+            {{ $isPNG := eq (path.Ext $slide.image) ".png" }}
+            
+            {{ if ($isJPG) -}}
+              {{ $webpPath:= replace $slide.image ".jpg" ".webp" }}
+              {{ $webpPathStatic:= printf "static/%s" $webpPath }}
+              {{ if (fileExists $webpPathStatic) -}}
+                <source srcset="{{ $webpPath | safeURL }}" type="image/webp" >
+              {{- end }}
+
+            {{- end }}
+            {{ if ($isPNG) -}}
+              {{ $webpPath:= replace $slide.image ".png" ".webp" }}
+              {{ $webpPathStatic:= printf "static/%s" $webpPath }}
+              {{ if (fileExists $webpPathStatic) -}}
+                <source srcset="{{ $webpPath | safeURL }}" type="image/webp" >
+              {{- end }}
+            {{- end }}
+            <img class="image_slider" src="{{ $slide.image }}" alt="a slider image of a customer" />
+          </picture>
+            
         </div>
         {{ end }}
       </div>

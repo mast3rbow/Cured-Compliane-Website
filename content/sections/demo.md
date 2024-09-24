@@ -1,5 +1,6 @@
 ---
 title: Get a demo
+image: "/img/temp-demo.png"
 ---
 
 **Register for a demo...**
