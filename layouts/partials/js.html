@@ -2,8 +2,6 @@
 <script src="https://unpkg.com/tippy.js@4"></script>
 <script>
 
-    console.log('Code/Design: ttntm.me'); // credit where credit is due
-
     const template = document.getElementById('followTip');
     const container = document.createElement('div');
 
@@ -17,5 +15,19 @@
         placement: 'bottom',
         interactive: true,
     })
+
+    // New JS functions
+    function navToggle() {
+        // Select the element with the id 'menu'
+        let menu = document.getElementById('menu');
+        // Check if the element has the class 'hidden'
+        if (menu.classList.contains('hidden')) {
+          // If it has the class, remove it
+          menu.classList.remove('hidden');
+        } else {
+          // If it doesn't have the class, add it
+          menu.classList.add('hidden');
+        }
+    }
 
 </script>

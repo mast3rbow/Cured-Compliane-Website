@@ -1,10 +1,19 @@
 images:
-  - image: /img/slider/mvsg.webp
-  - image: /img/slider/gmh.jpg
-  - image: /img/slider/collins-court-butcher.png
-  - image: /img/slider/wcm.png
-  - image: /img/slider/bermuda_butchery.webp
-  - image: /img/slider/compassmeats.jpg
   - image: /img/slider/ellisbutchers.png
+    alt: "Ellis Butchers, showcasing a variety of meat products."
   - image: /img/slider/kenilworth.png
+    alt: "Kenilworth Dairies, quality fresh milk, cheese and dairy deserts"
+  - image: /img/slider/mvsg.webp
+    alt: "Mary Valley Small Goods, known for their quality meats and traditional service."
+  - image: /img/slider/gmh.jpg
+    alt: "Gympie Meat Hall , offering a range of premium meat selections."
+  - image: /img/slider/collins-court-butcher.png
+    alt: "Collins Court Butcher shop front with an assortment of fresh meat products."
+  - image: /img/slider/bermuda_butchery.webp
+    alt: "Bermuda Butchery, highlighting their diverse range of meat cuts."
+  - image: /img/slider/compassmeats.jpg
+    alt: "Compass Meats, featuring a well-organized display of various meat cuts."
   - image: /img/slider/nab.webp
+    alt: "Native Angus Beef, showcasing a selection of fresh and high-quality meats."
+  - image: /img/slider/wcm.png
+    alt: "Wright Cut Meats, known for their excellent meat offerings and service."
