@@ -1,0 +1,17 @@
+<div class="my-8 border border-gray-300 rounded-lg">
+    {{ if .Get "title" }}
+    <details class="group">
+        <summary class="flex items-center justify-between cursor-pointer p-4 bg-gray-100 hover:bg-gray-200 rounded-lg transition-colors">
+            <span class="text-lg font-semibold text-gray-800">{{ .Get "title" }}</span>
+            <i class="fa-solid fa-chevron-down text-gray-600 group-open:rotate-180 transition-transform"></i>
+        </summary>
+        <div class="p-4 text-gray-700 bg-white rounded-b-lg">
+            {{ .Inner | markdownify }}
+        </div>
+    </details>
+    {{ else }}
+    <div class="p-4">
+        {{ .Inner | markdownify }}
+    </div>
+    {{ end }}
+</div>

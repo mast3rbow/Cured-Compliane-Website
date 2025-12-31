@@ -1,0 +1,13 @@
+<div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-300">
+    {{ if .Get "icon" }}
+    <div class="text-blue-600 text-4xl mb-4">
+        <i class="{{ .Get "icon" }}"></i>
+    </div>
+    {{ end }}
+    {{ if .Get "title" }}
+    <h3 class="text-xl font-bold text-gray-800 mb-3">{{ .Get "title" }}</h3>
+    {{ end }}
+    <div class="text-gray-600">
+        {{ .Inner | markdownify }}
+    </div>
+</div>

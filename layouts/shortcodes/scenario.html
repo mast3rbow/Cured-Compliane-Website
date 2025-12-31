@@ -1,0 +1,10 @@
+<div class="bg-white border-l-4 border-blue-600 rounded-lg shadow-md p-6 my-6">
+    {{ if .Get "title" }}
+    <h3 class="text-lg font-bold text-gray-800 mb-3">
+        <i class="fa-solid fa-lightbulb text-blue-600 mr-2"></i>{{ .Get "title" }}
+    </h3>
+    {{ end }}
+    <div class="text-gray-700">
+        {{ .Inner | markdownify }}
+    </div>
+</div>

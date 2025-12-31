@@ -3,7 +3,8 @@ baseurl = "/"
 DefaultContentLanguage = "en"
 publishdir = "public"
 canonifyUrls = "true"
-disableKinds = ["RSS","taxonomy","taxonomyTerm"] # disable hugo's content that we don't need...
+disableKinds = ["RSS","taxonomy","term"] # disable hugo's content that we don't need...
+ignoreLogs = ['warning-goldmark-raw-html']
 
 title = "Cured Compliance - Specialised compliance software for butchers and meat industry professionals." # page title -> see ./layouts/partials/head.html
 
@@ -30,15 +31,15 @@ title = "Cured Compliance - Specialised compliance software for butchers and mea
 
 [menus]
   [[menus.main]]
-    identifier = 'Features'
-    name = 'Features'
-    pageRef = '/features'
-    weight = 10
-  [[menus.main]]
     identifier = "Story"
     name = 'Our Story'
     pageRef = '/About'
     weight = 1
+  [[menus.main]]
+    identifier = 'Features'
+    name = 'Features'
+    pageRef = '/features'
+    weight = 10
   [[menus.main]]
     identifier = "Resources"
     name = 'Resources'
@@ -48,4 +49,9 @@ title = "Cured Compliance - Specialised compliance software for butchers and mea
     identifier = "media"
     name = 'Media'
     pageRef = '/media'
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
     weight = 50
