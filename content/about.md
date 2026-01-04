@@ -2,6 +2,7 @@
 title: About Us!
 sitemap_exclude: false
 seoTitle: About our story
+description: "A story about how Cured Compliance Started"
 layout: media.html
 ---
 
@@ -9,7 +10,7 @@ layout: media.html
 
 At Cured Compliance, we understand the unique challenges faced by butchers in today’s regulatory landscape. Our mission is to simplify compliance management, ensuring that you can focus on what you do best—providing top-quality products to your customers.
 
-{{< figure src="./img/bryton-ryan-shop.webp" width="100%" alt="Bryton and Ryan at Maryvalley Small Goods" class="border-rounded">}}
+![Bryton and Ryan at Maryvalley Small Goods](/img/bryton-ryan-shop.webp)
 
 **Why Cured Compliance?**
 

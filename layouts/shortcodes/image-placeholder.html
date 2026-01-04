@@ -1,0 +1,13 @@
+<div class="my-6 bg-gray-100 border-2 border-dashed border-gray-300 rounded-lg p-8 text-center">
+    <i class="fa-solid fa-image text-gray-400 text-6xl mb-4"></i>
+    <p class="text-gray-600 italic">
+        {{ if .Get "description" }}
+            {{ .Get "description" }}
+        {{ else }}
+            {{ .Inner }}
+        {{ end }}
+    </p>
+    {{ if .Get "alt" }}
+    <p class="text-xs text-gray-500 mt-2">Alt text: {{ .Get "alt" }}</p>
+    {{ end }}
+</div>

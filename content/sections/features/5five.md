@@ -1,7 +1,10 @@
 ---
-title: Friendly and Simple to use
+title: Smart Alerts
 weight: 5
-icon: icon5.svg
+icon: fa-solid fa-bell
+url: /features/alerts-notifications/
+_build:
+  render: false
 ---
 
-Simple to use, get your employees engaged in activtly improving compliance. Compliance is a team game, it shouldn't just be you doing it!
+**Multi-channel notifications**. Get notified before problems become disasters via SMS, email, voice.

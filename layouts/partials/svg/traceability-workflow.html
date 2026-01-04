@@ -1,0 +1,102 @@
+<svg viewBox="0 0 1000 300" xmlns="http://www.w3.org/2000/svg" style="width: 100%; max-width: 1000px; height: auto; margin: 2rem auto; display: block;">
+  <!-- Supplier Truck -->
+  <g id="supplier">
+    <rect x="10" y="100" width="100" height="80" fill="#e3f2fd" stroke="#1976d2" stroke-width="2" rx="5"/>
+    <text x="60" y="135" text-anchor="middle" font-size="28" fill="#333">🚚</text>
+    <text x="60" y="160" text-anchor="middle" font-size="11" font-weight="bold" fill="#1976d2">Supplier</text>
+    <text x="60" y="173" text-anchor="middle" font-size="9" fill="#666">Batch #8821</text>
+  </g>
+  
+  <!-- Arrow 1 -->
+  <path d="M 115 140 L 140 140" stroke="#666" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- Receiving Dock -->
+  <g id="receiving">
+    <rect x="145" y="100" width="100" height="80" fill="#f3e5f5" stroke="#7b1fa2" stroke-width="2" rx="5"/>
+    <text x="195" y="135" text-anchor="middle" font-size="28" fill="#333">📦</text>
+    <text x="195" y="160" text-anchor="middle" font-size="11" font-weight="bold" fill="#7b1fa2">Receiving</text>
+    <text x="195" y="173" text-anchor="middle" font-size="9" fill="#666">QR Scan</text>
+  </g>
+  
+  <!-- Arrow 2 -->
+  <path d="M 250 140 L 275 140" stroke="#666" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- Processing -->
+  <g id="processing">
+    <rect x="280" y="100" width="100" height="80" fill="#fff3e0" stroke="#f57c00" stroke-width="2" rx="5"/>
+    <text x="330" y="135" text-anchor="middle" font-size="28" fill="#333">🔪</text>
+    <text x="330" y="160" text-anchor="middle" font-size="11" font-weight="bold" fill="#f57c00">Processing</text>
+    <text x="330" y="173" text-anchor="middle" font-size="9" fill="#666">Batch B2401</text>
+  </g>
+  
+  <!-- Arrow 3 -->
+  <path d="M 385 140 L 410 140" stroke="#666" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- Cooking -->
+  <g id="cooking">
+    <rect x="415" y="100" width="100" height="80" fill="#ffebee" stroke="#c62828" stroke-width="2" rx="5"/>
+    <text x="465" y="135" text-anchor="middle" font-size="28" fill="#333">🔥</text>
+    <text x="465" y="160" text-anchor="middle" font-size="11" font-weight="bold" fill="#c62828">Cooking</text>
+    <text x="465" y="173" text-anchor="middle" font-size="9" fill="#666">71°C/60min</text>
+  </g>
+  
+  <!-- Arrow 4 -->
+  <path d="M 520 140 L 545 140" stroke="#666" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- Packing -->
+  <g id="packing">
+    <rect x="550" y="100" width="100" height="80" fill="#e8f5e9" stroke="#2e7d32" stroke-width="2" rx="5"/>
+    <text x="600" y="135" text-anchor="middle" font-size="28" fill="#333">📋</text>
+    <text x="600" y="160" text-anchor="middle" font-size="11" font-weight="bold" fill="#2e7d32">Packing</text>
+    <text x="600" y="173" text-anchor="middle" font-size="9" fill="#666">Use-by calc</text>
+  </g>
+  
+  <!-- Arrow 5 -->
+  <path d="M 655 140 L 680 140" stroke="#666" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- Dispatch -->
+  <g id="dispatch">
+    <rect x="685" y="100" width="100" height="80" fill="#fce4ec" stroke="#880e4f" stroke-width="2" rx="5"/>
+    <text x="735" y="135" text-anchor="middle" font-size="28" fill="#333">🚛</text>
+    <text x="735" y="160" text-anchor="middle" font-size="11" font-weight="bold" fill="#880e4f">Dispatch</text>
+    <text x="735" y="173" text-anchor="middle" font-size="9" fill="#666">12 customers</text>
+  </g>
+  
+  <!-- Arrow 6 -->
+  <path d="M 790 140 L 815 140" stroke="#666" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- Customer -->
+  <g id="customer">
+    <rect x="820" y="100" width="100" height="80" fill="#e0f2f1" stroke="#00695c" stroke-width="2" rx="5"/>
+    <text x="870" y="135" text-anchor="middle" font-size="28" fill="#333">🏪</text>
+    <text x="870" y="160" text-anchor="middle" font-size="11" font-weight="bold" fill="#00695c">Customer</text>
+    <text x="870" y="173" text-anchor="middle" font-size="9" fill="#666">Delivered</text>
+  </g>
+  
+  <!-- Database icon and data flow arrows -->
+  <g id="database">
+    <ellipse cx="500" cy="250" rx="45" ry="15" fill="#42a5f5" opacity="0.3"/>
+    <ellipse cx="500" cy="235" rx="45" ry="15" fill="#42a5f5" opacity="0.5"/>
+    <rect x="455" y="235" width="90" height="30" fill="#42a5f5"/>
+    <ellipse cx="500" cy="235" rx="45" ry="15" fill="#1976d2"/>
+    <text x="500" y="245" text-anchor="middle" font-size="10" font-weight="bold" fill="white">Database</text>
+  </g>
+  
+  <!-- Data flow arrows to database -->
+  <path d="M 60 185 L 60 220 L 470 220 L 470 240" stroke="#999" stroke-width="1.5" stroke-dasharray="3,3" fill="none" opacity="0.6"/>
+  <path d="M 195 185 L 195 210 L 480 210 L 480 240" stroke="#999" stroke-width="1.5" stroke-dasharray="3,3" fill="none" opacity="0.6"/>
+  <path d="M 330 185 L 330 225 L 490 225 L 490 240" stroke="#999" stroke-width="1.5" stroke-dasharray="3,3" fill="none" opacity="0.6"/>
+  <path d="M 600 185 L 600 215 L 510 215 L 510 240" stroke="#999" stroke-width="1.5" stroke-dasharray="3,3" fill="none" opacity="0.6"/>
+  <path d="M 735 185 L 735 230 L 520 230 L 520 240" stroke="#999" stroke-width="1.5" stroke-dasharray="3,3" fill="none" opacity="0.6"/>
+  
+  <!-- Title -->
+  <text x="500" y="30" text-anchor="middle" font-size="16" font-weight="bold" fill="#333">Product Journey: Supplier to Customer</text>
+  <text x="500" y="50" text-anchor="middle" font-size="11" fill="#666">Complete traceability with timestamped batch codes at every stage</text>
+  
+  <!-- Arrow marker definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#666"/>
+    </marker>
+  </defs>
+</svg>

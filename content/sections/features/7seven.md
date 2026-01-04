@@ -1,7 +1,10 @@
 ---
-title: Simple Billing model
+title: Inbuilt Reporting
 weight: 7
-icon: icon7.svg
+icon: fa-solid fa-chart-line
+url: /features/reports-dashboards/
+_build:
+  render: false
 ---
 
-A simple monthly fee, to ensure you can manage your compliance without paper or pen. We don't want this to cost an entire cow, instead maybe just decent ribeye
+**Give remote access** to inspectors to the comphrensive reporting for them to look at locally or remote. 

@@ -16,12 +16,12 @@ We do not disclosure your personal information to other organisations (for examp
 
 On request we will provide you with access and also change any of your personal information we hold (except in the limited circumstances recognised by privacy law). In this case we will ask questions and request a signed form from you to ensure that we are providing this information to the concerned party only.
 
-More information about Privacy law and the National Privacy Principles is available from the Federal Privacy Commissioner at <a href="https://www.oaic.gov.au" target="_blanl">https://www.oaic.gov.au</a>
+More information about Privacy law and the National Privacy Principles is available from the Federal Privacy Commissioner at {{< rawhtml >}}<a href="https://www.oaic.gov.au" target="_blank">https://www.oaic.gov.au</a>{{< /rawhtml >}}
 
 
 #### Website enhancements ####
 
-This website uses the follwing packages from <a href="https://unpkg.com" rel="noopener" target="_blank" title="UNPKG">unpkg.com</a>:
+This website uses the follwing packages from {{< rawhtml >}}<a href="https://unpkg.com" rel="noopener" target="_blank" title="UNPKG">unpkg.com</a>{{< /rawhtml >}}:
 
 - &dash; popper.js
 - &dash; tippy.js
