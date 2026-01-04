@@ -51,60 +51,77 @@ When monthly AI audit completes, get email with summary: compliance score, criti
 {{< /benefit >}}
 {{< /benefit-cards >}}
 
-{{< image-placeholder description="Mobile phone screenshot showing SMS alert: 'URGENT: Walk-in Fridge #2 temp 5.8°C exceeds 5°C threshold. Alert triggered at 2:17am. View details: [link]' with red background and bell icon" alt="SMS temperature alert on mobile phone" />}}
+{{< challenge-solution >}}
+{{< challenges >}}
+{{< challenge-item title="Finding Out Too Late" >}}
+Finding out too late about compliance issues (during audits). Costly audit failures and fines.
+{{< /challenge-item >}}
+{{< challenge-item title="Expired Certificates" >}}
+Expired supplier certificates discovered by inspectors. Failed audits and lost business.
+{{< /challenge-item >}}
+{{< challenge-item title="Missed Calibrations" >}}
+Equipment calibration missed by weeks or months. Inaccurate readings invalidating records.
+{{< /challenge-item >}}
+{{< challenge-item title="Skipped Checklists" >}}
+Staff skip checklists with no consequences. Compliance gaps that become violations.
+{{< /challenge-item >}}
+{{< challenge-item title="Cold Chain Failures" >}}
+Cold chain failures overnight with no notification. Thousands in spoiled product.
+{{< /challenge-item >}}
+{{< challenge-item title="No Gap Visibility" >}}
+No visibility into systematic compliance gaps. Recurring issues never get fixed.
+{{< /challenge-item >}}
+{{< /challenges >}}
 
-## Multi-Channel Delivery
-
-{{< comparison >}}
-{{< pain-point >}}
-- Finding out too late about compliance issues (during audits)
-- Expired supplier certificates discovered by inspectors
-- Equipment calibration missed by weeks or months
-- Staff skip checklists with no consequences
-- Cold chain failures overnight with no notification
-- No visibility into systematic compliance gaps
-{{< /pain-point >}}
-
-{{< solution >}}
-- **Proactive warnings** 7-14 days before issues occur
-- **Automatic cert tracking** with email reminders
-- **Scheduled calibration** alerts with booking links
-- **Real-time checklist** monitoring with supervisor alerts
-- **Instant SMS/voice** for critical temp breaches
-- **Monthly AI reports** showing trends and patterns
-{{< /solution >}}
-{{< /comparison >}}
+{{< solutions >}}
+{{< challenge-item title="Proactive Warnings" >}}
+7-14 days before issues occur. Time to fix problems before they escalate.
+{{< /challenge-item >}}
+{{< challenge-item title="Automatic Cert Tracking" >}}
+Email reminders before expiration. Never get caught with expired documents.
+{{< /challenge-item >}}
+{{< challenge-item title="Scheduled Calibration" >}}
+Alerts with booking links. Stay on top of equipment maintenance.
+{{< /challenge-item >}}
+{{< challenge-item title="Real-Time Checklist Monitoring" >}}
+Supervisor alerts for skipped tasks. Immediate visibility when tasks are skipped.
+{{< /challenge-item >}}
+{{< challenge-item title="Instant SMS/Voice" >}}
+For critical temp breaches. Save product before it's too late.
+{{< /challenge-item >}}
+{{< challenge-item title="Monthly AI Reports" >}}
+Showing trends and patterns. Fix systematic issues proactively.
+{{< /challenge-item >}}
+{{< /solutions >}}
+{{< /challenge-solution >}}
 
 ## Real-World Use Cases
 
-{{< scenario title="2am Fridge Failure - Immediate Response" >}}
+{{< accordion title="2am Fridge Failure - Immediate Response" >}}
 2:17am: Walk-in fridge temp hits 5.8°C (was 2.4°C). System sends SMS to owner and on-call manager. Phone rings with automated voice: "Urgent temperature alert..." Owner calls refrigeration contractor by 2:35am. Technician arrives 3:45am, fixes compressor. Temp back to 2.6°C by 5:00am. Total product at risk: $2,800. Product saved. Without alert, discovery at 6am arrival would mean $12,000+ loss.
-{{< /scenario >}}
+{{< /accordion >}}
 
-{{< scenario title="Supplier Cert Expiry - Proactive Renewal" >}}
+{{< accordion title="Supplier Cert Expiry - Proactive Renewal" >}}
 System detects supplier AQIS certificate expires in 14 days (June 30). Purchasing manager gets email alert June 16 with supplier name and cert details. Calls supplier same day requesting renewal. New certificate received June 22 (8 days before expiry). Updated in system, no gap in compliance. Previous manual tracking led to 2-week lapse discovered during audit.
-{{< /scenario >}}
+{{< /accordion >}}
 
-{{< scenario title="Missing Daily Cleaning - Supervisor Follow-Up" >}}
+{{< accordion title="Missing Daily Cleaning - Supervisor Follow-Up" >}}
 Monday 9:05am: System detects "Daily Pre-Start Cleaning" checklist not completed (expected by 7am). Sends email alert to production supervisor: "Pre-start cleaning not done by @JohnSmith. Floor staff present: Sarah, Mike, Tom." Supervisor walks to production area at 9:12am, finds staff started early without cleaning. Halts production, completes cleaning checklist with photos by 9:45am. Production resumes compliant. Issue documented for training review.
-{{< /scenario >}}
+{{< /accordion >}}
 
-{{< image-placeholder description="Alert configuration dashboard showing 6 alert types in card layout. Each card has toggle switch (on/off), notification channels checkboxes (SMS, Email, Voice, In-app), threshold settings, and recipient list. Example: 'Cold Room Alerts' card shows >5°C threshold, SMS+Voice enabled, recipients: Owner, Manager" alt="Alert configuration interface" />}}
+<img src="/img/alerts_notifications.png" alt="Alert configuration interface" style="border-radius: 0.75rem; width: 100%; max-width: 100%; margin: 2rem 0;" />
 
 ## Alert Configuration & Management
 
 {{< tech-specs title="Notification Channels" >}}
-**SMS (Twilio)**: Instant text messages for critical alerts (temp failures, urgent issues)  
+**SMS**: Instant text messages for critical alerts (temp failures, urgent issues)  
 **Voice Calls**: Automated phone calls that read alert details aloud (escalation for critical)  
 **Email**: Detailed notifications with PDF attachments, charts, and action links  
 **In-App**: Pop-up notifications when logged into system (for less urgent items)  
-**Quiet Hours**: Configure "do not disturb" periods for non-critical alerts
 {{< /tech-specs >}}
 
 {{< tech-specs title="Smart Alert Logic" >}}
-**Business Type Awareness**: Auto-detects if alert rules need regeneration when business type changes  
-**Escalation Rules**: Critical alerts try SMS first, then voice call if no acknowledgment in 5 min  
-**Alert Grouping**: Multiple similar alerts grouped into single notification (prevent spam)  
+**Escalation Rules**: Critical alerts try SMS first, then voice call if no acknowledgment  
 **Snooze & Acknowledge**: Mark alerts as "handled" to stop repeat notifications  
 **Historical Tracking**: See all past alerts with response times and outcomes
 {{< /tech-specs >}}

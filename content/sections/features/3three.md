@@ -1,7 +1,10 @@
 ---
-title: Your Shop, your lists
+title: Digital Checklists
 weight: 3
-icon: icon3.svg
+icon: fa-solid fa-clipboard-check
+url: /features/digital-checklists/
+_build:
+  render: false
 ---
 
-Customise the system to meet your shop needs, ensure your all your requirements are setup to meet compliance requirements
+Replace clipboards with mobile checklists. **Photo evidence**, never miss a checklist with alerts and reminders

@@ -1,7 +1,10 @@
 ---
-title: Complete your Daily checklists
+title: 24/7 Temperature Monitoring
 weight: 2
-icon: icon2.svg
+icon: fa-solid fa-thermometer
+url: /features/temperature-monitoring/
+_build:
+  render: false
 ---
 
-Always ensure your daily checks are completed, tracked and stored for the auditor using our checklists
+BLE IoT sensors track every fridge or freezer. **Instant SMS alerts** when temps exceed your threshhold

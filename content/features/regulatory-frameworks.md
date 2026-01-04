@@ -53,27 +53,49 @@ Select your type: Retail Butcher, Processor, Abattoir, or Transport. System auto
 
 {{< image-placeholder description="FSANZ cooking matrix table showing time-temperature equivalents. Columns: Temperature (°C), Time (minutes). Rows: 60°C/121min, 63°C/89min, 66°C/65min, 69°C/47min, 71°C/34min, 74°C/24min, 77°C/18min. Green checkmarks next to compliant combinations" alt="FSANZ time-temperature cooking matrix" />}}
 
-## Regulatory Frameworks Pre-Loaded
+{{< challenge-solution >}}
+{{< challenges >}}
+{{< challenge-item title="Irrelevant Regulations" >}}
+Generic software shows irrelevant regulations (dairy, seafood when you're meat-only). Wasted time filtering through irrelevant content.
+{{< /challenge-item >}}
+{{< challenge-item title="Wrong State Requirements" >}}
+Seeing requirements from other states you don't operate in. Confusion about what actually applies to you.
+{{< /challenge-item >}}
+{{< challenge-item title="Unknown Cooking Times" >}}
+Don't know correct cooking time/temps for smallgoods. Guesswork leading to non-compliance.
+{{< /challenge-item >}}
+{{< challenge-item title="No Industry Forms" >}}
+No industry-specific vehicle hygiene or allergen forms. Creating forms from scratch every time.
+{{< /challenge-item >}}
+{{< challenge-item title="Manual FSANZ Lookups" >}}
+Manual lookup of FSANZ cooking matrices every time. Time-consuming and error-prone.
+{{< /challenge-item >}}
+{{< challenge-item title="Unclear Requirements" >}}
+Unclear which requirements apply to your business type. Compliance uncertainty and risk.
+{{< /challenge-item >}}
+{{< /challenges >}}
 
-{{< comparison >}}
-{{< pain-point >}}
-- Generic software shows irrelevant regulations (dairy, seafood when you're meat-only)
-- Seeing requirements from other states you don't operate in
-- Don't know correct cooking time/temps for smallgoods
-- No industry-specific vehicle hygiene or allergen forms
-- Manual lookup of FSANZ cooking matrices every time
-- Unclear which requirements apply to your business type
-{{< /pain-point >}}
-
-{{< solution >}}
-- **100% meat processing** focus - zero irrelevant regulations
-- **State-based filtering** - only see NSW if you're in NSW
-- **Built-in cooking matrices** - instant validation
-- **Pre-configured forms** for meat transport and allergen control
-- **Auto-calculation** of time-temp equivalents
-- **Business type awareness** - butcher vs processor vs abattoir
-{{< /solution >}}
-{{< /comparison >}}
+{{< solutions >}}
+{{< challenge-item title="100% Meat Focus" >}}
+Zero irrelevant regulations. Only see what matters to your business.
+{{< /challenge-item >}}
+{{< challenge-item title="State-Based Filtering" >}}
+Only see NSW if you're in NSW. Clear understanding of your obligations.
+{{< /challenge-item >}}
+{{< challenge-item title="Built-In Cooking Matrices" >}}
+Instant validation. Accurate compliance every time.
+{{< /challenge-item >}}
+{{< challenge-item title="Pre-Configured Forms" >}}
+Meat transport and allergen control templates. Ready-to-use industry templates.
+{{< /challenge-item >}}
+{{< challenge-item title="Auto-Calculation" >}}
+Time-temp equivalents calculated automatically. Eliminate manual lookups and errors.
+{{< /challenge-item >}}
+{{< challenge-item title="Business Type Awareness" >}}
+Butcher vs processor vs abattoir. Precise requirements for your license class.
+{{< /challenge-item >}}
+{{< /solutions >}}
+{{< /challenge-solution >}}
 
 ## State & Federal Compliance
 
@@ -95,8 +117,6 @@ System includes regulations from all Australian jurisdictions:
 - **TAS**: Public Health Services food safety
 - **NT**: Northern Territory food safety regulations
 - **ACT**: ACT Health food safety standards
-
-{{< image-placeholder description="Australia map with 8 states/territories color-coded. Hover tooltips showing regulatory authority for each: NSW (Food Authority), VIC (PrimeSafe), QLD (SafeFood), etc. Business location selector dropdown showing 'NSW' selected, filter active icon" alt="Australian state compliance map with filtering" />}}
 
 ## Business Type Configuration
 
@@ -124,4 +144,4 @@ System includes regulations from all Australian jurisdictions:
 **Risk Profile**: Medium-High (customer liability, specialty products)
 {{< /tech-specs >}}
 
-{{< cta text="See Your Compliance Requirements" url="/demo" icon="fa-solid fa-book-open" />}}
+{{< cta text="See Your Compliance Requirements" url="/" icon="fa-solid fa-book-open" />}}

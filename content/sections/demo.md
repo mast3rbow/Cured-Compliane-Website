@@ -1,6 +1,6 @@
 ---
 title: Get a demo
-image: "/img/temp-demo.png"
+image: "/img/temp.webp"
 ---
 
 **Register for a demo...**

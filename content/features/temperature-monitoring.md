@@ -12,28 +12,51 @@ menu:
     weight: 12
 ---
 
-Your cold chain is your most critical compliance requirement. A single fridge failure at 2am can destroy $15,000 in product and trigger a recall. Manual temperature logging on clipboards can't catch failures fast enough.
+Stop gambling with your cold chain. Every butcher knows the nightmare: you arrive Monday morning to find the weekend fridge failure destroyed $15,000 in prime cuts. Your staff are manually logging temps on clipboards (when they remember), but you know those readings can't catch a 2am compressor failure.
 
-Our BLE 5.0 sensors monitor every fridge and freezer 24/7, sending readings every 5-15 minutes. The instant a temperature exceeds 5°C, you get an SMS and phone call - not when you arrive at 6am to find ruined stock, but within 60 seconds of the breach so you can save your product.
+**What if you got an SMS alert the instant your fridge hit over temp for longer then 15minutes?** Within 60 seconds of the breach, you're on the phone to your refrigeration contractor - saving your product before it's too late. That's exactly what our BLE 5.0 sensors do, 24/7, for every fridge, freezer, display counter, and cold room in your shop.
 
-Inspectors love it too. Instead of flipping through clipboard logs looking for gaps, you show them a perfect 6-month digital twin dashboard with zero manual entries and complete proof of cold chain integrity.
+Inspectors love it too. Instead of flipping through months of clipboard logs (looking for gaps or fabricated readings), you hand them a perfect digital dashboard showing 99.9% compliance with zero manual entries. That's the difference between a 10-minute inspection and a 2-hour interrogation.
 
 {{< stats-grid >}}
 {{< stat number="<60" unit="sec" >}}Alert delivery on temp breach{{< /stat >}}
-{{< stat number="5-15" unit="min" >}}Automated reading frequency{{< /stat >}}
-{{< stat number="100K+" unit="readings" >}}Analyzed in 5 minutes{{< /stat >}}
-{{< stat number="0" unit="manual logs" >}}Required from staff{{< /stat >}}
+{{< stat number="$15K" unit="saved" >}}Average product loss prevented{{< /stat >}}
+{{< stat number="100%" unit="automated" >}}No manual logging required{{< /stat >}}
+{{< stat number="0" unit="gaps" >}}Perfect audit trail 24/7{{< /stat >}}
 {{< /stats-grid >}}
 
-## How Temperature Monitoring Works
+**Custom Alarms for Every Asset in Your Shop**
+
+Not all cold storage is created equal. Your walk-in fridge storing $20K in wholesale beef has different requirements than your display counter showcasing sausages. **Set custom temperature thresholds and alert schedules each individual unit:**
 
 {{< benefit-cards >}}
-{{< benefit icon="fa-solid fa-bluetooth" title="BLE 5.0 Long-Range Sensors" >}}
-Install wireless sensors in every fridge/freezer in 2 hours. **BLE 5.0 long-range mode** reaches 100+ meters, even through cool room walls. Battery life 2+ years with no maintenance.
+{{< benefit icon="fa-solid fa-warehouse" title="Walk-In Cold Rooms & Fridges" >}}
+Critical storage requires critical monitoring. Set alerts with escalating notifications: SMS and email first, then a phone call, Track door open/close events to catch staff leaving doors ajar with our door sensors
+{{< /benefit >}}
+
+{{< benefit icon="fa-solid fa-temperature-arrow-down" title="Freezers (-18°C or Colder)" >}}
+Monitor blast freezers, holding freezers, and frozen meat storage. Alert when temp rises above critical temperature (gives you warning before product quality degrades). Track defrost cycles automatically - system knows planned defrost vs. real failures.
+{{< /benefit >}}
+
+{{< benefit icon="fa-solid fa-store" title="Display Counters & Retail Cases" >}}
+Customer-facing displays run warmer but still need monitoring. Set custom thresholds, Track ambient temp during summer heatwaves when cases work harder. Use multiple sensors to capture the different zones to satisfy your customers and auditors.
+{{< /benefit >}}
+
+{{< benefit icon="fa-solid fa-truck" title="Coolrooms & Dry Aging Rooms" >}}
+Specialized environments need specialized monitoring. Dry aging rooms (0-2°C, 80% humidity), smallgoods maturation chambers, and boning rooms all get custom alert profiles. Set different thresholds for different times (weekend setback temps vs. production hours).
+{{< /benefit >}}
+
+{{< /benefit-cards >}}
+
+**Why Butchers Love This System**
+
+{{< benefit-cards >}}
+{{< benefit icon="fa-brands fa-bluetooth" title="BLE 5.0 Long-Range Sensors" >}}
+Install wireless sensors in every fridge/freezer in 2 hours. **BLE 5.0 long-range mode** reaches 100+ meters and with models to deal different types of coldroom walling. Battery life 5+ years with no maintenance.
 {{< /benefit >}}
 
 {{< benefit icon="fa-solid fa-wifi" title="Gateway Connectivity" >}}
-WiFi or cellular gateway connects sensors to cloud. Works even with patchy internet - stores readings locally and syncs when connection returns. Power outage detection alerts you immediately.
+Ethernet, WiFi or cellular gateway connects sensors to cloud. Works even with patchy internet - Gateway outage detection alerts you immediately when either there is no internet or Power
 {{< /benefit >}}
 
 {{< benefit icon="fa-solid fa-bell-slash" title="Smart Defrost Detection" >}}
@@ -41,7 +64,7 @@ AI knows when planned defrost cycles are happening. Doesn't spam you with alerts
 {{< /benefit >}}
 
 {{< benefit icon="fa-solid fa-door-open" title="Door Abuse Tracking" >}}
-Track every cool room door open/close event. See if staff are leaving doors open too long (>2 minutes). Historical data shows patterns: "Walk-in fridge door left open 47 times last month, average 4.2 minutes."
+Track every cool room door open/close event. See if staff are leaving doors open too long (>5 minutes). Historical data shows patterns: "Walk-in fridge door left open 47 times last month, ensure those doors are shut end of the day.
 {{< /benefit >}}
 
 {{< benefit icon="fa-solid fa-chart-area" title="Digital Twin Dashboards" >}}
@@ -53,116 +76,112 @@ Download temperature logs for any date range. Perfect for inspector visits, cust
 {{< /benefit >}}
 {{< /benefit-cards >}}
 
-{{< image-placeholder description="Photo of BLE 5.0 sensor device mounted inside commercial fridge, white plastic housing with blue LED indicator, temperature display showing 2.4°C, product boxes visible in background" alt="BLE sensor installed in commercial fridge" />}}
+<img src="/img/gateway.png" alt="BLE sensor installed in commercial fridge" style="border-radius: 0.75rem; width: 100%; max-width: 100%; margin: 2rem 0;" />
 
-## The Problem with Manual Temperature Logging
+<div style="display: flex; justify-content: center; margin: 2rem 0;">
+<div style="max-width: 900px; width: 100%;">
 
-{{< comparison >}}
-{{< pain-point >}}
-- Product spoilage from undetected fridge failures overnight
-- Staff forget to log temps on clipboards (or fabricate readings)
-- No proof of cold chain integrity for inspectors or customers
-- Finding out at 6am that fridge failed at 2am (too late)
-- Missing temp logs during weekends/holidays
-- Illegible handwriting that regulators reject
-{{< /pain-point >}}
+{{< challenge-solution >}}
+{{< challenges >}}
+{{< challenge-item title="Overnight Fridge Failures" >}}
+Product spoilage from undetected fridge failures overnight. Discover thousands in lost stock the next morning.
+{{< /challenge-item >}}
+{{< challenge-item title="Forgotten or Fabricated Logs" >}}
+Staff forget to log temps on clipboards (or fabricate readings). Unreliable data that won't stand up to inspection.
+{{< /challenge-item >}}
+{{< challenge-item title="No Cold Chain Proof" >}}
+No proof of cold chain integrity for inspectors or customers. Failed audits and lost customer confidence.
+{{< /challenge-item >}}
+{{< challenge-item title="Finding Out Too Late" >}}
+Finding out at 6am that fridge failed at 2am (too late). Hours of damage already done before you can react.
+{{< /challenge-item >}}
+{{< challenge-item title="Weekend/Holiday Gaps" >}}
+Missing temp logs during weekends/holidays. Compliance gaps that regulators will catch.
+{{< /challenge-item >}}
+{{< challenge-item title="Illegible Handwriting" >}}
+Illegible handwriting that regulators reject. Wasted effort creating records that don't count.
+{{< /challenge-item >}}
+{{< /challenges >}}
 
-{{< solution >}}
-- **Instant alerts** within 60 seconds of temp breach
-- **100% automated** logging - no staff input required
-- **Perfect audit trail** with timestamped readings every 5-15 min
-- **Immediate notification** so you can save product
-- **No gaps** - system runs 24/7/365 without holidays
-- **Digital records** accepted by all regulators
-{{< /solution >}}
-{{< /comparison >}}
+{{< solutions >}}
+{{< challenge-item title="Instant Alerts" >}}
+Within 60 seconds of temp breach. Save product before it's too late - immediate action possible.
+{{< /challenge-item >}}
+{{< challenge-item title="100% Automated Logging" >}}
+No staff input required. Never rely on memory or manual processes again.
+{{< /challenge-item >}}
+{{< challenge-item title="Perfect Audit Trail" >}}
+Timestamped readings every 5mins. Complete documentation that regulators love.
+{{< /challenge-item >}}
+{{< challenge-item title="Immediate Notification" >}}
+Save product when it matters. Call your contractor at 2am, not discover losses at 6am.
+{{< /challenge-item >}}
+{{< challenge-item title="No Gaps" >}}
+System runs 24/7/365 without holidays. Continuous protection regardless of staffing.
+{{< /challenge-item >}}
+{{< challenge-item title="Digital Records" >}}
+Accepted by all regulators. Inspector-ready reports at the click of a button.
+{{< /challenge-item >}}
+{{< /solutions >}}
+{{< /challenge-solution >}}
 
-## Real-World Use Cases
+</div>
+</div>
 
-{{< scenario title="2am Fridge Failure Caught Early" >}}
-It's 2:15am. Your aging walk-in fridge compressor fails. At 2:16am, the temperature sensor detects 5.1°C (was 2.8°C). By 2:17am, you receive SMS: "URGENT: Walk-in Fridge #2 temp 5.1°C exceeds threshold." Your phone rings with automated voice alert. You call your refrigeration contractor who arrives by 3:30am. Compressor fixed by 5:00am, temp back to 2.5°C. Product saved. Without the alert, you'd have arrived at 6am to find 8 hours of rising temps and $15K in ruined beef.
-{{< /scenario >}}
-
-{{< scenario title="Inspector Visit - Perfect Cold Chain Proof" >}}
-SafeFood QLD inspector arrives for routine audit. Asks to see 6 months of temperature logs. Instead of handing them a stack of clipboards, you open your laptop. Digital twin dashboard shows all 8 cold assets with perfect compliance: 99.97% of readings <5°C, only 3 excursions (all documented: 1 planned defrost, 2 door-open spikes <3 min duration). You export a PDF with graphs and tables. Inspector says, "This is exactly what we want to see."
-{{< /scenario >}}
-
-{{< scenario title="Door Left Open - Proactive Fix" >}}
-Review weekly report: "Cool Room #3 door left open 12 times last week, average 6.2 minutes per event." Check who was working those shifts. Turns out new staff member doesn't understand door must close fully (was leaving it cracked). Provide training. Next week's report: 0 door-open events. Issue resolved before it became a compliance problem.
-{{< /scenario >}}
-
-{{< image-placeholder description="Dashboard screenshot showing digital twin view with 6 fridge/freezer cards in 2x3 grid. Each card shows: equipment name, current temp (color-coded green/yellow/red), last reading timestamp, 24-hour mini sparkline chart, and status icon. Top row all green (<5°C), one yellow card showing 5.8°C with warning triangle" alt="Digital twin temperature monitoring dashboard" />}}
+<img src="/img/bacon_settings_zoomed.png" alt="Digital twin temperature monitoring dashboard" style="border-radius: 0.75rem; width: 100%; max-width: 100%; margin: 2rem 0;" />
 
 ## Technical Capabilities
 
 {{< tech-specs title="BLE 5.0 Sensor Technology" >}}
-**Long-Range Mode**: 100+ meter range penetrating cool room walls and metal shelving  
-**Temperature Accuracy**: ±0.3°C calibrated to NATA standards  
-**Reading Frequency**: Configurable 5, 10, or 15-minute intervals (default 10 min)  
-**Battery Life**: 2-3 years on single coin cell battery (CR2477)  
-**IP Rating**: IP67 waterproof/dustproof for harsh environments  
-**Operating Range**: -40°C to +85°C (handles freezers to dry aging rooms)
+**Long-Range Mode**: 100+ meter range with options to deal cool room walls and metal shelving  
+**Reading Frequency**: A reading taken every 5 minutes  
+**Battery Life**: up to 5 years battery life on beacons
+**IP Rating**: Version 3 - IP57 waterproof/dustproof for harsh environments  
+**Operating Range**: -40°C to +130°C (handles freezers to ovens for our probes)
 {{< /tech-specs >}}
 
 {{< tech-specs title="Gateway & Connectivity" >}}
-**Dual Connectivity**: WiFi (2.4GHz) and optional 4G cellular backup  
-**Local Storage**: 30 days of readings stored locally if internet down  
-**Auto-Sync**: Uploads cached data when connection restored  
+**Dual Connectivity**: WiFi (2.4GHz) and optional 4G cellular backup   
 **Power Outage Detection**: Immediate SMS alert if gateway loses power  
-**Multi-Sensor Support**: Single gateway handles 50+ sensors  
+**Multi-Sensor Support**: Single gateway handles 50+ sensors
 **Remote Management**: Update sensor config, change thresholds, view battery levels from cloud
 {{< /tech-specs >}}
 
 {{< tech-specs title="Data Analysis & Reporting" >}}
-**Extended Processing**: 300-second timeout for analyzing months of IoT data (100,000+ readings)  
+**Extended Processing**: analyse months of IoT data (100,000+ readings) 
 **PostgreSQL Storage**: Unlimited historical data retention (7+ years)  
 **Azure Blob Backup**: Automated daily backups of all sensor data  
-**Fast Queries**: GIN indexes on timestamped readings for instant chart generation  
-**Compliance Reports**: Auto-generated PDF with graphs meeting regulatory requirements  
-**API Access**: RESTful API for integration with other systems
+**Compliance Reports**: Auto-generated graphs meeting regulatory requirements  
 {{< /tech-specs >}}
 
-{{< image-placeholder description="Photo of WiFi gateway device mounted on wall, white rectangular box with LED status indicators (green = online, blue = syncing), Ethernet and power cables visible, label showing 'Gateway #1 - Processing Room'" alt="Temperature monitoring gateway device" />}}
+<br>
 
-## Integration with Your Compliance System
+**Integration with AI Compliance Analysis**
 
-Temperature monitoring isn't standalone - it integrates seamlessly with AI compliance audits:
+Temperature monitoring powers your automated compliance system. Here's how real-time data becomes audit-ready documentation:
 
-{{< timeline >}}
-{{< step number="1" title="Continuous Monitoring" >}}
-BLE sensors take readings every 10 minutes, gateway uploads to cloud. System stores every reading with timestamp, sensor ID, and location metadata.
-{{< /step >}}
+{{< benefit-cards >}}
+{{< benefit icon="fa-solid fa-temperature-half" title="Continuous Data Collection" >}}
+BLE sensors capture readings every 10 minutes and upload to cloud. Every reading includes timestamp, sensor ID, location, and equipment metadata for complete traceability.
+{{< /benefit >}}
 
-{{< step number="2" title="Instant Violation Detection" >}}
-AI analyzes each reading against your thresholds (default >5°C for fridges, >-18°C for freezers). Detects violations within 60 seconds, sends multi-channel alerts (SMS, voice, email).
-{{< /step >}}
+{{< benefit icon="fa-solid fa-robot" title="AI-Powered Violation Detection" >}}
+Machine learning analyzes each reading against your thresholds (>5°C fridges, >-18°C freezers) within 60 seconds. Sends instant multi-channel alerts (SMS, voice, email) when violations occur.
+{{< /benefit >}}
 
-{{< step number="3" title="Monthly Audit Analysis" >}}
-When AI runs monthly compliance audit, it analyzes 100,000+ temperature readings. Calculates compliance rate (% of readings in spec), identifies patterns, flags systematic issues.
-{{< /step >}}
+{{< benefit icon="fa-solid fa-chart-line" title="Automated Compliance Audits" >}}
+AI runs monthly audits analyzing 100,000+ readings per location. Calculates compliance rates, identifies trends, flags systematic issues before they become violations.
+{{< /benefit >}}
 
-{{< step number="4" title="Inspector-Ready Reports" >}}
-Generate PDF with temperature compliance summary: "Walk-in Fridge #2 - 99.8% compliance over 6 months, 3 excursions (all <10 min duration, root cause documented)." Regulators accept this instantly.
-{{< /step >}}
-{{< /timeline >}}
+{{< benefit icon="fa-solid fa-file-certificate" title="Inspector-Ready Documentation" >}}
+Generate PDF reports with compliance summaries: "99.8% compliance over 6 months, 3 excursions documented with root cause analysis." Regulators accept digital records instantly.
+{{< /benefit >}}
+{{< /benefit-cards >}}
 
-{{< image-placeholder description="Temperature compliance chart showing 6-month timeline with green bars representing % of readings in spec. Jan 98.2%, Feb 99.1%, Mar 99.8%, Apr 99.6%, May 99.9%, Jun 99.7%. Trend line showing improvement. Red dots marking 3 excursion events with hover tooltips explaining each" alt="6-month temperature compliance trend chart" />}}
-
-## Proven ROI
-
-Real customers saving real money with 24/7 temperature monitoring:
-
-> **"We went from 3 temperature violations per month to ZERO. The instant SMS alerts mean we catch fridge failures before product spoils. Saved us $15,000 in one year from prevented spoilage alone."**  
-> — Small butcher shop, NSW
-
-> **"The door tracking feature identified $8K in wasted electricity (staff leaving cool room door open average 5 min per visit). Trained staff, problem solved. System paid for itself in 4 months."**  
-> — Medium processor, Victoria
-
-> **"Inspector was blown away by our digital temperature dashboards. Said it's the gold standard for cold chain compliance. Passed export certification audit first try - previous auditor had failed us twice for gaps in manual logs."**  
-> — Contract processor, Queensland
+<img src="/img/freezer-temp.png" alt="6-month temperature compliance trend chart" style="border-radius: 0.75rem; width: 100%; max-width: 100%; margin: 2rem 0;" />
 
 {{< cta text="See Temperature Monitoring Live Demo" url="/demo" icon="fa-solid fa-temperature-half" />}}
 
 ---
 
-**Installation takes 2 hours.** Our team mounts sensors, configures gateway, sets alert thresholds, and trains your staff. You're monitoring 24/7 by end of day with zero ongoing maintenance required.
+**Installation takes minutes not hours.** Self install sensors, plug in gateway, sets alert thresholds, and we help train you and your staff. You're monitoring 24/7 by end of day with zero ongoing maintenance required.

@@ -1,0 +1,55 @@
+<style>
+.challenge-solution-cards {
+  max-width: 900px;
+  margin: 2rem auto;
+}
+.challenge-solution-cards h3 {
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #1f2937;
+}
+.challenge-solution-cards .section {
+  margin-bottom: 3rem;
+}
+.challenge-solution-cards .grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+.challenge-solution-cards .item {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  text-align: center;
+  transition: all 0.2s ease;
+}
+.challenge-solution-cards .item:hover {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  border-color: #d1d5db;
+}
+.challenge-solution-cards .item strong {
+  display: block;
+  color: #dc2626;
+  font-size: 0.875rem;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 700;
+}
+.challenge-solution-cards .item p {
+  color: #374151;
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  margin: 0;
+}
+.challenge-solution-cards .solutions .item strong {
+  color: #059669;
+}
+</style>
+
+<div class="challenge-solution-cards">
+  {{ .Inner }}
+</div>

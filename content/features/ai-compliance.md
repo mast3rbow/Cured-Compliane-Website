@@ -18,22 +18,17 @@ Imagine waking up to a comprehensive compliance audit that's already complete. O
 
 The system understands your business. It knows the difference between beef hanging temps and poultry cold storage requirements. It validates cooking time-temperature matrices for smallgoods. It spots patterns like "You always forget cleaning checklists on Mondays" before they become audit findings.
 
-{{< stats-grid >}}
-{{< stat number="10" unit="min" >}}Complete audit processing time{{< /stat >}}
-{{< stat number="85-95" unit="%" >}}AI accuracy with human validation{{< /stat >}}
-{{< stat number="$0.36" unit="/M tokens" >}}Digital Ocean AI cost{{< /stat >}}
-{{< stat number="600" unit="sec" >}}Max timeout for large documents{{< /stat >}}
-{{< /stats-grid >}}
+**How AI Compliance Automation Works**
 
-## How AI Compliance Automation Works
+Multiple different data points into the AI engine which is made up of audit rules from Australian national and state regulation along side your own food safety program.
+
+{{< ai-integration-diagram >}}
+
+**The benfits of leveraging AI for contineous auditing**
 
 {{< benefit-cards >}}
 {{< benefit icon="fa-solid fa-calendar-check" title="Automated Monthly Audits" >}}
-Set it and forget it. AI runs comprehensive compliance audits automatically every month, analyzing all your data sources in parallel. Wake up to a completed report.
-{{< /benefit >}}
-
-{{< benefit icon="fa-solid fa-robot" title="Multi-AI Intelligence" >}}
-Uses Digital Ocean (primary), Claude (fallback), and OpenAI (backup) for maximum reliability. If one provider fails, the system automatically switches to the next.
+Set it and forget it. AI runs comprehensive compliance audits automatically every month, analyzing all your compliance data. Wake up to a completed report.
 {{< /benefit >}}
 
 {{< benefit icon="fa-solid fa-file-contract" title="Smart Document Processing" >}}
@@ -49,77 +44,94 @@ AI spots trends humans miss: systematic gaps in weekend records, suspicious clos
 {{< /benefit >}}
 
 {{< benefit icon="fa-solid fa-user-check" title="Human-Approved Insights" >}}
-AI spots issues, you validate and approve. 8 override categories let you correct false positives. Your feedback trains the system to get smarter every quarter.
+AI spots issues, you validate and approve. 8 override categories let you correct false positives. Your feedback trains the system to get smarter.
 {{< /benefit >}}
 {{< /benefit-cards >}}
 
-{{< image-placeholder description="Dashboard screenshot showing AI audit results with compliance score gauge (0-100) displaying 87/100 with 'Good' rating, trend graph showing 6-month improvement, and critical findings summary panel" alt="AI compliance dashboard with scoring and trends" />}}
-
 ## The Problem with Manual Compliance
 
-{{< comparison >}}
-{{< pain-point >}}
-- Manual audits take 2+ days of compilation and cross-referencing
-- Never sure if you're compliant until inspector shows up
-- Miss regulatory updates buried in 1000+ page documents
-- Don't have in-house compliance expertise
-- Systematic issues only discovered during failed audits
-- No visibility into improvement trends
-{{< /pain-point >}}
+<style>
+.compliance-comparison table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+.compliance-comparison td,
+.compliance-comparison th {
+  padding: 0.75rem 1rem;
+  border: none;
+}
+.compliance-comparison th {
+  background-color: #f3f4f6;
+  font-weight: 600;
+}
+.compliance-comparison tr:hover td {
+  background-color: #f9fafb;
+}
+</style>
 
-{{< solution >}}
-- **10-minute automated audits** running in background overnight
-- **Monthly compliance scores** showing exact status
-- **Auto-updated audit rules** when regulations change
-- **AI compliance expert** analyzing 24/7
-- **Proactive pattern detection** catching issues early
-- **Trend tracking** proving systematic improvement
-{{< /solution >}}
-{{< /comparison >}}
+<div class="compliance-comparison" style="display: flex; justify-content: center; margin: 2rem 0;">
+<div style="max-width: 900px; width: 100%;">
+
+{{< challenge-solution >}}
+{{< challenges >}}
+{{< challenge-item title="2+ Day Manual Audits" >}}
+Manual audits take 2+ days of compilation and cross-referencing. Massive time drain on management resources.
+{{< /challenge-item >}}
+{{< challenge-item title="Never Sure If Compliant" >}}
+Never sure if you're compliant until inspector shows up. Constant anxiety and uncertainty.
+{{< /challenge-item >}}
+{{< challenge-item title="Missed Regulatory Updates" >}}
+Miss regulatory updates buried in 1000+ page documents. Unknowingly become non-compliant.
+{{< /challenge-item >}}
+{{< challenge-item title="No In-House Expertise" >}}
+Don't have in-house compliance expertise. Expensive consultant dependency.
+{{< /challenge-item >}}
+{{< challenge-item title="Issues Found Too Late" >}}
+Systematic issues only discovered during failed audits. Costly failures and reputation damage.
+{{< /challenge-item >}}
+{{< challenge-item title="Can't Track Improvement" >}}
+No visibility into improvement trends. Can't prove systematic improvement.
+{{< /challenge-item >}}
+{{< /challenges >}}
+
+{{< solutions >}}
+{{< challenge-item title="10-Minute Automated Audits" >}}
+Running in background overnight. Continuous compliance monitoring without effort.
+{{< /challenge-item >}}
+{{< challenge-item title="Monthly Compliance Scores" >}}
+Showing exact status. Always know where you stand.
+{{< /challenge-item >}}
+{{< challenge-item title="Auto-Updated Audit Rules" >}}
+When regulations change. Never fall behind regulatory changes.
+{{< /challenge-item >}}
+{{< challenge-item title="AI Compliance Expert" >}}
+Analyzing 24/7. Expert-level compliance without hiring.
+{{< /challenge-item >}}
+{{< challenge-item title="Proactive Pattern Detection" >}}
+Catching issues early. Fix problems before they become failures.
+{{< /challenge-item >}}
+{{< challenge-item title="Trend Tracking" >}}
+Proving systematic improvement. Show inspectors your commitment to excellence.
+{{< /challenge-item >}}
+{{< /solutions >}}
+{{< /challenge-solution >}}
+
+</div>
+</div>
 
 ## Real-World Use Cases
 
-{{< scenario title="Unannounced Inspection" >}}
+{{< accordion title="Unannounced Inspection" >}}
 Inspector shows up at 9am without warning. You click "Generate Report" and hand them a comprehensive PDF audit in 60 seconds. The inspector reviews your 87/100 compliance score, sees your 6-month improvement trend, and notes your excellent AI-identified corrective actions. Inspection passes with minor observations.
-{{< /scenario >}}
+{{< /accordion >}}
 
-{{< scenario title="Monthly Management Review" >}}
+{{< accordion title="Monthly Management Review" >}}
 Wake up on the 1st of the month to an email: "Your monthly compliance audit is complete." Open the PDF to see your compliance score increased from 73 to 78. AI identified 3 critical issues (all already resolved) and spotted a new pattern: "Temperature probe calibration overdue for 2 devices." Schedule calibration before it becomes an audit finding.
-{{< /scenario >}}
+{{< /accordion >}}
 
-{{< scenario title="New Food Safety Plan" >}}
-Hire a consultant to update your FSP. Upload the new 120-page document. AI chunks it into 60 digestible sections (5 minutes), extracts 247 compliance requirements (another 5 minutes), merges them with FSANZ and NSW Food Authority regulations, and regenerates all your audit rules automatically. Your system is updated without manually rewriting a single checklist.
-{{< /scenario >}}
-
-{{< image-placeholder description="Process flow diagram showing FSP upload → AI chunking (2000 char segments) → Requirement extraction (247 items found) → Regulatory merging (FSANZ + state) → Auto-generated audit rules with checkmarks" alt="AI document processing workflow" />}}
-
-## Technical Capabilities
-
-{{< tech-specs title="AI Model & Processing" >}}
-**Multi-Provider Strategy**: Primary Digital Ocean AI ($0.36/M tokens), fallback to Claude 3.5 Sonnet, backup OpenAI GPT-4  
-**Chunking Intelligence**: Breaks large FSPs into 2000-character segments with 200-char overlap for context preservation  
-**Parallel Execution**: 10+ data collection modules run simultaneously (temperature, checklists, incidents, training, etc.)  
-**Smart Timeouts**: 60s for simple checks, 300s for complex analysis, 600s for large document processing  
-**Automatic Retry**: Failed tasks get extended timeout with exponential backoff
-{{< /tech-specs >}}
-
-{{< tech-specs title="Background Task Management" >}}
-**Django Q2 Scheduler**: Reliable cron-like task management for monthly audits  
-**Task Chaining**: Upload FSP → Chunk → Extract requirements → Generate rules → Run audit (fully automated)  
-**Real-time Status**: See what's running vs completed in admin dashboard  
-**Task Naming**: Easy identification of running processes  
-**Null-byte Cleaning**: Handles corrupted/malformed documents gracefully
-{{< /tech-specs >}}
-
-{{< tech-specs title="Quality & Learning" >}}
-**Human Feedback Loop**: Compliance officers override AI findings with 8 categories (false positive, context, regulation change, etc.)  
-**Quality Filtering**: Minimum 70% accuracy required before retraining  
-**JSONL Export**: Generate fine-tuning datasets for model improvement  
-**Quarterly Retraining**: AI gets smarter every 3 months based on your corrections  
-**Confidence Scoring**: Each finding includes AI confidence level (85-95% typical)
-{{< /tech-specs >}}
-
-{{< image-placeholder description="Split-screen mockup showing AI analysis on left (document text with highlighted compliance requirements) and extracted rules on right (structured checklist items with FSANZ clause references)" alt="AI requirement extraction interface" />}}
+{{< accordion title="New Food Safety Plan" >}}
+Hire a consultant to update your Food Safety Program. Upload the new 120-page document. AI chunks it into 60 digestible sections (5 minutes), extracts 247 compliance requirements (another 5 minutes), merges them with FSANZ and the state's regulations, and regenerates all your audit rules automatically. Your system is updated without manually rewriting a single checklist.
+{{< /accordion >}}
 
 ## How It Integrates with Your Operations
 
@@ -142,21 +154,6 @@ AI spots trends: temperature violations increasing, checklist completion declini
 Compliance officer reviews AI findings, approves accurate ones, overrides false positives. Your feedback trains the system. Generate final PDF report for management/inspectors.
 {{< /step >}}
 {{< /timeline >}}
-
-{{< image-placeholder description="Circular integration diagram with AI brain in center, connected to 8 data sources: Temperature IoT, Digital Checklists, Production Logs, Training Records, Supplier Certs, Incident Reports, Equipment Maintenance, Customer Complaints. Arrows showing data flow to central AI" alt="AI compliance integration architecture" />}}
-
-## Proven Results
-
-Our AI compliance automation has helped dozens of meat processors achieve consistent compliance:
-
-> **"We went from 3 failed audits in 2 years to zero failures in 18 months. The AI spotted gaps in our training records that we didn't even know existed. Fixed them before the export certification audit and passed first try."**  
-> — Medium processor, Victoria
-
-> **"The monthly compliance score is a game-changer. Management can see we're improving (67 → 89 in 9 months). When the inspector arrived, we showed them our trend chart and they were genuinely impressed."**  
-> — Small butcher shop, NSW
-
-> **"Unannounced SafeFood QLD inspection on a Friday afternoon. Generated our audit report in 45 seconds while the inspector was still putting their clipboard together. They said it was the most organized system they'd seen all year."**  
-> — Contract processor, Queensland
 
 {{< cta text="See AI Compliance in Action" url="/demo" icon="fa-solid fa-rocket" />}}
 

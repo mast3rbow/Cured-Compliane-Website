@@ -1,7 +1,10 @@
 ---
-title: Automate your Auditing needs
+title: Product Traceability
 weight: 4
-icon: icon4.svg
+icon: fa-solid fa-barcode
+url: /features/traceability/
+_build:
+  render: false
 ---
 
-Reduce your auditing costs and time, by letting the system do it for you. Built in alerts and reporting enables you to view compliance at a glance
+**Tracability made easy**. Doing high-risk products where you need tracability we make it easy and tracable. 

@@ -1,0 +1,65 @@
+{{ define "main" }}
+
+    <link rel="stylesheet"  href="/css/normalize.min.css">
+
+    {{ partial "navbar.html" . }}
+
+    <!-- Hero Section -->
+    <div class="w-full bg-gradient-to-r from-blue-600 to-blue-800 text-white py-16">
+        <div class="w-full sm:w-2/3 xl:w-1/2 mx-auto px-4 text-center">
+            <h1 class="font-bold text-4xl md:text-5xl mb-4">{{ .Title }}</h1>
+            {{ if .Description }}
+            <p class="text-xl md:text-2xl text-blue-100">{{ .Description }}</p>
+            {{ end }}
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="w-full bg-gray-50 py-12">
+        <div class="max-w-6xl mx-auto px-4">
+            
+            <!-- Content Description -->
+            <div class="font-light text-black text-lg mb-12 text-center">
+                {{ .Content }}
+            </div>
+
+            <!-- Features Grid -->
+            {{ if .Pages }}
+            <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 2rem; margin-bottom: 3rem;">
+                {{ range .Pages }}
+                <a href="{{ .RelPermalink }}" style="display: block; background: white; border: 1px solid #e5e7eb; border-radius: 0.75rem; padding: 2rem; text-decoration: none; transition: all 0.3s ease; font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif;" onmouseover="this.style.boxShadow='0 10px 25px -5px rgba(0, 0, 0, 0.1)'; this.style.borderColor='#3b82f6'; this.style.transform='translateY(-4px)';" onmouseout="this.style.boxShadow='none'; this.style.borderColor='#e5e7eb'; this.style.transform='translateY(0)';">
+                    {{ if .Params.icon }}
+                    <div style="color: #3b82f6; font-size: 3rem; margin-bottom: 1rem; text-align: center;">
+                        <i class="{{ .Params.icon }}"></i>
+                    </div>
+                    {{ end }}
+                    <h3 style="font-size: 1.25rem; font-weight: bold; color: #1f2937; margin-bottom: 0.75rem; text-align: center;">{{ .Title }}</h3>
+                    {{ if .Params.catchphrase }}
+                    <p style="color: #3b82f6; font-size: 0.9rem; font-style: italic; margin-bottom: 0.75rem; text-align: center;">{{ .Params.catchphrase }}</p>
+                    {{ end }}
+                    {{ if .Description }}
+                    <p style="color: #6b7280; font-size: 0.875rem; line-height: 1.6; text-align: center;">{{ .Description }}</p>
+                    {{ end }}
+                </a>
+                {{ end }}
+            </div>
+            {{ end }}
+
+            <!-- Call to Action -->
+            <div style="text-align: center; padding: 3rem 0; background: white; border-radius: 0.75rem; border: 1px solid #e5e7eb;">
+                <h2 style="font-size: 1.875rem; font-weight: bold; color: #1f2937; margin-bottom: 1rem;">Ready to Get Started?</h2>
+                <p style="color: #6b7280; font-size: 1.125rem; margin-bottom: 2rem;">See how Cured Compliance can transform your operations</p>
+                <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                    <a href="/demo" style="display: inline-block; background: #3b82f6; color: white; padding: 0.875rem 2rem; border-radius: 9999px; font-weight: 600; text-decoration: none; transition: all 0.3s ease;" onmouseover="this.style.background='#2563eb';" onmouseout="this.style.background='#3b82f6';">
+                        Book a Demo
+                    </a>
+                    <a href="#register" style="display: inline-block; background: white; color: #3b82f6; border: 2px solid #3b82f6; padding: 0.875rem 2rem; border-radius: 9999px; font-weight: 600; text-decoration: none; transition: all 0.3s ease;" onmouseover="this.style.background='#eff6ff';" onmouseout="this.style.background='white';">
+                        Start Free Trial
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+{{ end }}

@@ -1,7 +1,10 @@
 ---
-title: Full Auditability across system
+title: Ready Compliance
 weight: 6
-icon: icon6.svg
+icon: fa-solid fa-gavel
+url: /features/regulatory-frameworks/
+_build:
+  render: false
 ---
 
-All records are kept, with changes tracked, ensuring auditors are happy and able to trace all history
+**Pre-loaded** with FSANZ and state regulations, with contineous updates as regulation is updated

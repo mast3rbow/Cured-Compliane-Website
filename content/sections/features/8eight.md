@@ -1,7 +1,10 @@
 ---
-title: Designed for You
+title: Team Management
 weight: 8
-icon: icon8.svg
+icon: fa-solid fa-users
+url: /features/team-collaboration/
+_build:
+  render: false
 ---
 
-Designed by Butchers for butchers to meet your needs while not compromising on compliance. We constantly work with our partner butchers in improving the system and making it more effective as a future digital platform for all butchers
+**Role-based access** for staff. Mobile-first design for butchers on the floor.

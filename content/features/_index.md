@@ -11,42 +11,6 @@ Stop drowning in paperwork and start focusing on what you do best: processing qu
 
 Built specifically for the meat industry by people who understand your challenges. From small butcher shops to export processors, we've got you covered.
 
-## Core Platform Features
-
-{{< benefit-cards >}}
-{{< benefit icon="fa-solid fa-brain" title="AI-Powered Compliance Automation" >}}
-Your 24/7 compliance officer that never takes a day off. Automated monthly audits analyzing everything from cold room temps to cooking logs. [Learn more →](/features/ai-compliance/)
-{{< /benefit >}}
-
-{{< benefit icon="fa-solid fa-thermometer" title="24/7 Temperature Monitoring & IoT" >}}
-Never lose $15,000 in spoiled product again. BLE 5.0 sensors with instant SMS alerts when fridges hit >5°C. [Learn more →](/features/temperature-monitoring/)
-{{< /benefit >}}
-
-{{< benefit icon="fa-solid fa-clipboard-check" title="Digital Checklists & Daily Operations" >}}
-Replace clipboards and broken pens with mobile-first digital checklists. Photo evidence, digital signatures, and offline mode. [Learn more →](/features/digital-checklists/)
-{{< /benefit >}}
-
-{{< benefit icon="fa-solid fa-barcode" title="Complete Product Traceability" >}}
-Recall-ready in 60 seconds. Track every batch from supplier to customer with QR codes and complete production documentation. [Learn more →](/features/traceability/)
-{{< /benefit >}}
-
-{{< benefit icon="fa-solid fa-bell" title="Smart Alerts & Notifications" >}}
-Get notified before problems become disasters. Multi-channel alerts for cold room failures, expiry warnings, and missing checklists. [Learn more →](/features/alerts-notifications/)
-{{< /benefit >}}
-
-{{< benefit icon="fa-solid fa-gavel" title="Industry-Specific Compliance Frameworks" >}}
-Pre-configured for your exact business type. FSANZ cooking matrices, species workflows, and 8 state/territory regulations built-in. [Learn more →](/features/regulatory-frameworks/)
-{{< /benefit >}}
-
-{{< benefit icon="fa-solid fa-chart-line" title="Reports & Audit Management" >}}
-Hand inspectors a comprehensive audit in 60 seconds. Monthly compliance scores, critical failure highlights, and regulatory cross-references. [Learn more →](/features/reports-dashboards/)
-{{< /benefit >}}
-
-{{< benefit icon="fa-solid fa-users" title="Team Collaboration & Access Control" >}}
-Designed for Butchers, by Butchers. Role-based access from floor staff to owners. Mobile tablets, supplier portals, unlimited users. [Learn more →](/features/team-collaboration/)
-{{< /benefit >}}
-{{< /benefit-cards >}}
-
 ## Why Meat Processors Choose Cured Compliance
 
 **vs. Paper Systems**: No more lost checklists, illegible handwriting, or clipboards with broken pens. 100% digital audit trail with timestamps and accountability.

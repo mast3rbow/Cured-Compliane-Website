@@ -1,13 +1,13 @@
-<div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-300">
+<div style="display: block; background: white; border: 1px solid #e5e7eb; border-radius: 0.75rem; padding: 2rem; box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1); transition: all 0.3s ease; font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif;">
     {{ if .Get "icon" }}
-    <div class="text-blue-600 text-4xl mb-4">
+    <div style="color: #3b82f6; font-size: 3rem; margin-bottom: 1rem; text-align: center;">
         <i class="{{ .Get "icon" }}"></i>
     </div>
     {{ end }}
     {{ if .Get "title" }}
-    <h3 class="text-xl font-bold text-gray-800 mb-3">{{ .Get "title" }}</h3>
+    <h3 style="font-size: 1.25rem; font-weight: bold; color: #1f2937; margin-bottom: 0.75rem; text-align: center;">{{ .Get "title" }}</h3>
     {{ end }}
-    <div class="text-gray-600">
+    <div style="color: #6b7280; font-size: 0.875rem; line-height: 1.6;">
         {{ .Inner | markdownify }}
     </div>
 </div>

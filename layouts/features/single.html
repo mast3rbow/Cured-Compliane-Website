@@ -41,10 +41,10 @@
 
     <!-- Related Features Section -->
     {{ if .Params.relatedTags }}
-    <div class="w-full bg-white py-12 border-t border-gray-200">
-        <div class="w-full sm:w-2/3 xl:w-1/2 mx-auto px-4">
+    <div class="w-full bg-gray-50 py-12 border-t border-gray-200">
+        <div class="max-w-6xl mx-auto px-4">
             <h2 class="text-2xl font-bold text-gray-800 mb-8 text-center">Related Features</h2>
-            <div class="flex flex-col md:flex-row gap-6 justify-center">
+            <div style="display: flex; flex-wrap: wrap; gap: 2rem; justify-content: center;">
                 {{ $currentPage := . }}
                 {{ $relatedCount := 0 }}
                 {{ range where .Site.RegularPages "Section" "features" }}
@@ -57,15 +57,15 @@
                         {{ end }}
                         {{ if $hasMatch }}
                             {{ $relatedCount = add $relatedCount 1 }}
-                            <a href="{{ .Permalink }}" class="flex-1 block bg-white border-2 border-gray-200 rounded-lg shadow-md p-6 hover:shadow-xl hover:border-blue-600 transition-all duration-300 text-center">
+                            <a href="{{ .Permalink }}" style="display: block; background: white; border: 1px solid #e2e8f0; border-radius: 0.5rem; box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1); padding: 2rem; text-align: center; transition: all 0.3s ease; text-decoration: none; flex: 0 1 calc(33.333% - 1.5rem); min-width: 280px; max-width: 350px;" onmouseover="this.style.boxShadow='0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)'; this.style.borderColor='#3b82f6';" onmouseout="this.style.boxShadow='0 1px 3px 0 rgba(0, 0, 0, 0.1)'; this.style.borderColor='#e2e8f0';">
                                 {{ if .Params.icon }}
-                                <div class="text-blue-600 text-5xl mb-4">
+                                <div style="color: #3b82f6; font-size: 3rem; margin-bottom: 1rem;">
                                     <i class="{{ .Params.icon }}"></i>
                                 </div>
                                 {{ end }}
-                                <h3 class="text-lg font-bold text-gray-800 mb-2">{{ .Title }}</h3>
+                                <h3 style="font-size: 1.125rem; font-weight: bold; color: #1f2937; margin-bottom: 0.5rem;">{{ .Title }}</h3>
                                 {{ if .Params.catchphrase }}
-                                <p class="text-gray-600 text-sm">{{ .Params.catchphrase }}</p>
+                                <p style="color: #6b7280; font-size: 0.875rem; margin: 0;">{{ .Params.catchphrase }}</p>
                                 {{ end }}
                             </a>
                         {{ end }}

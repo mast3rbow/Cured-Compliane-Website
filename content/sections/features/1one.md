@@ -1,7 +1,10 @@
 ---
-title: Native Web Application
+title: AI-Powered Audits
 weight: 1
-icon: icon1.svg
+icon: fa-solid fa-brain
+url: /features/ai-compliance/
+_build:
+  render: false
 ---
 
-Manage compliance from any device, phone, tablet and computer ensuring consistency across the business without expensive devices
+Monthly compliance audits in **10 minutes**. Your 24/7 compliance officer that never takes a day off.
