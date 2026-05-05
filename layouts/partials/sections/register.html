@@ -7,9 +7,17 @@
 			{{ $reg.Content }}
 		</div>
 		<form class="w-full max-w-lg my-12 mx-auto" onsubmit="return submitForm()" validate>
-			<div class="flex items-center border-b border-blue-600 py-2">
-				<input class="appearance-none bg-transparent border border-transparent w-full text-gray-200 focus:outline-none focus:bg-gray-400 focus:text-gray-800 focus:border-gray-400 mr-3 py-2 px-3" id="form-email" type="email" value="" name="EMAIL" placeholder="example@email.com" aria-label="Email Address" required>
-				<button class="flex-shrink-0 bg-blue-600 border-blue-600 hover:bg-gray-800 hover:text-blue-600 border text-gray-200 py-2 px-4" type="submit" name="subscribe" style="border-radius: 3em;">
+			<div class="mb-4">
+				<input class="appearance-none bg-transparent border border-blue-600 w-full text-gray-200 focus:outline-none focus:bg-gray-400 focus:text-gray-800 focus:border-gray-400 py-2 px-3" id="form-name" type="text" value="" name="NAME" placeholder="Full Name" aria-label="Full Name" required>
+			</div>
+			<div class="mb-4">
+				<input class="appearance-none bg-transparent border border-blue-600 w-full text-gray-200 focus:outline-none focus:bg-gray-400 focus:text-gray-800 focus:border-gray-400 py-2 px-3" id="form-email" type="email" value="" name="EMAIL" placeholder="example@email.com" aria-label="Email Address" required>
+			</div>
+			<div class="mb-4">
+				<input class="appearance-none bg-transparent border border-blue-600 w-full text-gray-200 focus:outline-none focus:bg-gray-400 focus:text-gray-800 focus:border-gray-400 py-2 px-3" id="form-contact" type="tel" value="" name="CONTACT" placeholder="Contact Number" aria-label="Contact Number" required>
+			</div>
+			<div class="flex items-center justify-center">
+				<button class="flex-shrink-0 bg-blue-600 border-blue-600 hover:bg-gray-800 hover:text-blue-600 border text-gray-200 py-2 px-6" type="submit" name="subscribe" style="border-radius: 3em;">
 					Sign Up
 				</button>
 			</div>
@@ -26,7 +34,9 @@
 			superagent
 				.post('https://prod-31.australiaeast.logic.azure.com:443/workflows/130140203d6048449d801e009baf31f9/triggers/manual/paths/invoke?api-version=2016-10-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=ZoxbxzXH9gz5Hmhv0XUJbnhSMCenqnjbuQRJP5d8-dI')
 				.send({
+					name: document.getElementById('form-name').value,
 					email: document.getElementById('form-email').value,
+					contact: document.getElementById('form-contact').value,
 				})
 				.end(function(err, res) {
 					if (err || !res.ok) {
