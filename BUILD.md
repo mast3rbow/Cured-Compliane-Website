@@ -4,13 +4,13 @@
 
 ### 1. Node.js Version Control (`.nvmrc`)
 - **File**: `.nvmrc`
-- **Purpose**: Pins Node.js to v20.18.1 (LTS) for compatibility with native modules
-- **Why**: `better-sqlite3@8.7.0` (TinaCMS dependency) fails to compile with Node.js v22.22.0 due to V8 API changes
+- **Purpose**: Pins Node.js to v20.18.1 (LTS) for compatibility and stability
+- **Why**: Ensures consistent builds across development and CI/CD environments
 
 ### 2. Updated Dependencies (`package.json`)
-- **@tinacms/cli**: `^1.5.52` → `^1.6.10` (latest stable)
-- **@types/node**: `^22.1.0` → `^20.17.10` (matches Node.js v20 LTS)
-- **Added engines field**: Enforces Node.js 18-22 and npm ≥9 for consistency
+- **@types/node**: `^24.14.0` (matches Node.js v20+ LTS)
+- **Added engines field**: Enforces Node.js ≥18 and npm ≥9 for consistency
+- **Removed TinaCMS**: Removed `tinacms` and `@tinacms/cli` dependencies
 
 ### 3. npm Configuration (`.npmrc`)
 - **engine-strict=false**: Allows npm install even with engine mismatches (with warnings)
@@ -22,15 +22,6 @@
 - **actions/checkout**: v2 → v3 (current stable)
 - **Added Node.js setup step**: Uses `.nvmrc` for consistent builds
 - **Added npm caching**: Faster workflow runs
-
-## Deprecated Package Warnings Resolved
-
-The following warnings will be resolved by the TinaCMS update:
-- ✅ `@babel/plugin-proposal-*` → Now uses transform versions
-- ✅ `uuid@9.0.1` → Updated to v11+ via dependencies
-- ✅ `lodash.get` → Modern TinaCMS uses optional chaining
-- ✅ `glob@7.2.3` → Updated to secure version
-- ✅ `better-sqlite3` → Newer version with Node.js 20 compatibility
 
 ## How to Apply These Changes Locally
 
@@ -85,20 +76,6 @@ The GitHub workflow now automatically:
 No manual intervention needed for CI/CD builds.
 
 ## Troubleshooting
-
-### Issue: `better-sqlite3` still fails to compile
-**Solution**: 
-```powershell
-# Ensure you're on Node.js 20
-node --version
-
-# Clear npm cache
-npm cache clean --force
-
-# Reinstall
-Remove-Item node_modules -Recurse -Force
-npm install
-```
 
 ### Issue: `npm ERR! engine node`
 **Solution**: The `engine-strict=false` in `.npmrc` allows this. If you want strict checking:
