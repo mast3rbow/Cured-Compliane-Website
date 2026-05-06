@@ -1,21 +1,6 @@
 <script src="https://unpkg.com/popper.js@1"></script>
 <script src="https://unpkg.com/tippy.js@4"></script>
 <script>
-
-    const template = document.getElementById('followTip');
-    const container = document.createElement('div');
-
-    container.appendChild(document.importNode(template.content, true));
-
-    tippy('#follow', {
-        content: container.innerHTML,
-        animation: 'scale',
-        duration: 250,
-        arrow: true,
-        placement: 'bottom',
-        interactive: true,
-    })
-
     // New JS functions
     function navToggle() {
         // Select the element with the id 'menu'
@@ -29,5 +14,25 @@
           menu.classList.add('hidden');
         }
     }
+
+    // Initialize tippy.js tooltip if available
+    window.addEventListener('DOMContentLoaded', function() {
+        const template = document.getElementById('followTip');
+        const followElement = document.getElementById('follow');
+        
+        if (typeof tippy !== 'undefined' && template && followElement) {
+            const container = document.createElement('div');
+            container.appendChild(document.importNode(template.content, true));
+
+            tippy('#follow', {
+                content: container.innerHTML,
+                animation: 'scale',
+                duration: 250,
+                arrow: true,
+                placement: 'bottom',
+                interactive: true,
+            });
+        }
+    });
 
 </script>
