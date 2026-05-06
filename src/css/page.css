@@ -156,7 +156,20 @@ hr {
   z-index: 1000;
   border-radius: 0.5rem;
   padding: 0.5rem 0;
-  margin-top: 0.5rem;
+  top: 100%;
+  left: 0;
+  margin-top: 0;
+}
+
+/* Create a hover bridge */
+.dropdown::before {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  height: 10px;
+  z-index: 999;
 }
 
 .dropdown-content a {
@@ -165,7 +178,9 @@ hr {
   text-decoration: none;
   display: block;
   font-size: 1rem;
+  font-weight: normal;
   transition: all 0.2s ease;
+  white-space: nowrap;
 }
 
 .dropdown-content a:hover {
