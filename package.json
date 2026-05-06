@@ -4,7 +4,7 @@
   "description": "A simple landing page built with Hugo and Tailwind CSS",
   "main": "gulpfile.js",
   "dependencies": {
-    "gulp": "^4.0.2",
+    "gulp": "^5.0.1",
     "gulp-postcss": "^9.0.1",
     "gulp-concat-css": "^3.1.0",
     "cssnano": "^7.0.6",
