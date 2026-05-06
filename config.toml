@@ -46,10 +46,70 @@ title = "Cured Compliance - Specialised compliance software for butchers and mea
     pageRef = '/features'
     weight = 20
   [[menus.main]]
+    identifier = "ai-compliance"
+    name = 'AI-Powered Compliance Automation'
+    pageRef = '/features/ai-compliance'
+    parent = 'Features'
+    weight = 21
+  [[menus.main]]
+    identifier = "temperature-monitoring"
+    name = '24/7 Temperature Monitoring & IoT'
+    pageRef = '/features/temperature-monitoring'
+    parent = 'Features'
+    weight = 22
+  [[menus.main]]
+    identifier = "digital-checklists"
+    name = 'Digital Checklists & Daily Operations'
+    pageRef = '/features/digital-checklists'
+    parent = 'Features'
+    weight = 23
+  [[menus.main]]
+    identifier = "traceability"
+    name = 'Complete Product Traceability'
+    pageRef = '/features/traceability'
+    parent = 'Features'
+    weight = 24
+  [[menus.main]]
+    identifier = "alerts-notifications"
+    name = 'Smart Alerts & Notifications'
+    pageRef = '/features/alerts-notifications'
+    parent = 'Features'
+    weight = 25
+  [[menus.main]]
+    identifier = "regulatory-frameworks"
+    name = 'Industry-Specific Compliance Frameworks'
+    pageRef = '/features/regulatory-frameworks'
+    parent = 'Features'
+    weight = 26
+  [[menus.main]]
+    identifier = "reports-dashboards"
+    name = 'Reports & Audit Management'
+    pageRef = '/features/reports-dashboards'
+    parent = 'Features'
+    weight = 27
+  [[menus.main]]
+    identifier = "team-collaboration"
+    name = 'Team Collaboration & Access Control'
+    pageRef = '/features/team-collaboration'
+    parent = 'Features'
+    weight = 28
+  [[menus.main]]
     identifier = "Resources"
     name = 'Resources'
     pageRef = '/resources'
     weight = 30
+  [[menus.main]]
+    identifier = "faq"
+    name = 'Frequently Asked Questions (FAQ)'
+    pageRef = '/resources/faq'
+    parent = 'Resources'
+    weight = 31
+  [[menus.main]]
+    identifier = "getting-started"
+    name = 'Getting Started'
+    pageRef = '/resources/gettingstarted'
+    parent = 'Resources'
+    weight = 32
   [[menus.main]]
     identifier = "media"
     name = 'Media'
