@@ -18,6 +18,8 @@ At Cured Compliance, we understand the unique challenges faced by butchers in to
 
 ![Bryton and Ryan at Maryvalley Small Goods facility demonstrating Cured Compliance software for meat processing compliance management](/img/bryton-ryan-shop.webp)
 
+Butchers around Australia use Cured Compliance with customers in every state and territory—from metro butcher shops to regional smallgoods makers to rural family operations across NSW, QLD, VIC, SA, WA, TAS, NT, and ACT.
+
 **Why Cured Compliance?**
 
 In the world of butchery, adhering to stringent health and safety regulations is crucial, yet it can be time-consuming and complex. That’s where Cured Compliance steps in. Our cutting-edge compliance solutions are designed with the needs of butchers in mind, offering a streamlined approach to meet industry standards without the hassle.
