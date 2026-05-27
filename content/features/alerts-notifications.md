@@ -6,6 +6,7 @@ relatedTags: ["alerts", "monitoring", "automation"]
 weight: 15
 seoTitle: "Smart Alerts & Multi-Channel Notifications | Cured Compliance"
 description: "Proactive SMS, email, and voice alerts for cold room failures, expiry warnings, missing checklists, and equipment calibration. Never miss a critical compliance deadline."
+priority: 0.8
 menu:
   main:
     parent: 'Features'
@@ -109,7 +110,7 @@ System detects supplier AQIS certificate expires in 14 days (June 30). Purchasin
 Monday 9:05am: System detects "Daily Pre-Start Cleaning" checklist not completed (expected by 7am). Sends email alert to production supervisor: "Pre-start cleaning not done by @JohnSmith. Floor staff present: Sarah, Mike, Tom." Supervisor walks to production area at 9:12am, finds staff started early without cleaning. Halts production, completes cleaning checklist with photos by 9:45am. Production resumes compliant. Issue documented for training review.
 {{< /accordion >}}
 
-<img src="/img/alerts_notifications.png" alt="Alert configuration interface" style="border-radius: 0.75rem; width: 100%; max-width: 100%; margin: 2rem 0;" />
+<img src="/img/alerts_notifications.png" alt="Real-time alert configuration dashboard showing SMS and email notification settings for temperature monitoring, checklist reminders, and compliance deadline alerts" style="border-radius: 0.75rem; width: 100%; max-width: 100%; margin: 2rem 0;" />
 
 ## Alert Configuration & Management
 

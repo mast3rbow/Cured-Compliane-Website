@@ -1,0 +1,56 @@
+testimonials:
+  - name: "Sarah Mitchell"
+    organization: "Premium Meats Melbourne"
+    location: "Melbourne, VIC"
+    role: "Operations Manager"
+    quote: "Cured Compliance transformed our compliance process. What used to take 2 days of manual paperwork now completes automatically overnight. The AI audit feature alone has saved us countless hours."
+    rating: 5
+    
+  - name: "John Richardson"
+    organization: "Outback Butchers"
+    location: "Brisbane, QLD"
+    role: "Owner"
+    quote: "The temperature monitoring system saved us from a $15,000 loss when our fridge failed at 2am. Got the SMS alert immediately and had our technician there within the hour. Paid for itself in one incident."
+    rating: 5
+    
+  - name: "Lisa Chen"
+    organization: "Heritage Smallgoods"
+    location: "Sydney, NSW"
+    role: "Quality Assurance Manager"
+    quote: "Inspectors love our digital records. Last audit took 45 minutes instead of the usual 3 hours. The inspector said it was the best documentation system he'd seen in 20 years."
+    rating: 5
+    
+  - name: "Mark Thompson"
+    organization: "Valley Fresh Meats"
+    location: "Adelaide, SA"
+    role: "Production Supervisor"
+    quote: "Staff actually use the digital checklists because they're so simple. The tablet interface is intuitive and the photo evidence feature eliminates disputes about who did what."
+    rating: 5
+    
+  - name: "Emma Williams"
+    organization: "Coastal Butchery"
+    location: "Gold Coast, QLD"
+    role: "Compliance Officer"
+    quote: "Complete product traceability in 60 seconds. When we had a supplier recall, we identified affected batches and contacted customers within an hour. Saved our reputation."
+    rating: 5
+    
+  - name: "David Foster"
+    organization: "Export Quality Processors"
+    location: "Perth, WA"
+    role: "Export Manager"
+    quote: "The FSANZ compliance automation is incredible. It understands meat processing regulations better than most consultants. Our compliance score went from 67 to 87 in six months."
+    rating: 5
+    
+  - name: "Rachel Green"
+    organization: "Artisan Meat Co"
+    location: "Hobart, TAS"
+    role: "Co-Owner"
+    quote: "As a small business, we couldn't afford a full-time compliance officer. Cured Compliance gives us enterprise-level compliance management at a fraction of the cost."
+    rating: 5
+    
+  - name: "Tom Bradley"
+    organization: "Regional Abattoir Services"
+    location: "Dubbo, NSW"
+    role: "Plant Manager"
+    quote: "The IoT sensors and automated logging have eliminated manual temperature recording errors. Our cold chain compliance is now 99.9% - up from 94% with paper logs."
+    rating: 5

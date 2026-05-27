@@ -6,6 +6,7 @@ relatedTags: ["monitoring", "iot", "alerts"]
 weight: 12
 seoTitle: "24/7 Temperature Monitoring with BLE 5.0 IoT Sensors | Cured Compliance"
 description: "Instant SMS alerts when fridges hit >5°C. Bluetooth sensors in every fridge/freezer with automated logging every 5-15 minutes. Prove your cold chain integrity to inspectors."
+priority: 0.8
 menu:
   main:
     parent: 'Features'
@@ -76,7 +77,7 @@ Download temperature logs for any date range. Perfect for inspector visits, cust
 {{< /benefit >}}
 {{< /benefit-cards >}}
 
-<img src="/img/gateway.png" alt="BLE sensor installed in commercial fridge" style="border-radius: 0.75rem; width: 100%; max-width: 100%; margin: 2rem 0;" />
+<img src="/img/gateway.png" alt="BLE 5.0 IoT temperature sensor and wireless gateway installed in commercial refrigeration unit for 24/7 cold chain monitoring" style="border-radius: 0.75rem; width: 100%; max-width: 100%; margin: 2rem 0;" loading="lazy" />
 
 <div style="display: flex; justify-content: center; margin: 2rem 0;">
 <div style="max-width: 900px; width: 100%;">
@@ -128,7 +129,7 @@ Accepted by all regulators. Inspector-ready reports at the click of a button.
 </div>
 </div>
 
-<img src="/img/bacon_settings_zoomed.png" alt="Digital twin temperature monitoring dashboard" style="border-radius: 0.75rem; width: 100%; max-width: 100%; margin: 2rem 0;" />
+<img src="/img/bacon_settings_zoomed.png" alt="Digital twin temperature monitoring dashboard showing real-time fridge temperatures with automated alerts and compliance threshold settings" style="border-radius: 0.75rem; width: 100%; max-width: 100%; margin: 2rem 0;" loading="lazy" />
 
 ## Technical Capabilities
 
@@ -178,7 +179,7 @@ Generate PDF reports with compliance summaries: "99.8% compliance over 6 months,
 {{< /benefit >}}
 {{< /benefit-cards >}}
 
-<img src="/img/freezer-temp.png" alt="6-month temperature compliance trend chart" style="border-radius: 0.75rem; width: 100%; max-width: 100%; margin: 2rem 0;" />
+<img src="/img/freezer-temp.png" alt="Six month temperature compliance trend chart showing 99.6% cold chain integrity with automated logging and alert history for meat storage" style="border-radius: 0.75rem; width: 100%; max-width: 100%; margin: 2rem 0;" loading="lazy" />
 
 {{< cta text="See Temperature Monitoring Live Demo" url="/demo" icon="fa-solid fa-temperature-half" />}}
 

@@ -1,0 +1,31 @@
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "{{ .Title }}",
+  "description": "{{ if .Description }}{{ .Description }}{{ else }}{{ .Summary }}{{ end }}",
+  "datePublished": "{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}",
+  "dateModified": "{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}",
+  "author": {
+    "@type": {{ if .Params.author }}"Person",
+    "name": "{{ .Params.author }}"{{ else }}"Organization",
+    "name": "Cured Compliance"{{ end }}
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Cured Compliance",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "{{ .Site.BaseURL }}img/logo.png"
+    }
+  },
+  {{ if .Params.featured_image }}
+  "image": "{{ .Site.BaseURL }}{{ strings.TrimPrefix "/" .Params.featured_image }}",
+  {{ else if .Site.Params.images }}
+  "image": "{{ .Site.BaseURL }}{{ index .Site.Params.images 0 }}",
+  {{ end }}
+  "articleSection": "{{ if .Section }}{{ .Section | title }}{{ else }}Blog{{ end }}",
+  "wordCount": {{ .WordCount }},
+  "url": "{{ .Permalink }}"
+}
+</script>

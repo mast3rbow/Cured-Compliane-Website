@@ -3,6 +3,7 @@ title: Frequently Asked Questions (FAQ)
 sitemap_exclude: false
 seoTitle: Frequently Asked Questions about Cured Compliance
 description: "Common questions about Cured Compliance's IoT temperature monitoring, BLE sensors, digital checklists, and meat industry compliance management answered."
+priority: 0.6
 menus:
   main:
     parent: Resources

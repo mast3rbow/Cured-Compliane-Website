@@ -6,6 +6,7 @@ relatedTags: ["compliance", "automation", "reporting"]
 weight: 11
 seoTitle: "AI-Powered Compliance Automation for Meat Processing | Cured Compliance"
 description: "Automated monthly audits analyzing everything from cold room temps to cooking logs. AI that speaks your language and understands beef, pork, lamb, poultry, game, and offal processing."
+priority: 0.8
 menu:
   main:
     parent: 'Features'

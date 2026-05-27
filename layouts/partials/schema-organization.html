@@ -21,6 +21,9 @@
     "email": "{{ .Site.Params.Author.email }}",
     "contactType": "Customer Service",
     "availableLanguage": "English"
-  }
+  }{{ if .Params.awards }},
+  "award": [
+    {{ range $index, $award := .Params.awards }}{{ if $index }},{{ end }}"{{ $award.name }} - {{ $award.year }}"{{ end }}
+  ]{{ end }}
 }
 </script>

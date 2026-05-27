@@ -1,6 +1,7 @@
 ---
 title: Features
 description: "Explore AI-powered compliance automation, 24/7 IoT temperature monitoring, digital checklists, and complete traceability for meat processing operations."
+priority: 0.9
 ---
 
 # AI-Powered Compliance for Meat Processing

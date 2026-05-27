@@ -6,6 +6,7 @@ relatedTags: ["team", "mobile", "collaboration"]
 weight: 18
 seoTitle: "Team Collaboration & Role-Based Access Control | Cured Compliance"
 description: "From floor staff to owners - everyone sees what they need. Mobile tablet access, digital signatures, supplier portals, and role-based permissions with unlimited users."
+priority: 0.8
 menu:
   main:
     parent: 'Features'
@@ -94,32 +95,6 @@ Monthly audit completes June 1. Compliance officer reviews 47 AI findings. Findi
 {{< accordion title="Supplier Portal - Certificate Upload" >}}
 Meat supplier receives email: "AQIS certificate expiring in 7 days - please upload renewal." Supplier clicks link, logs into portal (their credentials only). Sees dashboard: active orders, pending deliveries, certificate status. Clicks "Upload New Certificate", scans renewed AQIS cert (PDF), uploads. System auto-validates expiry date (June 2025), updates database. Your purchasing manager gets notification: "Supplier ABC - AQIS cert renewed, valid through Jun 2025." No phone calls, no email attachments, no manual data entry.
 {{< /accordion >}}
-
-## Technical Access Control
-
-{{< tech-specs title="Django Permissions Framework" >}}
-**Group-Based Permissions**: Users assigned to groups (Owner, Compliance, Production, Admin, Supplier)  
-**Object-Level Permissions**: Can view/edit specific records only (e.g., staff see own checklists only)  
-**Schema-Based Isolation**: Multi-tenant architecture - your data NEVER mixes with competitors  
-**API Rate Limiting**: Prevents automated abuse or data scraping  
-**Session Management**: Auto-logout after inactivity, concurrent session limits
-{{< /tech-specs >}}
-
-{{< tech-specs title="Supplier Portal Security" >}}
-**Separate Login**: Suppliers never see your main system  
-**Limited Scope**: Only their orders, deliveries, certificates visible  
-**Read-Only Mostly**: Can upload certs/documents, can't edit your data  
-**Email Verification**: Two-factor authentication for sensitive operations  
-**Audit Logging**: Every supplier action tracked for your review
-{{< /tech-specs >}}
-
-{{< tech-specs title="Mobile & Offline Capabilities" >}}
-**Progressive Web App (PWA)**: Install on tablet home screen like native app  
-**Offline Storage**: 30 days of checklists cached locally (IndexedDB)  
-**Background Sync**: Auto-upload when WiFi reconnected  
-**Low Bandwidth Mode**: Compress photos, reduce data usage  
-**Touch Optimization**: Large targets (44px minimum) for gloved operation
-{{< /tech-specs >}}
 
 <br>
 

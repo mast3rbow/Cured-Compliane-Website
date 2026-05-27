@@ -6,6 +6,7 @@ relatedTags: ["compliance", "regulatory", "fsanz"]
 weight: 16
 seoTitle: "FSANZ & State Meat Processing Compliance Frameworks | Cured Compliance"
 description: "Pre-loaded with FSANZ cooking matrices, species-specific workflows, and 8 state/territory regulations. Business type filtering shows only requirements that apply to YOU."
+priority: 0.8
 menu:
   main:
     parent: 'Features'

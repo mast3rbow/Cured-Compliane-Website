@@ -6,6 +6,7 @@ relatedTags: ["operations", "mobile", "checklists"]
 weight: 13
 seoTitle: "Digital Checklists for Meat Processing Daily Operations | Cured Compliance"
 description: "Mobile-first digital checklists with photo evidence, digital signatures, and offline mode. Pre-start cleaning, CCP monitoring, and production logs all on tablets."
+priority: 0.8
 menu:
   main:
     parent: 'Features'
@@ -114,7 +115,7 @@ Cooking smallgoods batch #2401. Reach target internal temp 71°C. Staff member o
 Refrigerated truck arrives with beef delivery. WiFi is down in loading dock. Staff opens "Incoming Goods Inspection" on tablet in offline mode. Records supplier name (autocomplete from saved list), delivery temp (2.1°C), packaging condition (good), cert expiry date (scans QR code on AQIS cert). Takes photos of delivery docket and product labels. Completes checklist at 10:23am. At 11:05am, tablet reconnects to WiFi and auto-syncs all data including 6 photos. Purchasing receives notification.
 {{< /accordion >}}
 
-<img src="/img/prestart.png" alt="Digital checklist interface on mobile" style="border-radius: 0.75rem; width: 100%; max-width: 100%; margin: 2rem 0;" />
+<img src="/img/prestart.png" alt="Mobile digital checklist interface showing pre-start cleaning tasks with photo upload capability and digital signature for meat processing facility" style="border-radius: 0.75rem; width: 100%; max-width: 100%; margin: 2rem 0;" loading="lazy" />
 
 **Pre-Configured Checklist Templates**
 
@@ -134,7 +135,7 @@ We include ready-to-use templates for every common meat processing task:
 - Equipment maintenance (calibration schedules for scales, probes, slicers, grinders)
 - Vehicle hygiene (meat transport vehicle cleanliness assessment)
 
-<img src="/img/checklistmenu.png" alt="Pre-configured checklist template library" style="border-radius: 0.75rem; width: 100%; max-width: 100%; margin: 2rem 0;" />
+<img src="/img/checklistmenu.png" alt="Pre-configured compliance checklist library showing daily operations, CCP monitoring, and HACCP documentation templates for butchers" style="border-radius: 0.75rem; width: 100%; max-width: 100%; margin: 2rem 0;" loading="lazy" />
 
 ## Mobile Capabilities
 

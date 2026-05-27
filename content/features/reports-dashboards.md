@@ -6,6 +6,7 @@ relatedTags: ["reporting", "compliance", "audits"]
 weight: 17
 seoTitle: "Compliance Reports & Audit Management for Meat Processors | Cured Compliance"
 description: "One-click PDF report generation with monthly compliance scores, critical failure highlights, and regulatory cross-references. Wake up to completed audits every month."
+priority: 0.8
 menu:
   main:
     parent: 'Features'

@@ -1,0 +1,32 @@
+{{ if .Parent }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "{{ .Site.BaseURL }}"
+    }
+    {{- $parent := .Parent -}}
+    {{- $position := 2 -}}
+    {{- if $parent.Parent -}}
+    ,{
+      "@type": "ListItem",
+      "position": {{ $position }},
+      "name": "{{ $parent.Title }}",
+      "item": "{{ $parent.Permalink }}"
+    }
+    {{- $position = add $position 1 -}}
+    {{- end -}}
+    ,{
+      "@type": "ListItem",
+      "position": {{ $position }},
+      "name": "{{ .Title }}"
+    }
+  ]
+}
+</script>
+{{ end }}

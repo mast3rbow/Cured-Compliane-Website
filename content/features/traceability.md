@@ -6,6 +6,7 @@ relatedTags: ["compliance", "traceability", "recalls"]
 weight: 14
 seoTitle: "Product Traceability & Batch Tracking for Meat Processing | Cured Compliance"
 description: "Trace any batch from raw material supplier to end customer in 60 seconds. Complete production documentation with cooking logs, packing records, and recall simulation testing."
+priority: 0.8
 menu:
   main:
     parent: 'Features'
