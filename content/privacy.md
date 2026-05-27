@@ -1,7 +1,7 @@
 ---
 title: Privacy Policy
-description: Privacy policy and how we use your data
-seoTitle: Privacy policy and how we use your data
+description: "Privacy policy for Cured Compliance compliance management platform. How we collect, use, and protect your butcher shop and meat processing business data."
+seoTitle: Privacy Policy | Cured Compliance Data Protection
 ---
 
 CuredCompliance agrees that the ‘National Privacy Principles for the Fair Handling of Personal Information’ is an integral part of the way we do business. This Principle has guidelines and standards for the collection, access, storage and use of personal information which we obtain in order to run our business and meet customer needs. We are respectful of our customer’s right to privacy and in this regard will only use the personal information in relation to our customers in a way that is agreed in the National Privacy Principles.

@@ -1,8 +1,8 @@
 ---
 title: About Us!
 sitemap_exclude: false
-seoTitle: About our story
-description: "A story about how Cured Compliance Started"
+seoTitle: About Cured Compliance - Our Story | Australian Meat Industry Software
+description: "Australian-built compliance software for butchers and meat processors. Our story began with bacon and evolved into AI-powered FSANZ compliance automation trusted by the industry."
 layout: media.html
 ---
 

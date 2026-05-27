@@ -1,5 +1,5 @@
 # SETUP
-baseurl = "/"
+baseurl = "https://www.curedcompliance.com/"
 DefaultContentLanguage = "en"
 publishdir = "public"
 canonifyUrls = "true"
@@ -14,7 +14,7 @@ title = "Cured Compliance - Specialised compliance software for butchers and mea
 
 [params]
     description = "Cured Compliance - Specialised compliance software for butchers and meat industry professionals." # page description -> see ./layouts/partials/head.html
-    images = [] #add images here as "img/name.ext" (points to s./static/img/) to populate the default og and twitter <meta> attributes -> see ./layouts/partials/head.html
+    images = ["img/logo.png"] #add images here as "img/name.ext" (points to s./static/img/) to populate the default og and twitter <meta> attributes -> see ./layouts/partials/head.html
 
 [[params.social]]
     title = "LinkedIn"
@@ -27,7 +27,7 @@ title = "Cured Compliance - Specialised compliance software for butchers and mea
   changeFreq = 'always'
   disable = false
   filename = 'sitemap.xml'
-  priority = -1
+  priority = 0.5
 
 [menus]
   [[menus.main]]

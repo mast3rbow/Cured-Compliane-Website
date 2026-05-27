@@ -62,6 +62,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <link rel="canonical" href="{{ .Permalink }}" />
 {{ end }}
 
+<!-- Structured Data (Schema.org) -->
+{{ partial "schema-organization.html" . }}
+{{ if eq .Section "features" }}
+  {{ partial "schema-product.html" . }}
+{{ end }}
+{{ if eq .Title "Frequently Asked Questions (FAQ)" }}
+  {{ partial "schema-faqpage.html" . }}
+{{ end }}
+
 <!-- Stylesheets -->
 <link rel="stylesheet" href="/css/page.css">
 <link rel="stylesheet" href="/css/carousel.css">

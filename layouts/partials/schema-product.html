@@ -1,0 +1,32 @@
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "{{ .Title }}",
+  "applicationCategory": "BusinessApplication",
+  "operatingSystem": "Web Browser",
+  "description": "{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "AUD",
+    "description": "Contact for pricing"
+  },
+  "provider": {
+    "@type": "Organization",
+    "name": "Cured Compliance",
+    "url": "{{ .Site.BaseURL }}"
+  },
+  "featureList": [
+    "AI-Powered Compliance Automation",
+    "24/7 Temperature Monitoring",
+    "Digital Checklists",
+    "Product Traceability",
+    "Smart Alerts & Notifications",
+    "Regulatory Framework Compliance",
+    "Reports & Dashboards",
+    "Team Collaboration"
+  ],
+  "screenshot": "{{ .Site.BaseURL }}img/demo.png"
+}
+</script>

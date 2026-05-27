@@ -1,0 +1,26 @@
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Cured Compliance",
+  "legalName": "Cured Compliance Pty Ltd",
+  "url": "{{ .Site.BaseURL }}",
+  "logo": "{{ .Site.BaseURL }}img/logo.png",
+  "description": "{{ .Site.Params.description }}",
+  "foundingDate": "2020",
+  "email": "{{ .Site.Params.Author.email }}",
+  "sameAs": [
+    {{ range $index, $element := .Site.Params.social }}{{ if $index }},{{ end }}"{{ .url }}"{{ end }}
+  ],
+  "address": {
+    "@type": "PostalAddress",
+    "addressCountry": "AU"
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "email": "{{ .Site.Params.Author.email }}",
+    "contactType": "Customer Service",
+    "availableLanguage": "English"
+  }
+}
+</script>

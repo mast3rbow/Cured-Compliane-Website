@@ -1,8 +1,6 @@
 ---
 title: Features
-description: "Comprehensive compliance platform built specifically for butchers, meat processors, and abattoirs. AI-powered automation, 24/7 temperature monitoring, digital checklists, and complete traceability."
-noindex: true
-sitemap_exclude: true
+description: "Explore AI-powered compliance automation, 24/7 IoT temperature monitoring, digital checklists, and complete traceability for meat processing operations."
 ---
 
 # AI-Powered Compliance for Meat Processing
