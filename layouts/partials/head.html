@@ -65,6 +65,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 <!-- Structured Data (Schema.org) -->
 {{ partial "schema-organization.html" . }}
+{{ if .IsHome }}
+  {{ partial "schema-localbusiness.html" . }}
+  {{ partial "schema-review.html" . }}
+{{ end }}
 {{ if eq .Section "features" }}
   {{ partial "schema-product.html" . }}
 {{ end }}
@@ -74,8 +78,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 {{ if eq .Section "posts" }}
   {{ partial "schema-article.html" . }}
 {{ end }}
-{{ if .IsHome }}
-  {{ partial "schema-review.html" . }}
+{{ if eq .Title "About Us!" }}
+  {{ partial "schema-person.html" . }}
 {{ end }}
 
 <!-- Stylesheets -->

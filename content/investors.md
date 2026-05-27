@@ -1,7 +1,8 @@
 ---
 title: Investors
-description: Information for investors
-seoTitle: Investor information about cured compliance
+description: "Join the digital revolution for Australian butchers. Cured Compliance is seeking like-minded investors passionate about food safety, compliance innovation, and supporting the meat processing industry."
+seoTitle: Investor Information - Cured Compliance Funding Opportunities
+priority: 0.3
 ---
 **Mission**
 >Our mission is to drive the digital revolution for butchers. We want to simplify how butchers can complete in the digital era. We want to simplify auditing, improve tracability and provide valueable tools to enable butchers to do more. Ultimately ensuring safer food for everyone.

@@ -6,14 +6,23 @@ canonifyUrls = "true"
 disableKinds = ["RSS","taxonomy","term"] # disable hugo's content that we don't need...
 ignoreLogs = ['warning-goldmark-raw-html']
 
-title = "Cured Compliance - Specialised compliance software for butchers and meat industry professionals." # page title -> see ./layouts/partials/head.html
+title = "Meat Processing Compliance Software | AI, IoT & Digital Checklists | Cured Compliance" # page title -> see ./layouts/partials/head.html
 
 [author]
     name = "Cured Compliance"
-    email = "help@curedcompliance.com"
+    email = "info@curedcompliance.com"
 
 [params]
-    description = "Cured Compliance - Specialised compliance software for butchers and meat industry professionals." # page description -> see ./layouts/partials/head.html
+    description = "Australian-built compliance software for butchers and meat processors. AI audits, BLE IoT temperature monitoring, digital checklists, and complete traceability. FSANZ-compliant, trusted across Australia." # page description -> see ./layouts/partials/head.html
+    phone = "+61427594365"
+    businessHours = "Mo-Su 06:00-19:00"
+    locality = "Mary Valley"
+    region = "Queensland"
+    country = "Australia"
+    
+    [params.author]
+        name = "Cured Compliance"
+        email = "info@curedcompliance.com"
     images = ["img/logo.png"] #add images here as "img/name.ext" (points to s./static/img/) to populate the default og and twitter <meta> attributes -> see ./layouts/partials/head.html
 
 [[params.social]]

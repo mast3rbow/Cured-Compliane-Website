@@ -5,6 +5,11 @@ seoTitle: About Cured Compliance - Our Story | Australian Meat Industry Software
 description: "Australian-built compliance software for butchers and meat processors. Our story began with bacon and evolved into AI-powered FSANZ compliance automation trusted by the industry."
 layout: media.html
 priority: 0.4
+founders:
+  - name: "Bryton Wishart"
+    role: "Co-Founder"
+  - name: "Ryan Robb"
+    role: "Co-Founder"
 ---
 
 **Our story begins simply as all great things do with bacon...**

@@ -1,0 +1,42 @@
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Cured Compliance",
+  "legalName": "Cured Compliance Pty Ltd",
+  "url": "{{ .Site.BaseURL }}",
+  "logo": "{{ .Site.BaseURL }}img/logo.png",
+  "image": "{{ .Site.BaseURL }}img/logo.png",
+  "description": "{{ .Site.Params.description }}",
+  "telephone": "{{ .Site.Params.phone }}",
+  "email": "{{ .Site.Params.author.email }}",
+  "priceRange": "$$",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "{{ .Site.Params.locality }}",
+    "addressRegion": "{{ .Site.Params.region }}",
+    "addressCountry": "{{ .Site.Params.country }}"
+  },
+  "areaServed": {
+    "@type": "Country",
+    "name": "Australia"
+  },
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday",
+      "Sunday"
+    ],
+    "opens": "06:00",
+    "closes": "19:00"
+  },
+  "sameAs": [
+    {{ range $index, $element := .Site.Params.social }}{{ if $index }},{{ end }}"{{ .url }}"{{ end }}
+  ]
+}
+</script>
