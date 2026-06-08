@@ -1,4 +1,9 @@
-{{ $awards := .Site.GetPage "/sections/awards" }}
+{{ $awards := .Site.GetPage "sections/awards" }}
+{{ if not $awards }}
+  {{ with .Site.GetPage "/sections" }}
+    {{ $awards = .Resources.GetMatch "awards.md" }}
+  {{ end }}
+{{ end }}
 {{ if $awards }}
 <div id="awards" class="flex flex-col justify-center items-center bg-blue-200 py-12">
     <div class="self-center text-center w-full sm:w-2/3 xl:w-1/3 px-4 sm:px:0">

@@ -1,20 +1,28 @@
-{{ $featuresPage := .Site.GetPage "sections/features" }}
-{{ $fts := sort $featuresPage.Pages "Params.weight" }}
+{{ $featuresPage := .Site.GetPage "features" }}
+{{ $legacyFeaturesPage := .Site.GetPage "sections/features" }}
+{{ $fts := where .Site.RegularPages "Section" "features" }}
+{{ if not $fts }}
+    {{ $fts = slice }}
+{{ end }}
+{{ if and (eq (len $fts) 0) $legacyFeaturesPage }}
+    {{ $fts = $legacyFeaturesPage.Pages }}
+{{ end }}
+{{ $fts = sort $fts "Params.weight" }}
 <div id="features" class="w-full py-16 bg-white">
     <div class="w-full sm:w-2/3 xl:w-3/4 mx-auto px-4">
-        <h2 class="font-bold tracking-wider text-gray-800 text-4xl mb-4 text-center">{{ $featuresPage.Title | default "Core Features" }}</h2>
-        <p class="font-light text-gray-600 text-xl mb-6 text-center">{{ $featuresPage.Params.catchline | default "Everything you need for complete compliance management" }}</p>
+                <h2 class="font-bold tracking-wider text-gray-800 text-4xl mb-4 text-center">{{ if $featuresPage }}{{ $featuresPage.Title | default "Core Features" }}{{ else }}Core Features{{ end }}</h2>
+                <p class="font-light text-gray-600 text-xl mb-6 text-center">{{ if $featuresPage }}{{ $featuresPage.Params.catchline | default "Everything you need for complete compliance management" }}{{ else }}Everything you need for complete compliance management{{ end }}</p>
         
         <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 2rem; font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif;">
             
             {{ range $fts }}
             <!-- {{ .Title }} -->
-            <a href="{{ .Params.url }}" style="display: block; background: #f9fafb; border: 1px solid #e5e7eb; border-radius: 0.75rem; padding: 2rem; text-align: center; transition: all 0.3s ease; text-decoration: none;" onmouseover="this.style.background='white'; this.style.boxShadow='0 10px 25px -5px rgba(0, 0, 0, 0.1)'; this.style.borderColor='#3b82f6'; this.style.transform='translateY(-4px)';" onmouseout="this.style.background='#f9fafb'; this.style.boxShadow='none'; this.style.borderColor='#e5e7eb'; this.style.transform='translateY(0)';">
+            <a href="{{ .RelPermalink | default .Params.url }}" style="display: block; background: #f9fafb; border: 1px solid #e5e7eb; border-radius: 0.75rem; padding: 2rem; text-align: center; transition: all 0.3s ease; text-decoration: none;" onmouseover="this.style.background='white'; this.style.boxShadow='0 10px 25px -5px rgba(0, 0, 0, 0.1)'; this.style.borderColor='#3b82f6'; this.style.transform='translateY(-4px)';" onmouseout="this.style.background='#f9fafb'; this.style.boxShadow='none'; this.style.borderColor='#e5e7eb'; this.style.transform='translateY(0)';">
                 <div style="color: #3b82f6; font-size: 3rem; margin-bottom: 1rem;">
                     <i class="{{ .Params.icon }}"></i>
                 </div>
                 <h3 style="font-size: 1.25rem; font-weight: bold; color: #1f2937; margin-bottom: 0.5rem;">{{ .Title }}</h3>
-                <p style="color: #6b7280; font-size: 0.875rem; line-height: 1.5;">{{ .Content }}</p>
+                <p style="color: #6b7280; font-size: 0.875rem; line-height: 1.5;">{{ .Params.catchphrase | default (.Summary | plainify | truncate 140) }}</p>
             </a>
             {{ end }}
             
