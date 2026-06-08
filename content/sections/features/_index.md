@@ -5,5 +5,5 @@ headless: true
 cascade:
   build:
     render: false
-    list: local
+    list: always
 ---
