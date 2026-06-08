@@ -3,7 +3,7 @@ title: Team Management
 weight: 8
 icon: fa-solid fa-users
 url: /features/team-collaboration/
-_build:
+build:
   render: false
 ---
 

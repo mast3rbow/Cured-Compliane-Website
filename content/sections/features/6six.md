@@ -3,7 +3,7 @@ title: Ready Compliance
 weight: 6
 icon: fa-solid fa-gavel
 url: /features/regulatory-frameworks/
-_build:
+build:
   render: false
 ---
 

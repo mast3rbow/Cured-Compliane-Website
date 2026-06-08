@@ -3,7 +3,7 @@ title: 24/7 Temperature Monitoring
 weight: 2
 icon: fa-solid fa-thermometer
 url: /features/temperature-monitoring/
-_build:
+build:
   render: false
 ---
 

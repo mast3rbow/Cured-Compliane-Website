@@ -3,7 +3,7 @@ title: Product Traceability
 weight: 4
 icon: fa-solid fa-barcode
 url: /features/traceability/
-_build:
+build:
   render: false
 ---
 

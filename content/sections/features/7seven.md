@@ -3,7 +3,7 @@ title: Inbuilt Reporting
 weight: 7
 icon: fa-solid fa-chart-line
 url: /features/reports-dashboards/
-_build:
+build:
   render: false
 ---
 
