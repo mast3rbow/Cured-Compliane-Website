@@ -10,4 +10,4 @@ awards:
     description: "Recognized for innovative compliance solutions in the meat processing industry"
 ---
 
-Cured Compliance has been recognized for its innovative compliance solutions, winning the prestigious NBN Innovate Award for 2024, along with multiple accolades for its groundbreaking innovations from various business awards
+Cured Compliance has been recognised for its innovative solutions and groundbreaking work in compliance through a multitude of accolades and awards. Most notably, winning the prestigious NBN Innovate Award for 2024. 

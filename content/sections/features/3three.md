@@ -7,4 +7,4 @@ build:
   render: false
 ---
 
-Replace clipboards with mobile checklists. **Photo evidence**, never miss a checklist with alerts and reminders
+Replace clipboards with mobile checklists, digital alerts and reminders, and **photo evidence**. 

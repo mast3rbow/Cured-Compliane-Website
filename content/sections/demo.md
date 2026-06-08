@@ -1,8 +1,8 @@
 ---
-title: Get a demo
+title: Book a Demo
 image: "/img/temp.webp"
 ---
 
-**Register for a demo...**
+**And Experience the Ease of Cured Compliance.**
 
-Register below for one of our team members to give you a guided demo of the Cured Compliance platform.
+Register below and one of our team members will be in touch to provide a guided demonstration of the Cured Compliance platform. 

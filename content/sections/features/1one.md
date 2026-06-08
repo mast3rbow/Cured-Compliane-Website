@@ -7,4 +7,4 @@ build:
   render: false
 ---
 
-Monthly compliance audits in **10 minutes**. Your 24/7 compliance officer that never takes a day off.
+Monthly compliance audits are complete in **10 minutes** with your 24/7 compliance officer that never takes a day off. 

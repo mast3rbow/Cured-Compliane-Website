@@ -7,4 +7,4 @@ build:
   render: false
 ---
 
-**Role-based access** for staff. Mobile-first design for butchers on the floor.
+Mobile-first design and **role-based access** for butchers and team working on the floor. 

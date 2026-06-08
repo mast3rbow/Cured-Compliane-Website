@@ -7,4 +7,4 @@ build:
   render: false
 ---
 
-BLE IoT sensors track every fridge or freezer. **Instant SMS alerts** when temps exceed your threshhold
+BLE IoT sensors track every fridge and freezer. **Instant alerts** when temperatures exceed your thresholds. 

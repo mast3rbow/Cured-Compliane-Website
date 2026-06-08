@@ -7,4 +7,4 @@ build:
   render: false
 ---
 
-**Tracability made easy**. Doing high-risk products where you need tracability we make it easy and tracable. 
+Traceability **made easy** with simple logging and near instantaneous tracking for all high-risk products. 

@@ -2,4 +2,4 @@
 title: Registration
 ---
 
-Register your demo and we will get contact within a business day to organise a time!
+We will be in touch within a business day to organise a demonstration! 

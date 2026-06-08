@@ -7,4 +7,4 @@ build:
   render: false
 ---
 
-**Multi-channel notifications**. Get notified before problems become disasters via SMS, email, voice.
+**Multi-channel notification** options; get notified before problems become disasters via email, SMS, and voice. 

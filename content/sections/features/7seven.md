@@ -7,4 +7,4 @@ build:
   render: false
 ---
 
-**Give remote access** to inspectors to the comphrensive reporting for them to look at locally or remote. 
+Give inspectors **direct access** to the comprehensive reporting for instore or remote viewing. 

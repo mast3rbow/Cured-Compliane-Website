@@ -7,4 +7,4 @@ build:
   render: false
 ---
 
-**Pre-loaded** with FSANZ and state regulations, with contineous updates as regulation is updated
+**Pre-loaded** FSANZ and state regulations with continuous updates as regulations evolve. 
