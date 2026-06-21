@@ -38,6 +38,18 @@ title = "Meat Processing Compliance Software | AI, IoT & Digital Checklists | Cu
   filename = 'sitemap.xml'
   priority = 0.5
 
+[mediaTypes."text/plain"]
+  suffixes = ["txt"]
+
+[outputFormats.LLMS]
+  mediaType = "text/plain"
+  baseName = "llms"
+  isPlainText = true
+  notAlternative = true
+
+[outputs]
+  home = ["HTML", "LLMS"]
+
 [menus]
   [[menus.main]]
     identifier = "Home"

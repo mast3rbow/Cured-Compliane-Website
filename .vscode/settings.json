@@ -2,5 +2,8 @@
     "search.useIgnoreFiles": true,
     "terminal.integrated.automationProfile.windows": {
         
+    },
+    "chat.tools.terminal.autoApprove": {
+        "hugo": true
     }
 }
