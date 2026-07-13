@@ -1,6 +1,6 @@
 ---
 title: "24/7 Temperature Monitoring & IoT"
-catchphrase: "Never lose $15,000 in spoiled product again"
+catchphrase: "Don't lose $$$ on spoiled product again"
 icon: "fa-solid fa-thermometer"
 relatedTags: ["monitoring", "iot", "alerts"]
 weight: 12
