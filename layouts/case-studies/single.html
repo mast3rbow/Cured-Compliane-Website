@@ -10,6 +10,10 @@
       .case-study-body details { margin-top: 2rem; background: white; border: 1px solid #e5e7eb; border-radius: 0.75rem; padding: 1rem 1.25rem; font-size: 1rem; }
       .case-study-body summary { cursor: pointer; color: #3b82f6; }
       .case-study-body details[open] summary { margin-bottom: 1rem; }
+      /* Compact the shared registration section here: the blue CTA banner above replaces its heading and intro. */
+      #register { min-height: 0; padding: 2.5rem 0; }
+      #register > div > h2, #register > div > div.font-light { display: none; }
+      #register form { margin-top: 0; margin-bottom: 0; }
     </style>
 
     {{ partial "navbar.html" . }}
