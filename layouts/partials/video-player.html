@@ -1,0 +1,8 @@
+{{- /* Expects dict: src (required), poster, autoplay (bool) */ -}}
+<video style="width: 100%; border-radius: 0.75rem; background: #000; box-shadow: 0 10px 25px -5px rgba(0,0,0,0.2);"
+  controls preload="metadata" playsinline
+  {{ with .poster }}poster="{{ partial "video-url.html" . }}"{{ end }}
+  {{ if .autoplay }}autoplay muted loop{{ end }}>
+  <source src="{{ partial "video-url.html" .src }}" type="video/mp4">
+  Your browser does not support the video tag.
+</video>

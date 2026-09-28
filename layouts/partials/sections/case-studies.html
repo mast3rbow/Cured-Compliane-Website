@@ -1,0 +1,18 @@
+{{- /* Homepage teaser: latest 3 listed case studies. Renders nothing until one is published. */ -}}
+{{ with site.GetPage "/case-studies" }}
+{{ $studies := first 3 (where .Pages ".Params.unlisted" "!=" true) }}
+{{ if $studies }}
+<div id="case-studies" class="flex flex-col justify-center items-center bg-gray-50 py-12">
+    <div class="w-full max-w-6xl mx-auto px-4 text-center">
+        <h2 class="font-bold tracking-wider text-gray-800 text-4xl mb-4">{{ .Title }}</h2>
+        {{ with .Description }}<p class="font-light text-black text-xl mb-8">{{ . }}</p>{{ end }}
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; margin-bottom: 2rem;">
+            {{ range $studies }}
+                {{ partial "case-study-card.html" . }}
+            {{ end }}
+        </div>
+        <a href="{{ .RelPermalink }}" style="display: inline-block; background: #3b82f6; color: white; padding: 0.875rem 2rem; border-radius: 9999px; font-weight: 600; text-decoration: none;">View all case studies</a>
+    </div>
+</div>
+{{ end }}
+{{ end }}

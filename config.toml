@@ -14,6 +14,7 @@ title = "Meat Processing Compliance Software | AI, IoT & Digital Checklists | Cu
 
 [params]
     description = "Australian-built compliance software for butchers and meat processors. AI audits, BLE IoT temperature monitoring, digital checklists, and complete traceability. FSANZ-compliant, trusted across Australia." # page description -> see ./layouts/partials/head.html
+    videoBaseURL = "https://websitestorageaccount.blob.core.windows.net/videos/" # Azure Blob container holding case study videos + posters -> see ./layouts/partials/video-url.html
     phone = "+61427594365"
     businessHours = "Mo-Su 06:00-19:00"
     locality = "Mary Valley"
@@ -71,6 +72,11 @@ title = "Meat Processing Compliance Software | AI, IoT & Digital Checklists | Cu
     name = 'Resources'
     pageRef = '/resources'
     weight = 30
+  [[menus.main]]
+    identifier = "case-studies"
+    name = 'Case Studies'
+    pageRef = '/case-studies'
+    weight = 35
   [[menus.main]]
     identifier = "media"
     name = 'Media'

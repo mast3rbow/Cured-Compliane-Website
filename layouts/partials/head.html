@@ -19,6 +19,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta name="author" content="Cured Compliance Pty Ltd">
 
 <!-- BEGIN SOCIAL META DATA -->
+        {{ if and (eq .Section "case-studies") .IsPage }}
+        {{ with .Params.poster }}<meta property="og:image" content="{{ partial "video-url.html" . | absURL }}">{{ end }}
+        {{ with .Params.video }}<meta property="og:video" content="{{ partial "video-url.html" . | absURL }}">
+        <meta property="og:video:type" content="video/mp4">{{ end }}
+        {{ end }}
         {{ template "_internal/twitter_cards.html" . }}
         {{ template "_internal/opengraph.html" . }}
 <!-- ./END SOCIAL META DATA -->

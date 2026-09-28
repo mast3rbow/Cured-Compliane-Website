@@ -1,0 +1,86 @@
+{{ define "main" }}
+
+    <link rel="stylesheet"  href="/css/normalize.min.css">
+
+    <style>
+      .case-study-body h2, .case-study-body h3 { font-size: 1.25rem; font-weight: bold; margin: 1.5rem 0 0.5rem; }
+      .case-study-body p, .case-study-body ul { margin-bottom: 1rem; }
+      .case-study-body ul { list-style: disc; padding-left: 1.5rem; }
+      .case-study-body blockquote { border-left: 4px solid #3b82f6; padding-left: 1rem; font-style: italic; color: #374151; }
+      .case-study-body details { margin-top: 2rem; background: white; border: 1px solid #e5e7eb; border-radius: 0.75rem; padding: 1rem 1.25rem; font-size: 1rem; }
+      .case-study-body summary { cursor: pointer; color: #3b82f6; }
+      .case-study-body details[open] summary { margin-bottom: 1rem; }
+    </style>
+
+    {{ partial "navbar.html" . }}
+
+    <div class="w-full flex flex-col justify-center items-center">
+        <div class="self-center w-full lg:w-2/3 xl:w-1/2 px-4 pt-16 pb-12">
+            <a href="{{ .Parent.RelPermalink }}" style="color: #3b82f6; font-size: 0.875rem; font-weight: 600;"><i class="fa-solid fa-arrow-left"></i> All case studies</a>
+            <h1 class="font-bold uppercase tracking-widest text-gray-800 text-2xl mt-4 mb-2">{{ .Title }}</h1>
+            {{ with .Params.business }}<p style="color: #3b82f6; font-weight: 600; margin-bottom: 1rem;">{{ . }}{{ with $.Params.location }} &middot; {{ . }}{{ end }}</p>{{ end }}
+
+            {{ partial "video-player.html" (dict "src" .Params.video "poster" .Params.poster) }}
+
+            <div style="display: flex; gap: 0.75rem; flex-wrap: wrap; margin: 1.25rem 0;">
+                <button type="button" id="share-video" data-url="{{ .Permalink }}" data-title="{{ .Title }}"
+                    style="display: inline-flex; align-items: center; gap: 0.5rem; background: #3b82f6; color: white; padding: 0.625rem 1.5rem; border-radius: 9999px; font-weight: 600; border: 0; cursor: pointer;">
+                    <i class="fa-solid fa-share-nodes"></i><span>Share</span>
+                </button>
+                <button type="button" id="copy-video-link" data-url="{{ .Permalink }}"
+                    style="display: inline-flex; align-items: center; gap: 0.5rem; background: white; color: #3b82f6; border: 2px solid #3b82f6; padding: 0.5rem 1.5rem; border-radius: 9999px; font-weight: 600; cursor: pointer;">
+                    <i class="fa-solid fa-link"></i><span>Copy link</span>
+                </button>
+                <a href="{{ .Permalink }}#register"
+                    style="display: inline-flex; align-items: center; gap: 0.5rem; background: #1f2937; color: white; padding: 0.625rem 1.5rem; border-radius: 9999px; font-weight: 600; text-decoration: none;">
+                    <i class="fa-solid fa-envelope"></i><span>Enquire now</span>
+                </a>
+            </div>
+
+            <div class="case-study-body font-light text-black text-lg">
+                {{ .Content }}
+            </div>
+        </div>
+    </div>
+
+    <!-- Enquiry CTA: lead-in, then the site's standard registration form -->
+    <div class="w-full bg-gradient-to-r from-blue-600 to-blue-800 text-white py-12">
+        <div class="w-full sm:w-2/3 xl:w-1/2 mx-auto px-4 text-center">
+            <h2 class="font-bold text-3xl mb-4">Want results like {{ .Params.business | default "this" }}?</h2>
+            <p class="text-xl text-blue-100">Leave your details below and we'll be in touch within a business day to organise a demonstration for your shop.</p>
+        </div>
+    </div>
+    {{ partial "sections/register.html" . }}
+
+    <script>
+    (function () {
+        var share = document.getElementById('share-video');
+        var copy = document.getElementById('copy-video-link');
+
+        function copyLink(btn) {
+            var label = btn.querySelector('span');
+            var done = function () {
+                label.textContent = 'Link copied';
+                setTimeout(function () { label.textContent = 'Copy link'; }, 2000);
+            };
+            if (navigator.clipboard) {
+                navigator.clipboard.writeText(btn.dataset.url).then(done, function () { window.prompt('Copy this link:', btn.dataset.url); });
+            } else {
+                window.prompt('Copy this link:', btn.dataset.url);
+            }
+        }
+
+        copy.addEventListener('click', function () { copyLink(copy); });
+
+        // Native share sheet (mobile, Edge, Safari); hide the button where it isn't supported.
+        if (navigator.share) {
+            share.addEventListener('click', function () {
+                navigator.share({ title: share.dataset.title, url: share.dataset.url }).catch(function () {});
+            });
+        } else {
+            share.style.display = 'none';
+        }
+    })();
+    </script>
+
+{{ end }}

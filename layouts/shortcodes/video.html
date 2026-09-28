@@ -1,0 +1,4 @@
+{{- /* Usage: {{< video src="demo.mp4" poster="demo.jpg" >}}  add autoplay="true" for a muted looping clip */ -}}
+<div style="margin: 2rem 0;">
+  {{ partial "video-player.html" (dict "src" (.Get "src") "poster" (.Get "poster") "autoplay" (eq (.Get "autoplay") "true")) }}
+</div>

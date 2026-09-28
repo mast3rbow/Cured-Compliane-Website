@@ -1,0 +1,10 @@
+<a href="{{ .RelPermalink }}" style="display: flex; flex-direction: column; background: white; border: 1px solid #e5e7eb; border-radius: 0.75rem; overflow: hidden; text-decoration: none; text-align: left; transition: all 0.3s ease;" onmouseover="this.style.boxShadow='0 10px 25px -5px rgba(0, 0, 0, 0.1)'; this.style.borderColor='#3b82f6'; this.style.transform='translateY(-4px)';" onmouseout="this.style.boxShadow='none'; this.style.borderColor='#e5e7eb'; this.style.transform='translateY(0)';">
+    <div style="aspect-ratio: 16 / 9; background: #111827 center / cover no-repeat{{ with .Params.poster }}; background-image: url('{{ partial "video-url.html" . }}'){{ end }}; display: flex; align-items: center; justify-content: center;">
+        <i class="fa-solid fa-circle-play" style="color: white; font-size: 3rem; opacity: 0.9;"></i>
+    </div>
+    <div style="padding: 1.25rem;">
+        <h3 style="font-size: 1.125rem; font-weight: bold; color: #1f2937; margin-bottom: 0.25rem;">{{ .Title }}</h3>
+        {{ with .Params.business }}<p style="color: #3b82f6; font-size: 0.875rem; font-weight: 600; margin-bottom: 0.5rem;">{{ . }}{{ with $.Params.location }} &middot; {{ . }}{{ end }}</p>{{ end }}
+        {{ with .Description }}<p style="color: #6b7280; font-size: 0.875rem; line-height: 1.6;">{{ . }}</p>{{ end }}
+    </div>
+</a>
