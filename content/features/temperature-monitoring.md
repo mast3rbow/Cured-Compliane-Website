@@ -151,7 +151,7 @@ Accepted by all regulators. Inspector-ready reports at the click of a button.
 {{< tech-specs title="Data Analysis & Reporting" >}}
 **Extended Processing**: analyse months of IoT data (100,000+ readings) 
 **PostgreSQL Storage**: Unlimited historical data retention (7+ years)  
-**Azure Blob Backup**: Automated daily backups of all sensor data  
+**Managed Backups**: Automated daily backups of all sensor data on managed PostgreSQL, hosted in Sydney  
 **Compliance Reports**: Auto-generated graphs meeting regulatory requirements  
 {{< /tech-specs >}}
 
