@@ -1,3 +1,6 @@
+# PLACEHOLDER DATA: these are not real customers. Do not publish.
+# Replace with real, consented testimonials before re-enabling
+# sections/testimonials.html (layouts/index.html) and schema-review.html (head.html).
 testimonials:
   - name: "Sarah Mitchell"
     organization: "Premium Meats Melbourne"
