@@ -1,0 +1,24 @@
+{{ define "main" -}}
+{{- $llm := site.GetPage "/llm" -}}
+# {{ site.Title }}: full text
+
+> {{ site.Params.description }}
+
+{{ with $llm }}{{ .RawContent | strings.TrimSpace }}{{ end }}
+
+This file contains the full text of the main pages on {{ site.BaseURL }}. Legal pages are listed in {{ "llms.txt" | absURL }}.
+{{ range partial "llms/pages.html" . -}}
+{{ if and .pages (ne .title "Optional") -}}
+{{ range .pages }}{{ if not .IsHome }}
+---
+
+# {{ .Title }}
+
+URL: {{ .Permalink }}
+{{ with .Description }}Summary: {{ . }}
+{{ end }}
+{{ partial "llms/text.html" . }}
+{{ end }}{{ end -}}
+{{ end -}}
+{{ end -}}
+{{ end }}

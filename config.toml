@@ -50,8 +50,14 @@ enableGitInfo = true # sitemap <lastmod> from each file's last commit
   isPlainText = true
   notAlternative = true
 
+[outputFormats.LLMSFULL]
+  mediaType = "text/plain"
+  baseName = "llms-full"
+  isPlainText = true
+  notAlternative = true
+
 [outputs]
-  home = ["HTML", "LLMS"]
+  home = ["HTML", "LLMS", "LLMSFULL"]
 
 [menus]
   [[menus.main]]

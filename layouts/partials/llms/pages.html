@@ -1,0 +1,17 @@
+{{- /* Groups of public pages for llms.txt, llms-full.txt and /llm/. Returns a slice of dicts: {title, pages}. */ -}}
+{{- $public := where (where site.RegularPages "Params.noindex" "ne" true) "Params.sitemap_exclude" "ne" true -}}
+{{- $public = where $public "Params.unlisted" "ne" true -}}
+{{- $product := slice site.Home -}}
+{{- range slice "/solutions-for-butchers" "/features" -}}{{ with site.GetPage . }}{{ $product = $product | append . }}{{ end }}{{- end -}}
+{{- $company := slice -}}
+{{- range slice "/about" "/media" -}}{{ with site.GetPage . }}{{ $company = $company | append . }}{{ end }}{{- end -}}
+{{- $optional := slice -}}
+{{- range slice "/investors" "/privacy" "/imprint" -}}{{ with site.GetPage . }}{{ $optional = $optional | append . }}{{ end }}{{- end -}}
+{{- return slice
+  (dict "title" "Product" "pages" $product)
+  (dict "title" "Features" "pages" (where $public "Section" "features").ByWeight)
+  (dict "title" "Case studies" "pages" (where $public "Section" "case-studies").ByDate.Reverse)
+  (dict "title" "Resources" "pages" (where $public "Section" "resources").ByTitle)
+  (dict "title" "Company" "pages" $company)
+  (dict "title" "Optional" "pages" $optional)
+-}}
