@@ -25,7 +25,7 @@
                 <source srcset="{{ $webpPath | safeURL }}" type="image/webp" >
               {{- end }}
             {{- end }}
-            <img class="image_slider" src="{{ $slide.image }}" alt="a slider image of a customer" />
+            <img class="image_slider" src="{{ $slide.image }}" alt="{{ $slide.alt | default "Cured Compliance customer logo" }}" loading="lazy" decoding="async" />
           </picture>
             
         </div>

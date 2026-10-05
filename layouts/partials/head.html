@@ -14,21 +14,21 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <link rel="preconnect" href="https://unpkg.com" crossorigin>
 <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
 <link rel="dns-prefetch" href="https://www.googletagmanager.com">
-<link rel="icon" type="image/png" href="/img/logo.png" />
+<link rel="icon" type="image/x-icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="/img/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="author" content="Cured Compliance Pty Ltd">
 
-<!-- BEGIN SOCIAL META DATA -->
-        {{ if and (eq .Section "case-studies") .IsPage }}
-        {{ with .Params.poster }}<meta property="og:image" content="{{ partial "video-url.html" . | absURL }}">{{ end }}
-        {{ with .Params.video }}<meta property="og:video" content="{{ partial "video-url.html" . | absURL }}">
-        <meta property="og:video:type" content="video/mp4">{{ end }}
-        {{ end }}
-        {{ template "_internal/twitter_cards.html" . }}
-        {{ template "_internal/opengraph.html" . }}
-<!-- ./END SOCIAL META DATA -->
-<base href="{{ .Site.BaseURL }}">
-<meta name="theme-color" content="#ffffff">
+{{- $title := .Params.seoTitle | default (printf "%s | %s" .Title site.Title) }}
+{{- if .IsHome }}{{ $title = site.Params.homeTitle | default site.Title }}{{ end }}
+{{- $description := .Description | default site.Params.description }}
+{{- $image := index (.Params.images | default site.Params.images) 0 | absURL }}
+{{- if and (eq .Section "case-studies") .IsPage }}{{ with .Params.poster }}{{ $image = partial "video-url.html" . | absURL }}{{ end }}{{ end }}
+
+<title>{{ $title }}</title>
+<meta name="description" content="{{ $description }}" />
+<link rel="canonical" href="{{ .Permalink }}" />
 
 {{ if .Params.noindex }}
   <meta name="robots" content="noindex, nofollow">
@@ -36,37 +36,23 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <meta name="robots" content="index, follow">
 {{ end }}
 
-{{ if .IsHome }}
-  <!-- Pagination logic for home page -->
-  {{ $paginator := .Paginate (where .Site.RegularPages ".Params.post" "!=" false) }}
-  {{ if eq $paginator.PageNumber 1 }}
-    <title>{{ .Title }}</title>
-    <meta name="description" content="{{ .Site.Params.description }}" />
-  {{ else }}
-    <title>{{ .Title }} | Page {{ $paginator.PageNumber }}</title>
-    <meta name="description" content="This is page {{ $paginator.PageNumber }} of our content." />
-  {{ end }}
-  <link rel="canonical" href="{{ .Permalink }}" />
-{{ else if .IsSection }}
-  <!-- Section Page Pagination Logic -->
-  {{ $paginator := .Paginate (where .Site.RegularPages ".Params.post" "!=" false) }}
-  <meta name="description" content="Paginated section page" />
-  {{ if eq $paginator.PageNumber 1 }}
-    <title>{{ .Title }}</title>
-  {{ else }}
-    <title>{{ .Title }} | Page {{ $paginator.PageNumber }}</title>
-  {{ end }}
-  <link rel="canonical" href="{{ .Permalink }}page/{{ $paginator.PageNumber }}/" />
-{{ else }}
-  <!-- Single Page Logic -->
-  {{ if .Params.seoTitle }}
-    <title>{{ .Params.seoTitle }}</title>
-  {{ else }}
-    <title>{{ .Title }}</title>
-  {{ end }}
-  <meta name="description" content="{{ .Description }}" />
-  <link rel="canonical" href="{{ .Permalink }}" />
-{{ end }}
+<!-- BEGIN SOCIAL META DATA -->
+<meta property="og:site_name" content="{{ site.Title }}">
+<meta property="og:locale" content="en_AU">
+<meta property="og:type" content="{{ if .IsHome }}website{{ else if .IsPage }}article{{ else }}website{{ end }}">
+<meta property="og:url" content="{{ .Permalink }}">
+<meta property="og:title" content="{{ $title }}">
+<meta property="og:description" content="{{ $description }}">
+<meta property="og:image" content="{{ $image }}">
+{{ if and (eq .Section "case-studies") .IsPage }}{{ with .Params.video }}<meta property="og:video" content="{{ partial "video-url.html" . | absURL }}">
+<meta property="og:video:type" content="video/mp4">{{ end }}{{ end }}
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ $title }}">
+<meta name="twitter:description" content="{{ $description }}">
+<meta name="twitter:image" content="{{ $image }}">
+<!-- ./END SOCIAL META DATA -->
+<base href="{{ .Site.BaseURL }}">
+<meta name="theme-color" content="#ffffff">
 
 <!-- Structured Data (Schema.org) -->
 {{ partial "schema-organization.html" . }}
@@ -77,15 +63,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 {{ if eq .Section "features" }}
   {{ partial "schema-product.html" . }}
 {{ end }}
-{{ if eq .Title "Frequently Asked Questions (FAQ)" }}
+{{ if .Params.faqSchema }}
   {{ partial "schema-faqpage.html" . }}
 {{ end }}
 {{ if eq .Section "posts" }}
   {{ partial "schema-article.html" . }}
 {{ end }}
-{{ if eq .Title "About Us!" }}
-  {{ partial "schema-person.html" . }}
+{{ if and (eq .Section "case-studies") .IsPage }}
+  {{ partial "schema-video.html" . }}
 {{ end }}
+{{ partial "schema-person.html" . }}
 
 <!-- Stylesheets -->
 <link rel="stylesheet" href="/css/page.css">

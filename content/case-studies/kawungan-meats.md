@@ -1,5 +1,6 @@
 ---
 title: "From Pen and Paper to Impressing Auditors"
+date: 2026-09-29
 seoTitle: "Kawungan Quality Meats Case Study - Hervey Bay Butcher | Cured Compliance"
 business: "Kawungan Quality Meats"
 location: "Hervey Bay, QLD"

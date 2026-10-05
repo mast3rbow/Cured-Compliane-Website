@@ -77,7 +77,7 @@ Download temperature logs for any date range. Perfect for inspector visits, cust
 {{< /benefit >}}
 {{< /benefit-cards >}}
 
-<img src="/img/gateway.png" alt="BLE 5.0 IoT temperature sensor and wireless gateway installed in commercial refrigeration unit for 24/7 cold chain monitoring" style="border-radius: 0.75rem; width: 100%; max-width: 100%; margin: 2rem 0;" loading="lazy" />
+<img src="/img/gateway.webp" width="2517" height="2264" alt="BLE 5.0 IoT temperature sensor and wireless gateway installed in commercial refrigeration unit for 24/7 cold chain monitoring" style="border-radius: 0.75rem; width: 100%; max-width: 100%; height: auto; margin: 2rem 0;" loading="lazy" />
 
 <div style="display: flex; justify-content: center; margin: 2rem 0;">
 <div style="max-width: 900px; width: 100%;">

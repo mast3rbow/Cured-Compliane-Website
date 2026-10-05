@@ -1,7 +1,7 @@
 ---
 title: Regulatory Acceptance & Compliance Standards
 seoTitle: Are Digital Temperature Logs Accepted by Food Inspectors? | Australia
-description: "Yes. Digital temperature monitoring systems are accepted by Australian food authorities when they meet FSANZ Standard 3.2.2 requirements. Learn how Cured Compliance meets regulatory standards across NSW, QLD, VIC, SA, WA, TAS, NT, and ACT."
+description: "Are digital temperature logs accepted by food inspectors? See how digital monitoring meets FSANZ Standard 3.2.2 and requirements in every Australian state."
 priority: 0.6
 menus:
   main:

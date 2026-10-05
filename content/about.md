@@ -2,7 +2,7 @@
 title: About Us!
 sitemap_exclude: false
 seoTitle: About Cured Compliance - Our Story | Australian Meat Industry Software
-description: "Australian-built compliance software for butchers and meat processors. Our story began with bacon and evolved into AI-powered FSANZ compliance automation trusted by the industry."
+description: "Meet the founders behind Cured Compliance. Built inside a Mary Valley smallgoods business, now used by butchers in every Australian state and territory."
 layout: media.html
 priority: 0.4
 founders:

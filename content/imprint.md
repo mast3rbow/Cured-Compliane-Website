@@ -1,7 +1,7 @@
 ---
 title: Terms and Services
-description: Information according to legal requirements apply.
-seoTitle: Terms and Services for Cured compliance
+description: "Terms of service for the Cured Compliance website and compliance platform, operated by Cured Compliance Pty Ltd (ABN 97 179 655 366)."
+seoTitle: Terms of Service | Cured Compliance
 priority: 0.2
 ---
 Your use of the curedcomplaince.com or curedcompliance.com.au website (“CuredCompliance website”) is owned by 97 179 655 366 and its related entities (“we”, “our” or “us”) is subject to:
