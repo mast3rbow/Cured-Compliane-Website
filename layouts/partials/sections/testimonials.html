@@ -1,0 +1,26 @@
+{{- /* Homepage testimonials from data/testimonials.yaml. These are the same reviews marked up in schema-review.html, so the structured data matches visible content. */ -}}
+{{ with hugo.Data.testimonials.testimonials }}
+<div id="testimonials" class="flex flex-col justify-center items-center bg-white py-12">
+    <div class="w-full max-w-6xl mx-auto px-4 text-center">
+        <h2 class="font-bold tracking-wider text-gray-800 text-4xl mb-4">What Our Customers Say</h2>
+        <p class="font-light text-black text-xl mb-8">Butchers and meat processors across Australia on running compliance with Cured Compliance.</p>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr)); gap: 1.5rem; text-align: left;">
+            {{ range . }}
+            <figure style="display: flex; flex-direction: column; background: #f9fafb; border: 1px solid #e5e7eb; border-radius: 0.75rem; padding: 1.5rem; margin: 0;">
+                {{ with .rating }}
+                <div style="color: #facc15; margin-bottom: 0.75rem;" aria-label="Rated {{ . }} out of 5">
+                    {{ range seq (int .) }}<i class="fa-solid fa-star" aria-hidden="true"></i> {{ end }}
+                </div>
+                {{ end }}
+                <blockquote style="flex: 1; font-style: italic; color: #374151; line-height: 1.6; margin: 0 0 1rem;">&ldquo;{{ .quote }}&rdquo;</blockquote>
+                <figcaption style="border-top: 1px solid #e5e7eb; padding-top: 0.75rem;">
+                    <div style="font-weight: 600; color: #1f2937;">{{ .name }}</div>
+                    <div style="font-size: 0.875rem; color: #4b5563;">{{ with .role }}{{ . }}, {{ end }}<span style="color: #3b82f6; font-weight: 500;">{{ .organization }}</span></div>
+                    {{ with .location }}<div style="font-size: 0.75rem; color: #6b7280;">{{ . }}</div>{{ end }}
+                </figcaption>
+            </figure>
+            {{ end }}
+        </div>
+    </div>
+</div>
+{{ end }}
