@@ -28,6 +28,10 @@ enableGitInfo = true # sitemap <lastmod> from each file's last commit
         name = "Cured Compliance"
         email = "info@curedcompliance.com"
 
+    [params.award]
+        name = "NBN Innovate Award"
+        year = "2023"
+
 [[params.social]]
     title = "LinkedIn"
     url = "https://linkedin.com/company/75633596" # add your linkedin profile URL
@@ -37,7 +41,6 @@ enableGitInfo = true # sitemap <lastmod> from each file's last commit
 
 [sitemap]
   changeFreq = ''
-  disable = false
   filename = 'sitemap.xml'
   priority = -1
 
@@ -70,6 +73,11 @@ enableGitInfo = true # sitemap <lastmod> from each file's last commit
     name = 'Our Story'
     pageRef = '/About'
     weight = 10
+  [[menus.main]]
+    identifier = "solutions-for-butchers"
+    name = 'Solutions'
+    url = '/solutions-for-butchers/'
+    weight = 15
   [[menus.main]]
     identifier = 'Features'
     name = 'Features'

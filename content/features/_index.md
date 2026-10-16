@@ -19,4 +19,4 @@ Built specifically for the meat industry by people who understand your challenge
 
 **vs. Building Your Own**: 1000+ hours of development already done. Battle-tested with real butcher shops. Monthly AI improvements you don't have to maintain.
 
-{{< cta text="See All Features in Action" url="/demo" icon="fa-solid fa-rocket" />}}
+{{< cta text="See All Features in Action" url="/book-a-demo/" icon="fa-solid fa-rocket" />}}

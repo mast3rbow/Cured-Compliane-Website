@@ -15,7 +15,7 @@ menu:
 
 Stop gambling with your cold chain. Every butcher knows the nightmare: you arrive Monday morning to find the weekend fridge failure destroyed $15,000 in prime cuts. Your staff are manually logging temps on clipboards (when they remember), but you know those readings can't catch a 2am compressor failure.
 
-**What if you got an SMS alert the instant your fridge hit over temp for longer then 15minutes?** Within 60 seconds of the breach, you're on the phone to your refrigeration contractor - saving your product before it's too late. That's exactly what our BLE 5.0 sensors do, 24/7, for every fridge, freezer, display counter, and cold room in your shop.
+**What if you got an SMS alert the instant your fridge hit over temp for longer than 15 minutes?** {{< spec "alert_timing" >}}. That's exactly what our BLE 5.0 sensors do, 24/7, for every fridge, freezer, display counter, and cold room in your shop.
 
 Inspectors love it too. Instead of flipping through months of clipboard logs (looking for gaps or fabricated readings), you hand them a perfect digital dashboard showing 99.9% compliance with zero manual entries. That's the difference between a 10-minute inspection and a 2-hour interrogation.
 
@@ -28,8 +28,7 @@ Inspectors love it too. Instead of flipping through months of clipboard logs (lo
 
 **Custom Alarms for Every Asset in Your Shop**
 
-Not all cold storage is created equal. Your walk-in fridge storing $20K in wholesale beef has different requirements than your display counter showcasing sausages. **Set custom temperature thresholds and alert schedules each individual unit:**
-
+Not all cold storage is created equal. Your walk-in fridge storing $20K in wholesale beef has different requirements than your display counter showcasing sausages. **Set custom temperature thresholds and alert schedules for each individual unit:**
 {{< benefit-cards >}}
 {{< benefit icon="fa-solid fa-warehouse" title="Walk-In Cold Rooms & Fridges" >}}
 Critical storage requires critical monitoring. Set alerts with escalating notifications: SMS and email first, then a phone call, Track door open/close events to catch staff leaving doors ajar with our door sensors
@@ -53,7 +52,7 @@ Specialized environments need specialized monitoring. Dry aging rooms (0-2°C, 8
 
 {{< benefit-cards >}}
 {{< benefit icon="fa-brands fa-bluetooth" title="BLE 5.0 Long-Range Sensors" >}}
-Install wireless sensors in every fridge/freezer in 2 hours. **BLE 5.0 long-range mode** reaches 100+ meters and with models to deal different types of coldroom walling. Battery life 5+ years with no maintenance.
+Install wireless sensors in every fridge/freezer in {{< spec "setup_time" >}}. **BLE 5.0 long-range mode** reaches 100+ meters and supports models for different types of coldroom walling. Battery life {{< spec "battery_life" >}} with no maintenance.
 {{< /benefit >}}
 
 {{< benefit icon="fa-solid fa-wifi" title="Gateway Connectivity" >}}
@@ -181,7 +180,7 @@ Generate PDF reports with compliance summaries: "99.8% compliance over 6 months,
 
 <img src="/img/freezer-temp.png" alt="Six month temperature compliance trend chart showing 99.6% cold chain integrity with automated logging and alert history for meat storage" style="border-radius: 0.75rem; width: 100%; max-width: 100%; margin: 2rem 0;" loading="lazy" />
 
-{{< cta text="See Temperature Monitoring Live Demo" url="/demo" icon="fa-solid fa-temperature-half" />}}
+{{< cta text="See Temperature Monitoring Live Demo" url="/book-a-demo/" icon="fa-solid fa-temperature-half" />}}
 
 ---
 

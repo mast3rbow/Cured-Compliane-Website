@@ -127,4 +127,4 @@ Monday 9:05am: System detects "Daily Pre-Start Cleaning" checklist not completed
 **Historical Tracking**: See all past alerts with response times and outcomes
 {{< /tech-specs >}}
 
-{{< cta text="Configure Your Alerts" url="/demo" icon="fa-solid fa-bell-concierge" />}}
+{{< cta text="Configure Your Alerts" url="/book-a-demo/" icon="fa-solid fa-bell-concierge" />}}

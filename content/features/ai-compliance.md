@@ -21,11 +21,54 @@ The system understands your business. It knows the difference between beef hangi
 
 **How AI Compliance Automation Works**
 
-Multiple different data points into the AI engine which is made up of audit rules from Australian national and state regulation along side your own food safety program.
+The AI engine combines temperature data, checklist records, production logs, supplier information and staff training data with Australian national and state audit rules, alongside your own food safety program.
 
-{{< ai-integration-diagram >}}
+<div style="margin: 2rem 0;">
+  <svg role="img" aria-label="AI compliance engine receiving temperature, checklist, production, training, supplier, and incident data inputs" width="700" height="420" viewBox="0 0 700 420" xmlns="http://www.w3.org/2000/svg" style="max-width: 100%; height: auto; display: block; margin: 0 auto; background: #f8fafc; border-radius: 1rem;">
+    <rect x="245" y="130" width="210" height="110" rx="20" fill="#dbeafe" stroke="#1d4ed8" stroke-width="2"/>
+    <text x="350" y="175" text-anchor="middle" font-size="24" font-weight="700" fill="#1e3a8a">AI Compliance</text>
+    <text x="350" y="205" text-anchor="middle" font-size="24" font-weight="700" fill="#1e3a8a">Engine</text>
+    <g>
+      <circle cx="100" cy="90" r="45" fill="#dbeafe" stroke="#3b82f6"/>
+      <text x="100" y="95" text-anchor="middle" font-size="22">🌡️</text>
+      <text x="100" y="135" text-anchor="middle" font-size="12">Temperature</text>
+      <line x1="145" y1="90" x2="245" y2="155" stroke="#3b82f6" stroke-width="2" marker-end="url(#arrow)"/>
+    </g>
+    <g>
+      <circle cx="600" cy="90" r="45" fill="#dbeafe" stroke="#3b82f6"/>
+      <text x="600" y="95" text-anchor="middle" font-size="22">✓</text>
+      <text x="600" y="135" text-anchor="middle" font-size="12">Checklists</text>
+      <line x1="555" y1="90" x2="455" y2="155" stroke="#3b82f6" stroke-width="2" marker-end="url(#arrow)"/>
+    </g>
+    <g>
+      <circle cx="100" cy="330" r="45" fill="#dbeafe" stroke="#3b82f6"/>
+      <text x="100" y="335" text-anchor="middle" font-size="22">📋</text>
+      <text x="100" y="375" text-anchor="middle" font-size="12">Production</text>
+      <line x1="145" y1="330" x2="245" y2="240" stroke="#3b82f6" stroke-width="2" marker-end="url(#arrow)"/>
+    </g>
+    <g>
+      <circle cx="600" cy="330" r="45" fill="#dbeafe" stroke="#3b82f6"/>
+      <text x="600" y="335" text-anchor="middle" font-size="22">🎓</text>
+      <text x="600" y="375" text-anchor="middle" font-size="12">Training</text>
+      <line x1="555" y1="330" x2="455" y2="240" stroke="#3b82f6" stroke-width="2" marker-end="url(#arrow)"/>
+    </g>
+    <defs>
+      <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+        <path d="M0,0 L0,6 L9,3 z" fill="#3b82f6" />
+      </marker>
+    </defs>
+  </svg>
+</div>
 
-**The benfits of leveraging AI for contineous auditing**
+<ul>
+  <li>Temperature and humidity data from IoT sensors</li>
+  <li>Digital checklists and process records</li>
+  <li>Production logs and batch records</li>
+  <li>Training records and staff certifications</li>
+  <li>Supplier documents and corrective actions</li>
+</ul>
+
+**The benefits of leveraging AI for continuous auditing**
 
 {{< benefit-cards >}}
 {{< benefit icon="fa-solid fa-calendar-check" title="Automated Monthly Audits" >}}
@@ -156,7 +199,7 @@ Compliance officer reviews AI findings, approves accurate ones, overrides false 
 {{< /step >}}
 {{< /timeline >}}
 
-{{< cta text="See AI Compliance in Action" url="/demo" icon="fa-solid fa-rocket" />}}
+{{< cta text="See AI Compliance in Action" url="/book-a-demo/" icon="fa-solid fa-rocket" />}}
 
 ---
 

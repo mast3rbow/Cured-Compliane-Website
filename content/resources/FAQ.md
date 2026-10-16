@@ -5,6 +5,15 @@ seoTitle: Frequently Asked Questions about Cured Compliance
 faqSchema: true
 description: "Common questions about Cured Compliance's IoT temperature monitoring, BLE sensors, digital checklists, and meat industry compliance management answered."
 priority: 0.6
+faq:
+  - question: "What is Cured Compliance?"
+    answer: "Cured Compliance is Australian food safety compliance software for butchers, smallgoods makers and meat processors. It combines BLE IoT temperature monitoring, digital checklists, batch traceability and AI-assisted compliance audits in one platform, built around FSANZ standards and each state's regulator."
+  - question: "How can I get started with Cured Compliance?"
+    answer: "Getting started is easy. Book a demo with our team and we will walk through your setup, recommend the right hardware and help you configure the system for your shop or processing site."
+  - question: "Does Cured Compliance require internet access?"
+    answer: "Internet is required for the app and reporting, but the temperature sensors continue to log locally to the gateway during an outage and sync when connectivity is restored."
+  - question: "How long do the sensors last?"
+    answer: "The standard sensors last {{< spec \"battery_life\" >}} on a typical installation."
 menus:
   main:
     parent: Resources
@@ -15,7 +24,7 @@ menus:
 
 **Q:** What is Cured Compliance?
 
-**A:** Cured Compliance is a comprehensive compliance management platform designed to simplify and streamline compliance tasks for businesses. Our solutions include IoT hardware for temperature monitoring, batch code traceability, and more.
+**A:** Cured Compliance is Australian food safety compliance software for butchers, smallgoods makers and meat processors. It combines BLE IoT temperature monitoring, digital checklists, batch traceability and AI-assisted compliance audits in one platform, built around FSANZ standards and each state's regulator.
 
 **Q:** How can I get started with Cured Compliance?
 
@@ -76,7 +85,7 @@ menus:
 
 **Q:** Are the sensors rechargeable or do they need to be replaced once the battery dies? What's the lifespan?
 
-**A:** Our BLE 5.0 sensors have non-rechargeable batteries lasting 2+ years (24-30 months typical). When batteries die, we send replacement sensors under warranty. No charging hassles, no power cables in your fridges.
+**A:** Our BLE 5.0 sensors have non-rechargeable batteries lasting {{< spec "battery_life" >}} on a typical installation. When batteries die, we send replacement sensors under warranty. No charging hassles, no power cables in your fridges.
 
 **Q:** Do the sensors need to be drilled into the wall or cabinet? How do I install them?
 
@@ -102,7 +111,7 @@ menus:
 
 **Q:** Does the app need internet? Can I use it offline?
 
-**A:** Yes, internet is required. The app needs an active connection to access temperature data, complete checklists, and sync records in real-time. Sensors transmit via BLE gateway connected to your shop Wi-Fi. For delivery tablets: You'll need mobile data (4G/5G) to access the system while on the road.
+**A:** Yes, internet is required. The app needs an active connection to access temperature data, complete checklists, and sync records in real-time. Sensors transmit via BLE gateway connected to your shop Wi‑Fi. For delivery tablets: you'll need mobile data (4G/5G) to access the system while on the road.
 
 **Q:** Can I use a phone or do I need a tablet? What works best?
 
@@ -122,7 +131,7 @@ menus:
 
 **Q:** I currently use Clever Logger (or other cloud temp system). Will it integrate with Cured Compliance?
 
-**A:** Cured Compliance is a standalone system and replaces Clever Logger. We provide temperature monitoring plus compliance checklists, traceability, and audit reporting all integrated. Our BLE 5.0 sensors offer longer battery life (2+ years) and better freezer performance. When switching: install our sensors alongside your existing ones for 24 hours to compare data accuracy, then remove the old system once confident. Historical data can be preserved via PDF exports if needed for audit continuity.
+**A:** Cured Compliance is a standalone system and replaces Clever Logger. We provide temperature monitoring plus compliance checklists, traceability, and audit reporting all integrated. Our BLE 5.0 sensors offer longer battery life (3+ years) and better freezer performance. When switching: install our sensors alongside your existing ones for 24 hours to compare data accuracy, then remove the old system once confident. Historical data can be preserved via PDF exports if needed for audit continuity.
 
 **Regulatory & Compliance Questions**
 
@@ -132,7 +141,7 @@ menus:
 
 **Q:** My NSW inspector was skeptical about cloud-based systems before. Will they accept Cured Compliance?
 
-**A:** Regulators support digital platforms as long as they meet your Food Safety Program standards. Cured Compliance provides: continuous temperature logging (every 5-15 min), tamper-proof timestamps and records, instant PDF export for inspector review, and 5+ years of data retention (exceeds requirements). If your inspector prefers paper during the audit, simply print the PDF temperature logs—you get the best of both: digital alerts and monitoring, plus paper backup for audits. Many customers report inspectors preferring digital once they see the system. One NSW customer's inspector said: "Best documentation system I've seen in 20 years."
+**A:** Regulators support digital platforms as long as they meet your Food Safety Program standards. Cured Compliance provides: continuous temperature logging (every 5 min), tamper-proof timestamps and records, instant PDF export for inspector review, and 3+ years of data retention (exceeds requirements). If your inspector prefers paper during the audit, simply print the PDF temperature logs—you get the best of both: digital alerts and monitoring, plus paper backup for audits. Many customers report inspectors preferring digital once they see the system. One NSW customer's inspector said: "Best documentation system I've seen in 20 years."
 
 **Q:** Do you have customers in NSW doing smallgoods who could share their experience?
 

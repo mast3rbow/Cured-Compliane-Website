@@ -1,5 +1,5 @@
 ---
-title: About Us!
+title: About Cured Compliance
 sitemap_exclude: false
 seoTitle: About Cured Compliance - Our Story | Australian Meat Industry Software
 description: "Meet the founders behind Cured Compliance. Built inside a Mary Valley smallgoods business, now used by butchers in every Australian state and territory."
@@ -11,27 +11,29 @@ founders:
     role: "Co-Founder"
 ---
 
-**Our story begins simply as all great things do with bacon...**
+**Our story begins in the Mary Valley with bacon.**
 
-At Cured Compliance, we understand the unique challenges faced by butchers in today’s regulatory landscape. Our mission is to simplify compliance management, ensuring that you can focus on what you do best—providing top-quality products to your customers.
+Cured Compliance was founded in 2020 by Bryton Wishart and Ryan Robb, building on hands-on experience inside a working smallgoods business in the Mary Valley. We saw the day-to-day pressure of running a meat business under Australian food safety rules and set out to make compliance simpler, more visible and easier to prove during audits.
 
-![Bryton and Ryan at Maryvalley Small Goods facility demonstrating Cured Compliance software for meat processing compliance management](/img/bryton-ryan-shop.webp)
+![Bryton and Ryan at Mary Valley Smallgoods facility demonstrating Cured Compliance software for meat processing compliance management](/img/bryton-ryan-shop.webp)
 
-Butchers around Australia use Cured Compliance with customers in every state and territory—from metro butcher shops to regional smallgoods makers to rural family operations across NSW, QLD, VIC, SA, WA, TAS, NT, and ACT.
+Butchers and meat businesses around Australia use Cured Compliance across every state and territory—from metro butcher shops to regional smallgoods makers to rural family operations in NSW, QLD, VIC, SA, WA, TAS, NT, and ACT.
 
 **Why Cured Compliance?**
 
-In the world of butchery, adhering to stringent health and safety regulations is crucial, yet it can be time-consuming and complex. That’s where Cured Compliance steps in. Our cutting-edge compliance solutions are designed with the needs of butchers in mind, offering a streamlined approach to meet industry standards without the hassle.
+In the world of butchery, food safety and compliance are essential, but the paperwork, temperature checks, cleaning records and regulatory updates can quickly become overwhelming. We built a system to bring those tasks together in one place so operators can spend less time chasing admin and more time running their business.
 
 **What We Offer**
-1. Tailored Compliance Solutions: Our platform is specifically designed to address the regulatory requirements unique to the butchery industry. From HACCP (Hazard Analysis and Critical Control Points) to hygiene standards, we provide tools that help you stay compliant with ease and supported by Australian regulators.
+1. Tailored compliance workflows: Our platform is designed around the specific requirements of the butcher, smallgoods and meat processing sectors. From HACCP to digital checklists and traceability, we help teams stay compliant without extra admin.
 
-2. User-Friendly Interface: We know that you’re busy, so we’ve made our solutions intuitive and easy to use. Our user-friendly interface means you can quickly access the information you need and manage compliance tasks without disrupting your workflow.
+2. Practical monitoring tools: We focus on real operational needs, not generic forms. Temperature monitoring, task completion, alerts and reporting are built for busy shop-floor teams.
 
-3. Real-Time Updates: Regulations are constantly evolving, and so are we. Cured Compliance ensures you’re always up-to-date with the latest changes in industry standards. Our platform offers real-time updates and alerts, so you never miss a beat.
+3. Real-time visibility: Regulations and operational requirements change often. Cured Compliance keeps the necessary data in one place so you can act quickly when a temperature issue, checklist gap or audit question appears.
 
-4. Comprehensive Reporting: Generate detailed reports effortlessly with our automated tools. Whether you need to demonstrate compliance for an inspection or review your procedures, our reporting features make it straightforward and efficient.
+4. Clear reporting: Generate audit-ready reports in minutes, with the records ready to show inspectors, managers and internal teams.
 
-5. Expert Support: Our team of compliance experts is here to support you every step of the way. We offer dedicated support to answer your questions and help you navigate any compliance challenges.
+5. Hands-on support: Our team works with operators to set up workflows, answer questions and help each business get value from the system quickly.
 
-6. More then just compliance, we have inbuilt ordering systems and other butcher focused tools to streamline your shop
+6. More than just compliance: We also support ordering workflows and other features built around butcher shop operations, not just auditing and record-keeping.
+
+<!-- TODO: add founder bios when available -->

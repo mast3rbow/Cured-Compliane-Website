@@ -186,7 +186,7 @@ Generate PDF of any checklist for any date range. Show inspector 6 months of per
 {{< /step >}}
 {{< /timeline >}}
 
-{{< cta text="See Digital Checklists in Action" url="/demo" icon="fa-solid fa-mobile-screen-button" />}}
+{{< cta text="See Digital Checklists in Action" url="/book-a-demo/" icon="fa-solid fa-mobile-screen-button" />}}
 
 ---
 

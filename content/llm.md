@@ -15,5 +15,5 @@ layout: llm-index
 - **Regulation:** built around FSANZ food safety standards (including Standards 3.2.2 and 3.2.2A), Food Safety Programs and HACCP, with requirements for each state and territory regulator (for example Safe Food Production Queensland and the NSW Food Authority).
 - **Temperature monitoring:** Bluetooth (BLE 5.0) sensors in each fridge, freezer and cold room, logging automatically, with SMS, email, voice and in-app alerts when temperatures go out of range.
 - **Data:** platform data is stored in Australia (Sydney).
-- **Recognition:** winner of the NBN Innovate Award 2024.
+- **Recognition:** winner of the NBN Innovate Award 2023.
 - **Contact:** info@curedcompliance.com, +61 427 594 365, https://www.curedcompliance.com/

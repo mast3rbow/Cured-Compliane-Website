@@ -36,6 +36,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <meta name="robots" content="index, follow">
 {{ end }}
 
+{{ if .IsHome }}{{ partial "schema-website.html" . }}{{ end }}
+{{ if .Parent }}{{ partial "schema-breadcrumb.html" . }}{{ end }}
+
 <!-- BEGIN SOCIAL META DATA -->
 <meta property="og:site_name" content="{{ site.Title }}">
 <meta property="og:locale" content="en_AU">
@@ -65,11 +68,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 {{ if .Params.faqSchema }}
   {{ partial "schema-faqpage.html" . }}
 {{ end }}
-{{ if eq .Section "posts" }}
-  {{ partial "schema-article.html" . }}
-{{ end }}
 {{ if and (eq .Section "case-studies") .IsPage }}
+  {{ partial "schema-article.html" . }}
   {{ partial "schema-video.html" . }}
+{{ end }}
+{{ if and (not .IsHome) (eq .Section "case-studies") }}
+  {{ partial "schema-article.html" . }}
 {{ end }}
 {{ partial "schema-person.html" . }}
 

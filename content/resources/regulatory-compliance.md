@@ -3,13 +3,19 @@ title: Regulatory Acceptance & Compliance Standards
 seoTitle: Are Digital Temperature Logs Accepted by Food Inspectors? | Australia
 description: "Are digital temperature logs accepted by food inspectors? See how digital monitoring meets FSANZ Standard 3.2.2 and requirements in every Australian state."
 priority: 0.6
+faq:
+  - question: "Can inspectors access my temperature data during an audit?"
+    answer: "Yes. Inspectors can view live or historical data, and you can also print PDF reports from the system before or during the audit."
+  - question: "How long do records need to be kept?"
+    answer: "The platform is designed to retain records for {{< spec \"data_retention\" >}} and supports audit and inspection requirements."
+  - question: "Does Cured Compliance meet Australian food safety requirements?"
+    answer: "Yes. It is built around FSANZ standards and each state's regulator, making it suitable for Australian butcher and meat processing operations."
+faqSchema: true
 menus:
   main:
     parent: Resources
     weight: 45
 ---
-
-# Regulatory Acceptance & Compliance Standards
 
 ## Are Digital Temperature Logs Accepted by Food Inspectors?
 
@@ -38,11 +44,11 @@ Australian state and territory food authorities support the use of digital platf
 
 ## How Cured Compliance Meets Standards
 
-✅ **Accurate monitoring**: BLE 5.0 sensors log temps every 5-15 minutes (±0.5°C accuracy)  
+✅ **Accurate monitoring**: BLE 5.0 sensors log temps {{< spec "logging_interval" >}} (±0.5°C accuracy)  
 ✅ **Tamper-proof records**: Timestamps cannot be backdated or altered  
 ✅ **Instant alerts**: SMS/email when temperatures exceed safe thresholds  
 ✅ **Audit-ready reporting**: Generate PDF reports showing 12+ months of data  
-✅ **Data retention**: 5+ years of records (exceeds 2-3 year requirements)  
+✅ **Data retention**: {{< spec "data_retention" >}} of records  
 ✅ **Verification**: Temperature accuracy within ±0.5°C (calibration certificates available)  
 ✅ **Continuous logging**: Never misses overnight failures (unlike 2x daily manual checks)
 
@@ -84,7 +90,7 @@ If your inspector prefers paper during inspection, this gives them a printed ver
 | **Tamper-proof** | Can be backdated, altered, or "lost" | Timestamps locked, records permanent |
 | **Alerts** | None (find out about failures when you arrive next morning) | SMS within 60 seconds of breach |
 | **Audit prep** | 3+ hours gathering paperwork | 60 seconds - click "Generate Report" |
-| **Data retention** | Filing cabinets, risk of water damage/fire | Cloud storage, 5+ years, searchable |
+| **Data retention** | Filing cabinets, risk of water damage/fire | Cloud storage, 3+ years, searchable |
 | **Inspector access** | Photocopying, waiting | Real-time access, instant PDF export |
 | **Staff compliance** | Illegible handwriting, "forgot to sign" | Digital signatures, photo evidence |
 
@@ -138,7 +144,7 @@ A: Yes, instantly. Log in on any device and show live or historical data. Or pri
 A: Sensors continue logging locally (data stored on gateway). Data uploads automatically when internet reconnects. If internet is down during the audit, you can still show historical data from before the outage (already uploaded to cloud).
 
 **Q: How long do you retain records?**  
-A: 5+ years minimum (exceeds regulatory requirements of 2-3 years). Records never expire unless you manually delete them.
+A: {{< spec "data_retention" >}} minimum. Records never expire unless you manually delete them.
 
 **Q: Are digital signatures legally acceptable?**  
 A: Yes. Australian law recognizes digital signatures as legally binding under the Electronic Transactions Act 1999 (Cth). Food inspectors accept digital signatures on checklists and forms.
@@ -159,12 +165,12 @@ Cured Compliance is purpose-built to meet those standards with:
 - Accurate, continuous monitoring
 - Tamper-proof record keeping
 - Instant audit reporting
-- 5+ year data retention
+- {{< spec "data_retention" >}} data retention
 
 **Your Food Safety Program determines acceptability** — Cured Compliance provides the tools to meet those requirements efficiently.
 
 ---
 
-**Ready to simplify your compliance?** [Book a demo](/) or [Get a quote](/)
+**Ready to simplify your compliance?** [Book a demo](/book-a-demo/) or [Get a quote](/book-a-demo/)
 
 **Still have questions?** Email info@curedcompliance.com or call +61427594365

@@ -5,8 +5,6 @@ description: "Purpose-built compliance software for Australian butchers. FSANZ-c
 priority: 0.9
 ---
 
-# Compliance Software for Australian Butchers & Meat Processors
-
 **If you're a butcher or meat processor in Australia asking "How do I simplify food safety compliance?" — you're in the right place.**
 
 ---
@@ -110,7 +108,7 @@ Yes. Even sole traders face audits, and one failed fridge overnight can cost $15
 Yes. Tablets are easier than clipboards, photo uploads prevent disputes ("I did clean that!"), and digital signatures are faster than pen-and-paper. Staff prefer it after the first week.
 
 **"What if I already have Clever Logger or other temp sensors?"**  
-Cured Compliance is a standalone system that replaces existing temp loggers. Install our sensors alongside your current ones for 24 hours to compare, then remove the old system. Our sensors last longer (2+ years battery) and include compliance checklists, traceability, and audit tools all integrated.
+Cured Compliance is a standalone system that replaces existing temp loggers. Install our sensors alongside your current ones for 24 hours to compare, then remove the old system. Our sensors last longer (3+ years battery) and include compliance checklists, traceability, and audit tools all integrated.
 
 **"How long does setup take?"**  
 30 minutes per staff member. We configure your fridges, create user logins, assign roles, and train your team on tablets. You're operational by lunch.
@@ -157,10 +155,10 @@ Our FSANZ-compliant system meets requirements across all jurisdictions.
 Regulators across Australia support digital platforms that comply with FSANZ Standard 3.2.2 and 3.2.3.
 
 **What makes Cured Compliance compliant**:
-- Continuous temperature logging (every 5-15 min)
+- Continuous temperature logging ({{< spec "logging_interval" >}})
 - Tamper-proof timestamps (can't be backdated)
 - Instant PDF export for inspector review
-- 5+ years of data retention (exceeds requirements)
+- {{< spec "data_retention" >}} of data retention
 
 **If your inspector prefers paper**: Click "Print PDF Report" during the audit. You get the best of both worlds: digital alerts and monitoring day-to-day, plus paper backup when needed.
 
@@ -172,15 +170,21 @@ Regulators across Australia support digital platforms that comply with FSANZ Sta
 
 ## Get Started
 
-{{< cta text="Book a Demo for Your Butcher Shop" url="/" icon="fa-solid fa-calendar-check" />}}
+{{< cta text="Book a Demo for Your Butcher Shop" url="/book-a-demo/" icon="fa-solid fa-calendar-check" />}}
 
 **What happens next**:
 1. **30-min live demo** (video call) - We show you the system, answer questions about your specific setup
 2. **Hardware quote** - We recommend exact sensor quantities based on your fridges/equipment
 3. **3-5 day delivery** - Sensors arrive anywhere in Australia via courier
-4. **1-hour onboarding** - Remote training session, you're operational within 1 week
+4. **{{< spec "setup_time" >}} onboarding** - Remote training session, you're operational within 1 hour
 
 **Or try before you buy**: 14-day free trial with demo sensors. Return for full refund if not happy.
+
+<div style="text-align: center; margin: 2rem 0; padding: 2rem 1.5rem; background: #eff6ff; border-radius: 1rem;">
+  <h2 style="margin-bottom: 0.75rem;">Start your 14-day free trial</h2>
+  <p style="margin-bottom: 1.25rem;">See how Cured Compliance works for your business before you commit.</p>
+  <a href="/book-a-demo/" style="display: inline-block; background: #2563eb; color: white; padding: 0.75rem 1.5rem; border-radius: 9999px; text-decoration: none; font-weight: 600;">Book a demo</a>
+</div>
 
 ---
 

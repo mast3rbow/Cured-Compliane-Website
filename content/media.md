@@ -1,8 +1,8 @@
 ---
 title: Media Releases
 sitemap_exclude: false
-seoTitle: Media Releases - Cured Compliance NBN Innovate Award Winner 2024
-description: "Latest news and media coverage about Cured Compliance. Winner of the NBN Innovate Award 2024 for pioneering AI-powered compliance solutions transforming Australia's meat processing industry."
+seoTitle: Media Releases - Cured Compliance NBN Innovate Award Winner 2023
+description: "Latest news and media coverage about Cured Compliance. Winner of the NBN Innovate Award 2023 for pioneering AI-powered compliance solutions transforming Australia's meat processing industry."
 priority: 0.4
 ---
 
@@ -10,7 +10,7 @@ Welcome to the Media Center of Cured Compliance! Here, you’ll find the latest 
 
 **Cured Compliance Wins Prestigious NBN Innovate Award**
 
-We are thrilled to announce that Cured Compliance has been honored with the NBN Innovate Award for 2024! This prestigious accolade recognizes our pioneering efforts in developing cutting-edge compliance solutions that drive industry standards forward.
+We are thrilled to announce that Cured Compliance has been honored with the NBN Innovate Award for 2023! This prestigious accolade recognizes our pioneering efforts in developing innovative compliance solutions that drive industry standards forward.
 
 The NBN Innovate Award celebrates organizations that demonstrate exceptional innovation, and we are proud to be acknowledged for our transformative approach to compliance management. This award is a testament to the hard work and dedication of our team in delivering solutions that not only meet but exceed industry expectations.
 

@@ -4,7 +4,13 @@
 
 > {{ site.Params.description }}
 
-{{ with $llm }}{{ .RawContent | strings.TrimSpace }}{{ end }}
+{{ with $llm }}{{ trim .RawContent " \t\n\r" }}{{ end }}
+
+Key product facts used across the site:
+- Battery life: {{ site.Data.specs.battery_life }}
+- Logging interval: {{ site.Data.specs.logging_interval }}
+- Data retention: {{ site.Data.specs.data_retention }}
+- Award: {{ site.Data.specs.award_name }} {{ site.Data.specs.award_year }}
 
 This file contains the full text of the main pages on {{ site.BaseURL }}. Legal pages are listed in {{ "llms.txt" | absURL }}.
 {{ range partial "llms/pages.html" . -}}

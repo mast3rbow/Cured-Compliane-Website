@@ -9,8 +9,6 @@ menus:
     weight: 44
 ---
 
-# Hardware Guide — Which Sensors Do I Need?
-
 **Confused about sensor types, quantities, or installation? This guide answers every hardware question.**
 
 ---
@@ -19,11 +17,11 @@ menus:
 
 ### V3 Temp & Humidity Sensor
 **Use for**: Fridges, freezers, coolrooms, dry agers, display cases  
-**What it does**: Sticks magnetically to fridge wall, logs temp + humidity every 5-15 min  
+**What it does**: Sticks magnetically to fridge wall, logs temperature and humidity {{< spec "logging_interval" >}}  
 **Size**: 82mm × 82mm × 26mm (about the size of a small coaster)  
-**Battery**: 2+ years, non-rechargeable (we send replacements under warranty)  
-**Installation**: Stick to metal wall, press button, done (30 seconds)  
-**Works in**: -40°C to +85°C (perfect for freezers and coolrooms)
+**Battery**: {{< spec "battery_life" >}}, non-rechargeable (we send replacements under warranty)  
+**Installation**: Stick to metal wall, press button, done ({{< spec "setup_time" >}})  
+**Works in**: {{< spec "sensor_body_range" >}} (perfect for freezers and coolrooms)
 
 **When to use**: This is your standard sensor for 90% of cold storage monitoring.
 
@@ -33,9 +31,9 @@ menus:
 **Use for**: Smokers, ovens, cooking processes, internal meat temps  
 **What it does**: Same sensor body, but with 1-meter stainless steel probe  
 **Insert probe into**: Meat during cooking, smoker chamber, oven cavity  
-**Battery**: 2+ years  
+**Battery**: 3+ years  
 **Installation**: Magnetic mount on exterior, run probe cable through smoker door seal  
-**Temperature range**: Probe rated to +300°C for cooking applications
+**Temperature range**: Probe rated to {{< spec "probe_max_temp" >}} for cooking applications
 
 **When to use**: Cooking logs for ready-to-eat products (hams, salamis, bacon), smoking processes, or monitoring internal meat temperatures.
 
@@ -45,7 +43,7 @@ menus:
 **Use for**: Specialty installs (tight spaces, through-wall monitoring)  
 **What it does**: External temperature probe on 2-meter cable  
 **Use cases**: Display fridges where sensor body won't fit inside, monitoring temps through insulated walls  
-**Battery**: 2+ years  
+**Battery**: 3+ years  
 **Installation**: Mount sensor body outside fridge, run cable to probe location inside
 
 **When to use**: Rare situations where standard sensor won't physically fit or you need to monitor through barriers.
@@ -123,7 +121,7 @@ If your fridge has plastic or glass interior, use included 3M adhesive mount (st
 ## Battery Life & Replacement
 
 **How long do batteries last?**  
-2+ years typical (24-30 months depending on logging frequency and temperature extremes).
+3+ years typical (36+ months depending on logging frequency and temperature extremes).
 
 **Are they rechargeable?**  
 No. Non-rechargeable lithium batteries. This is intentional—no charging cables in your fridges, no risk of power failures.
@@ -181,10 +179,10 @@ A: Yes. Probe sensors are rated to +300°C for ovens, smokers, and high-temp coo
 ## Still Not Sure What You Need?
 
 **Option 1**: Email us your fridge/equipment list → info@curedcompliance.com  
-**Option 2**: Book a 15-minute hardware consultation (free) → [Contact us](/)
+**Option 2**: Book a 15-minute hardware consultation (free) → [Contact us](/book-a-demo/)
 
 We'll ask about your setup and recommend exact sensor quantities and types.
 
 ---
 
-**Ready to order?** [Get a quote](/) or [Book a demo](/)
+**Ready to order?** [Get a quote](/book-a-demo/) or [Book a demo](/book-a-demo/)

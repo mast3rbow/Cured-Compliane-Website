@@ -9,8 +9,6 @@ menus:
     weight: 46
 ---
 
-# Meat Industry Compliance Glossary
-
 **Essential terms every Australian butcher and meat processor should know.**
 
 ---
