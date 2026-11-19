@@ -1,7 +1,7 @@
 ---
 title: About Cured Compliance
 sitemap_exclude: false
-seoTitle: About Cured Compliance - Our Story | Australian Meat Industry Software
+seoTitle: "About Cured Compliance | Our Story"
 description: "Meet the founders behind Cured Compliance. Built inside a Mary Valley smallgoods business, now used by butchers in every Australian state and territory."
 priority: 0.4
 founders:

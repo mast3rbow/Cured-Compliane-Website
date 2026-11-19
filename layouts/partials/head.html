@@ -11,7 +11,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <link rel="preload" href="/css/page.css" as="style">
 <link rel="preload" href="/css/carousel.css" as="style">
 <!-- PRECONNECT TO CDN ORIGINS -->
-<link rel="preconnect" href="https://unpkg.com" crossorigin>
 <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
 <link rel="dns-prefetch" href="https://www.googletagmanager.com">
 <link rel="icon" type="image/x-icon" href="/favicon.ico" sizes="any">
@@ -59,9 +58,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 <!-- Structured Data (Schema.org) -->
 {{ partial "schema-organization.html" . }}
-{{ if .IsHome }}
-  {{ partial "schema-localbusiness.html" . }}
-{{ end }}
 {{ if eq .Section "features" }}
   {{ partial "schema-product.html" . }}
 {{ end }}
@@ -72,7 +68,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   {{ partial "schema-article.html" . }}
   {{ partial "schema-video.html" . }}
 {{ end }}
-{{ if and (not .IsHome) (eq .Section "case-studies") }}
+{{ if and (not .IsHome) (not .IsPage) (eq .Section "case-studies") }}
   {{ partial "schema-article.html" . }}
 {{ end }}
 {{ partial "schema-person.html" . }}

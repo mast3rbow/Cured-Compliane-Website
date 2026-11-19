@@ -84,7 +84,7 @@ Our website uses:
 - **Google Tag Manager and Google Analytics** to measure visits and understand how the website is used;
 - **marketing automation tracking** (Mautic), which records the pages you visit. If you have submitted a form or clicked a link in one of our emails, this activity may be linked to your contact details;
 - **embedded YouTube videos** on our Media page, which may set cookies when played; and
-- **content delivery networks** (unpkg.com, cdnjs.cloudflare.com and Microsoft Azure storage) that serve scripts, icons and videos. These receive your IP address when your browser loads the files.
+- **content delivery networks** (cdnjs.cloudflare.com and Microsoft Azure storage) that serve scripts, icons and videos. These receive your IP address when your browser loads the files.
 
 You can block or delete cookies in your browser settings. Some parts of the website may not work properly if you do.
 

@@ -1,6 +1,6 @@
 ---
 title: Regulatory Acceptance & Compliance Standards
-seoTitle: Are Digital Temperature Logs Accepted by Food Inspectors? | Australia
+seoTitle: "Are Digital Temperature Logs Accepted by Inspectors?"
 description: "Are digital temperature logs accepted by food inspectors? See how digital monitoring meets FSANZ Standard 3.2.2 and requirements in every Australian state."
 priority: 0.6
 faq:
@@ -86,7 +86,7 @@ If your inspector prefers paper during inspection, this gives them a printed ver
 
 | Aspect | Paper Records | Digital (Cured Compliance) |
 |--------|---------------|----------------------------|
-| **Accuracy** | Manual checks 2x daily (can miss overnight failures) | Automated logging every 5-15 minutes |
+| **Accuracy** | Manual checks 2x daily (can miss overnight failures) | Automated logging {{< spec "logging_interval" >}} |
 | **Tamper-proof** | Can be backdated, altered, or "lost" | Timestamps locked, records permanent |
 | **Alerts** | None (find out about failures when you arrive next morning) | SMS within 60 seconds of breach |
 | **Audit prep** | 3+ hours gathering paperwork | 60 seconds - click "Generate Report" |

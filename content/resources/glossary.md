@@ -1,7 +1,7 @@
 ---
 title: Meat Industry Compliance Glossary
 seoTitle: FSANZ, HACCP & Meat Industry Compliance Terms Explained
-description: "Essential compliance terminology for Australian butchers and meat processors. FSANZ standards, HACCP definitions, BLE sensors, and food safety terms explained in plain English."
+description: "Plain-English definitions of FSANZ standards, HACCP, cold chain and food safety terms for Australian butchers and meat processors."
 priority: 0.5
 menus:
   main:
@@ -185,7 +185,7 @@ Foreign objects in food: metal fragments, glass, plastic, bones. Controlled thro
 ## Sensor Types (Cured Compliance Specific)
 
 **V3 Temp & Humidity Sensor**  
-Standard fridge/freezer monitoring sensor. Magnetic mount, 82mm × 82mm × 26mm size, 2+ year battery life. Logs temperature and humidity every 5-15 minutes. Use for: coolrooms, display fridges, freezers, dry agers.
+Standard fridge/freezer monitoring sensor. Magnetic mount, 82mm × 82mm × 26mm size, {{< spec "battery_life" >}} battery life. Logs temperature and humidity {{< spec "logging_interval" >}}. Use for: coolrooms, display fridges, freezers, dry agers.
 
 **V3 Probe Sensor**  
 Cooking and smoking sensor with 1-meter stainless steel probe. Same sensor body as standard V3, but probe inserts into meat or smoker chamber. Rated to +300°C for cooking applications. Use for: smokers, ovens, internal meat temp monitoring.

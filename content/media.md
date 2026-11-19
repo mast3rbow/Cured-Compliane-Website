@@ -1,8 +1,8 @@
 ---
 title: Media Releases
 sitemap_exclude: false
-seoTitle: Media Releases - Cured Compliance NBN Innovate Award Winner 2023
-description: "Latest news and media coverage about Cured Compliance. Winner of the NBN Innovate Award 2023 for pioneering AI-powered compliance solutions transforming Australia's meat processing industry."
+seoTitle: "Media & Awards | Cured Compliance"
+description: "News and media coverage of Cured Compliance, winner of the 2023 NBN Innovate Award for AI-powered compliance in Australian meat processing."
 priority: 0.4
 ---
 

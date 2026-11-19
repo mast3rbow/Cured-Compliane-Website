@@ -1,9 +1,0 @@
-{
-    "trailingSlash": "always",
-    "responseOverrides": {
-        "404": {
-            "rewrite": "/404",
-            "statusCode": 404
-        }
-    }
-}

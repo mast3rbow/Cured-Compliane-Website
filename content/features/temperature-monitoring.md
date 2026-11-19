@@ -4,8 +4,8 @@ catchphrase: "Don't lose $$$ on spoiled product again"
 icon: "fa-solid fa-thermometer"
 relatedTags: ["monitoring", "iot", "alerts"]
 weight: 12
-seoTitle: "24/7 Temperature Monitoring with BLE 5.0 IoT Sensors | Cured Compliance"
-description: "Instant SMS alerts when fridges hit >5°C. Bluetooth sensors in every fridge/freezer with automated logging every 5-15 minutes. Prove your cold chain integrity to inspectors."
+seoTitle: "Cold Room Temperature Monitoring | Cured Compliance"
+description: "Bluetooth sensors log every fridge, freezer and cold room every 5 minutes and SMS you when temperatures breach. Inspector-ready cold chain records."
 priority: 0.8
 menu:
   main:
@@ -15,9 +15,9 @@ menu:
 
 Stop gambling with your cold chain. Every butcher knows the nightmare: you arrive Monday morning to find the weekend fridge failure destroyed $15,000 in prime cuts. Your staff are manually logging temps on clipboards (when they remember), but you know those readings can't catch a 2am compressor failure.
 
-**What if you got an SMS alert the instant your fridge hit over temp for longer than 15 minutes?** {{< spec "alert_timing" >}}. That's exactly what our BLE 5.0 sensors do, 24/7, for every fridge, freezer, display counter, and cold room in your shop.
+**What if you got an SMS alert as soon as your fridge stayed over temperature past the delay you set?** {{< spec "alert_timing" >}}. That's exactly what our BLE 5.0 sensors do, 24/7, for every fridge, freezer, display counter, and cold room in your shop.
 
-Inspectors love it too. Instead of flipping through months of clipboard logs (looking for gaps or fabricated readings), you hand them a perfect digital dashboard showing 99.9% compliance with zero manual entries. That's the difference between a 10-minute inspection and a 2-hour interrogation.
+Inspectors love it too. Instead of flipping through months of clipboard logs (looking for gaps or fabricated readings), you hand them a perfect digital dashboard showing your full compliance record with zero manual entries. That's the difference between a 10-minute inspection and a 2-hour interrogation.
 
 {{< stats-grid >}}
 {{< stat number="<60" unit="sec" >}}Alert delivery on temp breach{{< /stat >}}
@@ -56,7 +56,7 @@ Install wireless sensors in every fridge/freezer in {{< spec "setup_time" >}}. *
 {{< /benefit >}}
 
 {{< benefit icon="fa-solid fa-wifi" title="Gateway Connectivity" >}}
-Ethernet, WiFi or cellular gateway connects sensors to cloud. Works even with patchy internet - Gateway outage detection alerts you immediately when either there is no internet or Power
+WiFi or 4G cellular gateway connects sensors to cloud. Works even with patchy internet - Gateway outage detection alerts you immediately when either there is no internet or Power
 {{< /benefit >}}
 
 {{< benefit icon="fa-solid fa-bell-slash" title="Smart Defrost Detection" >}}
@@ -111,7 +111,7 @@ Within 60 seconds of temp breach. Save product before it's too late - immediate 
 No staff input required. Never rely on memory or manual processes again.
 {{< /challenge-item >}}
 {{< challenge-item title="Perfect Audit Trail" >}}
-Timestamped readings every 5mins. Complete documentation that regulators love.
+Timestamped readings {{< spec "logging_interval" >}}. Complete documentation that regulators love.
 {{< /challenge-item >}}
 {{< challenge-item title="Immediate Notification" >}}
 Save product when it matters. Call your contractor at 2am, not discover losses at 6am.
@@ -120,7 +120,7 @@ Save product when it matters. Call your contractor at 2am, not discover losses a
 System runs 24/7/365 without holidays. Continuous protection regardless of staffing.
 {{< /challenge-item >}}
 {{< challenge-item title="Digital Records" >}}
-Accepted by all regulators. Inspector-ready reports at the click of a button.
+Digital records are an accepted way to meet temperature record-keeping requirements ([see the regulatory guide](/resources/regulatory-compliance/)). Inspector-ready reports at the click of a button.
 {{< /challenge-item >}}
 {{< /solutions >}}
 {{< /challenge-solution >}}
@@ -134,8 +134,8 @@ Accepted by all regulators. Inspector-ready reports at the click of a button.
 
 {{< tech-specs title="BLE 5.0 Sensor Technology" >}}
 **Long-Range Mode**: 100+ meter range with options to deal cool room walls and metal shelving  
-**Reading Frequency**: A reading taken every 5 minutes  
-**Battery Life**: up to 5 years battery life on beacons
+**Reading Frequency**: A reading taken {{< spec "logging_interval" >}}  
+**Battery Life**: {{< spec "battery_life" >}} battery life on beacons
 **IP Rating**: Version 3 - IP57 waterproof/dustproof for harsh environments  
 **Operating Range**: -40°C to +130°C (handles freezers to ovens for our probes)
 {{< /tech-specs >}}
@@ -149,7 +149,7 @@ Accepted by all regulators. Inspector-ready reports at the click of a button.
 
 {{< tech-specs title="Data Analysis & Reporting" >}}
 **Extended Processing**: analyse months of IoT data (100,000+ readings) 
-**PostgreSQL Storage**: Unlimited historical data retention (7+ years)  
+**PostgreSQL Storage**: Historical data retained for {{< spec "data_retention" >}}  
 **Managed Backups**: Automated daily backups of all sensor data on managed PostgreSQL, hosted in Sydney  
 **Compliance Reports**: Auto-generated graphs meeting regulatory requirements  
 {{< /tech-specs >}}
@@ -162,7 +162,7 @@ Temperature monitoring powers your automated compliance system. Here's how real-
 
 {{< benefit-cards >}}
 {{< benefit icon="fa-solid fa-temperature-half" title="Continuous Data Collection" >}}
-BLE sensors capture readings every 10 minutes and upload to cloud. Every reading includes timestamp, sensor ID, location, and equipment metadata for complete traceability.
+BLE sensors capture readings {{< spec "logging_interval" >}} and upload to cloud. Every reading includes timestamp, sensor ID, location, and equipment metadata for complete traceability.
 {{< /benefit >}}
 
 {{< benefit icon="fa-solid fa-robot" title="AI-Powered Violation Detection" >}}
@@ -174,7 +174,7 @@ AI runs monthly audits analyzing 100,000+ readings per location. Calculates comp
 {{< /benefit >}}
 
 {{< benefit icon="fa-solid fa-file-certificate" title="Inspector-Ready Documentation" >}}
-Generate PDF reports with compliance summaries: "99.8% compliance over 6 months, 3 excursions documented with root cause analysis." Regulators accept digital records instantly.
+Generate PDF reports with compliance summaries: "99.8% compliance over 6 months, 3 excursions documented with root cause analysis." (example report)
 {{< /benefit >}}
 {{< /benefit-cards >}}
 
@@ -184,4 +184,4 @@ Generate PDF reports with compliance summaries: "99.8% compliance over 6 months,
 
 ---
 
-**Installation takes minutes not hours.** Self install sensors, plug in gateway, sets alert thresholds, and we help train you and your staff. You're monitoring 24/7 by end of day with zero ongoing maintenance required.
+**Setup is done {{< spec "setup_time" >}}.** Self install sensors, plug in gateway, sets alert thresholds, and we help train you and your staff. You're monitoring 24/7 by end of day with zero ongoing maintenance required.

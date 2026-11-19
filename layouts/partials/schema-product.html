@@ -7,12 +7,6 @@
   "operatingSystem": "Web, iOS, Android",
   "areaServed": "AU",
   "description": "{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}",
-  "offers": {
-    "@type": "Offer",
-    "price": "TODO",
-    "priceCurrency": "AUD",
-    "description": "TODO: confirm pricing on the pricing page once it exists"
-  },
   "provider": {
     "@type": "Organization",
     "name": "Cured Compliance",
@@ -28,6 +22,8 @@
     "Reports & Dashboards",
     "Team Collaboration"
   ],
-  "screenshot": "{{ .Site.BaseURL }}img/demo.png"
+  "screenshot": "{{ .Site.BaseURL }}img/demo.png",
+  "dateModified": "{{ .Lastmod.Format "2006-01-02" }}",
+  "url": "{{ .Permalink }}"
 }
 </script>

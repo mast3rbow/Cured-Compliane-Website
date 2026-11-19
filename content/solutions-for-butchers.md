@@ -1,7 +1,7 @@
 ---
 title: Compliance Software for Australian Butchers & Meat Processors
 seoTitle: Food Safety & Compliance Software for Butchers | Cured Compliance
-description: "Purpose-built compliance software for Australian butchers. FSANZ-compliant, IoT temperature monitoring, digital checklists, HACCP automation. Butchers around Australia use Cured Compliance with customers in every state and territory."
+description: "Food safety and compliance software for Australian butchers: IoT temperature monitoring, digital checklists, HACCP and traceability in one platform."
 priority: 0.9
 ---
 

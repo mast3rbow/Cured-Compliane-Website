@@ -1,7 +1,7 @@
 ---
 title: "From Pen and Paper to Impressing Auditors"
 date: 2026-09-29
-seoTitle: "Kawungan Quality Meats Case Study - Hervey Bay Butcher | Cured Compliance"
+seoTitle: "Kawungan Meats, Hervey Bay: Case Study | Cured Compliance"
 business: "Kawungan Quality Meats"
 location: "Hervey Bay, QLD"
 description: "Fifth-generation butcher Dale Newberry swapped the AMIC paper diary for Cured Compliance, and now every product that leaves his shop carries a batch code."

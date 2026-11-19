@@ -4,8 +4,8 @@ catchphrase: "Replace clipboards and broken pens with mobile-first digital check
 icon: "fa-solid fa-clipboard-check"
 relatedTags: ["operations", "mobile", "checklists"]
 weight: 13
-seoTitle: "Digital Checklists for Meat Processing Daily Operations | Cured Compliance"
-description: "Mobile-first digital checklists with photo evidence, digital signatures, and offline mode. Pre-start cleaning, CCP monitoring, and production logs all on tablets."
+seoTitle: "Digital Food Safety Checklists | Cured Compliance"
+description: "Mobile digital checklists with photo evidence and digital signatures. Pre-start cleaning, CCP monitoring and production logs on any tablet or phone."
 priority: 0.8
 menu:
   main:

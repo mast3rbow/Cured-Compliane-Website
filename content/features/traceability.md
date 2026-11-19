@@ -4,8 +4,8 @@ catchphrase: "Recall-ready in 60 seconds - from supplier to customer"
 icon: "fa-solid fa-barcode"
 relatedTags: ["compliance", "traceability", "recalls"]
 weight: 14
-seoTitle: "Product Traceability & Batch Tracking for Meat Processing | Cured Compliance"
-description: "Trace any batch from raw material supplier to end customer in 60 seconds. Complete production documentation with cooking logs, packing records, and recall simulation testing."
+seoTitle: "Meat Traceability & Batch Tracking | Cured Compliance"
+description: "Trace any batch from supplier to customer in 60 seconds, with cooking logs, packing records and recall simulation for Australian meat businesses."
 priority: 0.8
 menu:
   main:
@@ -46,7 +46,7 @@ Production logs record packaging date, use-by calculation (automatic based on pr
 {{< /benefit >}}
 
 {{< benefit icon="fa-solid fa-magnifying-glass" title="Instant Batch Search" >}}
-PostgreSQL full-text search with GIN indexes. Search any batch code, supplier name, customer name, or date range. Results in <1 second even with 7+ years of data.
+PostgreSQL full-text search with GIN indexes. Search any batch code, supplier name, customer name, or date range. Results in <1 second across your full history.
 {{< /benefit >}}
 
 {{< /benefit-cards >}}
@@ -91,7 +91,7 @@ Photo uploads and expiry tracking. Always audit-ready with valid certificates.
 Shows exactly who got which batches. Complete visibility for targeted recalls.
 {{< /challenge-item >}}
 {{< challenge-item title="Digital Records" >}}
-Stored 7+ years in secure cloud. Never lose critical traceability data.
+Stored for {{< spec "data_retention" >}} in secure cloud. Never lose critical traceability data.
 {{< /challenge-item >}}
 {{< challenge-item title="Instant PDF Reports" >}}
 Proving complete traceability. Pass export audits with confidence.
