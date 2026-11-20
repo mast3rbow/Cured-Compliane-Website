@@ -1,6 +1,8 @@
 # SETUP
 baseurl = "https://www.curedcompliance.com/"
 DefaultContentLanguage = "en"
+locale = "en-AU"
+disableHugoGeneratorInject = true
 publishdir = "public"
 canonifyUrls = "true"
 disableKinds = ["RSS","taxonomy","term"] # disable hugo's content that we don't need...
@@ -18,7 +20,6 @@ enableGitInfo = true # sitemap <lastmod> from each file's last commit
     description = "Australian-built compliance software for butchers and meat processors. AI audits, BLE IoT temperature monitoring, digital checklists, and complete traceability. FSANZ-compliant, trusted across Australia." # page description -> see ./layouts/partials/head.html
     videoBaseURL = "https://websitestorageaccount.blob.core.windows.net/videos/" # Azure Blob container holding case study videos + posters -> see ./layouts/partials/video-url.html
     phone = "+61427594365"
-    businessHours = "Mo-Su 06:00-19:00"
     locality = "Mary Valley"
     region = "Queensland"
     country = "Australia"

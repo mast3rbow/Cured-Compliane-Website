@@ -1,6 +1,5 @@
 var gulp = require('gulp'),
-    postcss = require('gulp-postcss'),
-    concatCss = require('gulp-concat-css');
+    postcss = require('gulp-postcss');
 
 gulp.task('css', function () {
     return gulp.src('./src/css/page.css')
@@ -13,6 +12,5 @@ gulp.task('css', function () {
           }]
         })
       ]))
-      .pipe(concatCss('page.css'))
       .pipe(gulp.dest('static/css/'));
   });

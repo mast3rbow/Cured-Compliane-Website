@@ -1,7 +1,7 @@
 ---
 title: Hardware Guide — Which Sensors Do I Need?
-seoTitle: Cured Compliance Hardware Guide | Sensor Types for Butchers
-description: "Complete guide to temperature sensors for Australian butchers. Learn which sensors you need for fridges, freezers, smokers, and delivery vehicles. Installation, battery life, and sizing explained."
+seoTitle: "Temperature Sensor Guide for Butchers | Cured Compliance"
+description: "Which temperature sensors you need for fridges, freezers, smokers and delivery vehicles, with installation, battery life and sizing explained."
 priority: 0.7
 menus:
   main:

@@ -1,0 +1,21 @@
+{
+    "trailingSlash": "always",
+    "responseOverrides": {
+        "404": {
+            "rewrite": "/404/index.html",
+            "statusCode": 404
+        }
+    },
+    "routes": [
+        { "route": "/sections/demo/", "redirect": "/book-a-demo/", "statusCode": 301 },
+        { "route": "/sections/register/", "redirect": "/book-a-demo/", "statusCode": 301 },
+        { "route": "/sections/about/", "redirect": "/about/", "statusCode": 301 },
+        { "route": "/sections/awards/", "redirect": "/media/", "statusCode": 301 },
+        { "route": "/demo/", "redirect": "/book-a-demo/", "statusCode": 301 }
+    ],
+    "globalHeaders": {
+        "Permissions-Policy": "camera=(), microphone=(), geolocation=(), payment=()",
+        "X-Content-Type-Options": "nosniff",
+        "Referrer-Policy": "strict-origin-when-cross-origin"
+    }
+}
