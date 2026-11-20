@@ -4,8 +4,8 @@ catchphrase: "Your 24/7 compliance officer that never takes a day off"
 icon: "fa-solid fa-brain"
 relatedTags: ["compliance", "automation", "reporting"]
 weight: 11
-seoTitle: "AI Compliance Audits for Butchers | Cured Compliance"
-description: "Automated monthly AI audits of cold room temps, cooking logs and checklists, built for beef, pork, lamb, poultry, game and smallgoods processing."
+seoTitle: "AI-Powered Compliance Automation for Meat Processing | Cured Compliance"
+description: "Automated monthly audits analyzing everything from cold room temps to cooking logs. AI that speaks your language and understands beef, pork, lamb, poultry, game, and offal processing."
 priority: 0.8
 menu:
   main:

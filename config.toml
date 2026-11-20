@@ -16,8 +16,8 @@ enableGitInfo = true # sitemap <lastmod> from each file's last commit
     email = "info@curedcompliance.com"
 
 [params]
-    homeTitle = "Compliance Software for Butchers & Meat Processors" # home page <title>
-    description = "Australian compliance software for butchers and meat processors: AI audits, IoT temperature monitoring, digital checklists and traceability." # page description -> see ./layouts/partials/head.html
+    homeTitle = "Compliance Software for Butchers & Meat Processors | Cured Compliance" # home page <title>
+    description = "Australian-built compliance software for butchers and meat processors. AI audits, BLE IoT temperature monitoring, digital checklists, and complete traceability. FSANZ-compliant, trusted across Australia." # page description -> see ./layouts/partials/head.html
     videoBaseURL = "https://websitestorageaccount.blob.core.windows.net/videos/" # Azure Blob container holding case study videos + posters -> see ./layouts/partials/video-url.html
     phone = "+61427594365"
     locality = "Mary Valley"

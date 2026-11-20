@@ -4,8 +4,8 @@ catchphrase: "Designed for Butchers, by Butchers"
 icon: "fa-solid fa-users"
 relatedTags: ["team", "mobile", "collaboration"]
 weight: 18
-seoTitle: "Team Access & Collaboration | Cured Compliance"
-description: "Role-based access for floor staff, managers and owners. Tablet access, digital signatures, supplier portals and unlimited users."
+seoTitle: "Team Collaboration & Role-Based Access Control | Cured Compliance"
+description: "From floor staff to owners - everyone sees what they need. Mobile tablet access, digital signatures, supplier portals, and role-based permissions with unlimited users."
 priority: 0.8
 menu:
   main:

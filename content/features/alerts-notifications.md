@@ -5,7 +5,7 @@ icon: "fa-solid fa-bell"
 relatedTags: ["alerts", "monitoring", "automation"]
 weight: 15
 seoTitle: "Smart Alerts & Multi-Channel Notifications | Cured Compliance"
-description: "SMS, email and voice alerts for cold room failures, expiry warnings, missed checklists and calibration due dates. Never miss a compliance deadline."
+description: "Proactive SMS, email, and voice alerts for cold room failures, expiry warnings, missing checklists, and equipment calibration. Never miss a critical compliance deadline."
 priority: 0.8
 menu:
   main:

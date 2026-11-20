@@ -4,8 +4,8 @@ catchphrase: "Hand inspectors a comprehensive audit in 60 seconds"
 icon: "fa-solid fa-chart-line"
 relatedTags: ["reporting", "compliance", "audits"]
 weight: 17
-seoTitle: "Compliance Reports & Audits | Cured Compliance"
-description: "One-click PDF compliance reports with monthly scores, critical failure highlights and regulatory cross-references. Inspector-ready every month."
+seoTitle: "Compliance Reports & Audit Management for Meat Processors | Cured Compliance"
+description: "One-click PDF report generation with monthly compliance scores, critical failure highlights, and regulatory cross-references. Wake up to completed audits every month."
 priority: 0.8
 menu:
   main:

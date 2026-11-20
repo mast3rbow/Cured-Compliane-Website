@@ -4,8 +4,8 @@ catchphrase: "Pre-configured for your exact business type"
 icon: "fa-solid fa-gavel"
 relatedTags: ["compliance", "regulatory", "fsanz"]
 weight: 16
-seoTitle: "FSANZ & State Compliance Frameworks | Cured Compliance"
-description: "Pre-loaded FSANZ cooking matrices, species-specific workflows and all 8 state and territory requirements, filtered to what applies to your business."
+seoTitle: "FSANZ & State Meat Processing Compliance Frameworks | Cured Compliance"
+description: "Pre-loaded with FSANZ cooking matrices, species-specific workflows, and 8 state/territory regulations. Business type filtering shows only requirements that apply to YOU."
 priority: 0.8
 menu:
   main:

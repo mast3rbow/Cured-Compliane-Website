@@ -16,6 +16,8 @@
                 <span class="text-white">{{ .Title }}</span>
             </nav>
             
+            {{ partial "schema-breadcrumb.html" . }}
+            
             {{ if .Params.icon }}
             <div class="text-6xl md:text-7xl opacity-90 mb-4">
                 <i class="{{ .Params.icon }}"></i>
