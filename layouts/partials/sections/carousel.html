@@ -4,7 +4,7 @@
 <div id="slider" class="flex flex-col justify-center items-center bg-blue-200 py-12">
 <div class="slider">
   	<div class="slide-track">
-        {{ range $index, $slide := hugo.Data.carousel.images }}
+        {{ range $index, $slide := site.Data.carousel.images }}
         <div class="slide">
           <picture>
             {{ $isJPG := eq (path.Ext $slide.image) ".jpg" }}
@@ -25,7 +25,7 @@
                 <source srcset="{{ $webpPath | safeURL }}" type="image/webp" >
               {{- end }}
             {{- end }}
-            <img class="image_slider" src="{{ $slide.image }}" alt="a slider image of a customer" />
+            <img class="image_slider" src="{{ $slide.image }}" alt="{{ $slide.alt | default "Cured Compliance customer logo" }}" loading="lazy" decoding="async" />
           </picture>
             
         </div>

@@ -1,0 +1,28 @@
+{{ define "main" }}
+
+    <link rel="stylesheet"  href="/css/normalize.min.css">
+
+    {{ partial "navbar.html" . }}
+
+    <div class="w-full bg-gradient-to-r from-blue-600 to-blue-800 text-white py-16">
+        <div class="w-full sm:w-2/3 xl:w-1/2 mx-auto px-4 text-center">
+            <h1 class="font-bold text-4xl md:text-5xl mb-4">{{ .Title }}</h1>
+            {{ with .Description }}<p class="text-xl md:text-2xl text-blue-100">{{ . }}</p>{{ end }}
+        </div>
+    </div>
+
+    <div class="w-full bg-gray-50 py-12">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="font-light text-black text-lg mb-12 text-center">
+                {{ .Content }}
+            </div>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 2rem;">
+                {{ range where .Pages ".Params.unlisted" "!=" true }}
+                {{ partial "case-study-card.html" . }}
+                {{ end }}
+            </div>
+        </div>
+    </div>
+
+{{ end }}

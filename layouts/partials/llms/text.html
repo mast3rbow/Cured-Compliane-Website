@@ -1,0 +1,21 @@
+{{- /* Converts a page's rendered HTML to plain Markdown-ish text for llms-full.txt. */ -}}
+{{- $s := replace .Content "" "" -}}
+{{- $s = replaceRE `(?is)<(script|style|svg|noscript)\b.*?</(script|style|svg|noscript)>` "" $s -}}
+{{- $s = replaceRE `(?is)<details\b.*?</details>` "" $s -}}
+{{- $s = replaceRE `(?i)<h1[^>]*>` "\n\n# " $s -}}
+{{- $s = replaceRE `(?i)<h2[^>]*>` "\n\n## " $s -}}
+{{- $s = replaceRE `(?i)<h3[^>]*>` "\n\n### " $s -}}
+{{- $s = replaceRE `(?i)<h[4-6][^>]*>` "\n\n#### " $s -}}
+{{- $s = replaceRE `(?i)</h[1-6]>` "\n\n" $s -}}
+{{- $s = replaceRE `(?i)<li[^>]*>` "\n- " $s -}}
+{{- $s = replaceRE `(?i)</?(strong|b)>` "**" $s -}}
+{{- $s = replaceRE `(?i)<br\s*/?>|</p>|</div>|</tr>|</blockquote>|</ul>|</ol>|</figure>` "\n" $s -}}
+{{- $s = replaceRE `(?i)</t[dh]>` " | " $s -}}
+{{- $s = replaceRE `<[^>]+>` "" $s -}}
+{{- $s = htmlUnescape $s -}}
+{{- $s = replaceRE `[ \t\x{00a0}]+` " " $s -}}
+{{- $s = replaceRE `(?m)^ +| +$` "" $s -}}
+{{- $s = replaceRE `\*\*\s*\*\*` "" $s -}}
+{{- $s = replaceRE `(?m)^- *$\n?` "" $s -}}
+{{- $s = replaceRE `\n{3,}` "\n\n" $s -}}
+{{- return strings.TrimSpace $s -}}

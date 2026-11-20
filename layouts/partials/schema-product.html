@@ -4,13 +4,14 @@
   "@type": "SoftwareApplication",
   "name": "{{ .Title }}",
   "applicationCategory": "BusinessApplication",
-  "operatingSystem": "Web Browser",
+  "operatingSystem": "Web, iOS, Android",
+  "areaServed": "AU",
   "description": "{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}",
   "offers": {
     "@type": "Offer",
-    "price": "0",
+    "price": "TODO",
     "priceCurrency": "AUD",
-    "description": "Contact for pricing"
+    "description": "TODO: confirm pricing on the pricing page once it exists"
   },
   "provider": {
     "@type": "Organization",

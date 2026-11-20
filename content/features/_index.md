@@ -1,10 +1,11 @@
 ---
 title: Features
+seoTitle: "Compliance Software Features for Butchers | Cured Compliance"
 description: "Explore AI-powered compliance automation, 24/7 IoT temperature monitoring, digital checklists, and complete traceability for meat processing operations."
 priority: 0.9
 ---
 
-# AI-Powered Compliance for Meat Processing
+## AI-Powered Compliance for Meat Processing
 
 Stop drowning in paperwork and start focusing on what you do best: processing quality meat. Our platform automates compliance headaches with AI-powered audits, 24/7 IoT monitoring, mobile digital checklists, and complete product traceability.
 
@@ -18,4 +19,4 @@ Built specifically for the meat industry by people who understand your challenge
 
 **vs. Building Your Own**: 1000+ hours of development already done. Battle-tested with real butcher shops. Monthly AI improvements you don't have to maintain.
 
-{{< cta text="See All Features in Action" url="/demo" icon="fa-solid fa-rocket" />}}
+{{< cta text="See All Features in Action" url="/book-a-demo/" icon="fa-solid fa-rocket" />}}
