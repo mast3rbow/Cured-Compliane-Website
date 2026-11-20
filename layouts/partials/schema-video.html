@@ -1,0 +1,21 @@
+{{ with .Params.video }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  "name": {{ $.Title | jsonify | safeJS }},
+  "description": {{ $.Description | jsonify | safeJS }},
+  "contentUrl": {{ partial "video-url.html" . | absURL | jsonify | safeJS }},
+  {{ with $.Params.poster }}"thumbnailUrl": {{ partial "video-url.html" . | absURL | jsonify | safeJS }},
+  {{ end }}"uploadDate": "{{ $.Date.Format "2006-01-02T15:04:05Z07:00" }}",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Cured Compliance",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "{{ site.BaseURL }}img/logo.png"
+    }
+  }
+}
+</script>
+{{ end }}

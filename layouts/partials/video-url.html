@@ -1,0 +1,6 @@
+{{- /* Resolves a video/poster filename against site.Params.videoBaseURL. Full URLs and site paths ("/img/...") pass through unchanged. */ -}}
+{{- $url := . -}}
+{{- if not (or (strings.Contains . "://") (strings.HasPrefix . "/")) -}}
+  {{- $url = printf "%s/%s" (strings.TrimSuffix "/" site.Params.videoBaseURL) . -}}
+{{- end -}}
+{{- return $url -}}

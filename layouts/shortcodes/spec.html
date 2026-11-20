@@ -1,0 +1,4 @@
+{{- $key := .Get 0 -}}
+{{- $specs := site.Data.specs -}}
+{{- $value := index $specs $key -}}
+{{- with $value -}}{{ . }}{{- else -}}{{ errorf "Missing spec %q" $key }}{{- end -}}

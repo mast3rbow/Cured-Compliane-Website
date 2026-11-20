@@ -8,23 +8,19 @@
       "@type": "ListItem",
       "position": 1,
       "name": "Home",
-      "item": "{{ .Site.BaseURL }}"
-    }
-    {{- $parent := .Parent -}}
-    {{- $position := 2 -}}
-    {{- if $parent.Parent -}}
-    ,{
+      "item": "{{ site.BaseURL }}"
+    }{{ if and .Parent (ne .Parent.Kind "home") }},
+    {
       "@type": "ListItem",
-      "position": {{ $position }},
-      "name": "{{ $parent.Title }}",
-      "item": "{{ $parent.Permalink }}"
-    }
-    {{- $position = add $position 1 -}}
-    {{- end -}}
-    ,{
+      "position": 2,
+      "name": {{ .Parent.Title | jsonify }},
+      "item": {{ .Parent.RelPermalink | jsonify }}
+    }{{ end }},
+    {
       "@type": "ListItem",
-      "position": {{ $position }},
-      "name": "{{ .Title }}"
+      "position": {{ if and .Parent (ne .Parent.Kind "home") }}3{{ else }}2{{ end }},
+      "name": {{ .Title | jsonify }},
+      "item": {{ .RelPermalink | jsonify }}
     }
   ]
 }
